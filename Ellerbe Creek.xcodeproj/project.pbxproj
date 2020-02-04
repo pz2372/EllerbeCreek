@@ -18,6 +18,15 @@
 		83FE53BD23E91FFC00E04182 /* GameMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53BC23E91FFC00E04182 /* GameMapView.swift */; };
 		83FE53BF23E9200F00E04182 /* GameMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53BE23E9200F00E04182 /* GameMapViewController.swift */; };
 		83FE53C123E9202400E04182 /* GameMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83FE53C023E9202400E04182 /* GameMapView.xib */; };
+		83FE53C423E9AE9200E04182 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53C323E9AE9200E04182 /* Storage.swift */; };
+		83FE53C623E9AF0F00E04182 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53C523E9AF0F00E04182 /* DependencyContainer.swift */; };
+		83FE53C923E9AF9100E04182 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53C823E9AF9100E04182 /* Navigator.swift */; };
+		83FE53CB23E9AFAE00E04182 /* SystemNavigatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53CA23E9AFAE00E04182 /* SystemNavigatable.swift */; };
+		83FE53CD23E9AFC000E04182 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53CC23E9AFC000E04182 /* ViewControllerFactory.swift */; };
+		83FE53D023E9AFFB00E04182 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53CF23E9AFFB00E04182 /* Game.swift */; };
+		83FE53D223E9B00600E04182 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53D123E9B00600E04182 /* User.swift */; };
+		83FE53D423E9B39100E04182 /* UIViewController+NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53D323E9B39100E04182 /* UIViewController+NibLoadable.swift */; };
+		83FE53D623E9B3AA00E04182 /* NibBasedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53D523E9B3AA00E04182 /* NibBasedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +56,15 @@
 		83FE53BC23E91FFC00E04182 /* GameMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMapView.swift; sourceTree = "<group>"; };
 		83FE53BE23E9200F00E04182 /* GameMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMapViewController.swift; sourceTree = "<group>"; };
 		83FE53C023E9202400E04182 /* GameMapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameMapView.xib; sourceTree = "<group>"; };
+		83FE53C323E9AE9200E04182 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		83FE53C523E9AF0F00E04182 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		83FE53C823E9AF9100E04182 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		83FE53CA23E9AFAE00E04182 /* SystemNavigatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNavigatable.swift; sourceTree = "<group>"; };
+		83FE53CC23E9AFC000E04182 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		83FE53CF23E9AFFB00E04182 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		83FE53D123E9B00600E04182 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		83FE53D323E9B39100E04182 /* UIViewController+NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NibLoadable.swift"; sourceTree = "<group>"; };
+		83FE53D523E9B3AA00E04182 /* NibBasedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibBasedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +121,11 @@
 		83FE53B723E91E5600E04182 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				83FE53C323E9AE9200E04182 /* Storage.swift */,
+				83FE53C523E9AF0F00E04182 /* DependencyContainer.swift */,
 				83FE53C223E9204000E04182 /* UI */,
+				83FE53C723E9AF7E00E04182 /* Protocols */,
+				83FE53CE23E9AFDD00E04182 /* Models */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -131,8 +153,29 @@
 			isa = PBXGroup;
 			children = (
 				83FE53B323E91C3800E04182 /* Colors.swift */,
+				83FE53D523E9B3AA00E04182 /* NibBasedView.swift */,
+				83FE53D323E9B39100E04182 /* UIViewController+NibLoadable.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		83FE53C723E9AF7E00E04182 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				83FE53C823E9AF9100E04182 /* Navigator.swift */,
+				83FE53CA23E9AFAE00E04182 /* SystemNavigatable.swift */,
+				83FE53CC23E9AFC000E04182 /* ViewControllerFactory.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		83FE53CE23E9AFDD00E04182 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83FE53D123E9B00600E04182 /* User.swift */,
+				83FE53CF23E9AFFB00E04182 /* Game.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,11 +274,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83FE53C623E9AF0F00E04182 /* DependencyContainer.swift in Sources */,
+				83FE53CD23E9AFC000E04182 /* ViewControllerFactory.swift in Sources */,
+				83FE53D423E9B39100E04182 /* UIViewController+NibLoadable.swift in Sources */,
 				83FE53BD23E91FFC00E04182 /* GameMapView.swift in Sources */,
 				83FE53BF23E9200F00E04182 /* GameMapViewController.swift in Sources */,
 				83FE53BB23E91EAA00E04182 /* GameMapNavigator.swift in Sources */,
 				83FE53B423E91C3800E04182 /* Colors.swift in Sources */,
+				83FE53D023E9AFFB00E04182 /* Game.swift in Sources */,
+				83FE53D623E9B3AA00E04182 /* NibBasedView.swift in Sources */,
+				83FE53CB23E9AFAE00E04182 /* SystemNavigatable.swift in Sources */,
+				83FE53D223E9B00600E04182 /* User.swift in Sources */,
+				83FE53C923E9AF9100E04182 /* Navigator.swift in Sources */,
 				83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */,
+				83FE53C423E9AE9200E04182 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,23 +8,43 @@
 
 import UIKit
 
-class GameMapViewController: UIViewController {
+protocol GameMapViewControllerDelegate: class {
+    
+}
+
+class GameMapViewController: UIViewController, NibLoadable {
+    
+    // MARK - Constants
+    
+    private let navigator: GameMapNavigator
+    private let storage: Storage
+    private let gameMapView: GameMapView = GameMapView()
+    
+    // MARK: - UIViewController Lifecycle
+    
+    required init(navigator: GameMapNavigator) {
+        self.navigator = navigator
+        self.storage = navigator.dependencyContainer.storage
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        return nil
+    }
+    
+    override func loadView() {
+        super.loadView()
+        self.view = self.gameMapView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.gameMapView.delegate = self
     }
+
+}
+
+extension GameMapViewController: GameMapViewControllerDelegate {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
