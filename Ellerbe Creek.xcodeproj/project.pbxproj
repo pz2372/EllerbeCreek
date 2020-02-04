@@ -8,22 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE537C23E906C200E04182 /* AppDelegate.swift */; };
-		83FE537F23E906C200E04182 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE537E23E906C200E04182 /* SceneDelegate.swift */; };
-		83FE538123E906C200E04182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE538023E906C200E04182 /* ViewController.swift */; };
 		83FE538423E906C200E04182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FE538223E906C200E04182 /* Main.storyboard */; };
 		83FE538623E906C300E04182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FE538523E906C300E04182 /* Assets.xcassets */; };
 		83FE538923E906C300E04182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FE538723E906C300E04182 /* LaunchScreen.storyboard */; };
+		83FE53AD23E91A3A00E04182 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FE53AC23E91A3A00E04182 /* Mapbox.framework */; };
+		83FE53AE23E91A3A00E04182 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83FE53AC23E91A3A00E04182 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		83FE53B423E91C3800E04182 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53B323E91C3800E04182 /* Colors.swift */; };
+		83FE53BB23E91EAA00E04182 /* GameMapNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53BA23E91EAA00E04182 /* GameMapNavigator.swift */; };
+		83FE53BD23E91FFC00E04182 /* GameMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53BC23E91FFC00E04182 /* GameMapView.swift */; };
+		83FE53BF23E9200F00E04182 /* GameMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53BE23E9200F00E04182 /* GameMapViewController.swift */; };
+		83FE53C123E9202400E04182 /* GameMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83FE53C023E9202400E04182 /* GameMapView.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83FE53AF23E91A3A00E04182 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83FE53AE23E91A3A00E04182 /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		83FE537923E906C200E04182 /* Ellerbe Creek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ellerbe Creek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FE537C23E906C200E04182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83FE537E23E906C200E04182 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83FE538023E906C200E04182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83FE538323E906C200E04182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83FE538523E906C300E04182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83FE538823E906C300E04182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83FE538A23E906C300E04182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83FE53AC23E91A3A00E04182 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
+		83FE53B323E91C3800E04182 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		83FE53BA23E91EAA00E04182 /* GameMapNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMapNavigator.swift; sourceTree = "<group>"; };
+		83FE53BC23E91FFC00E04182 /* GameMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMapView.swift; sourceTree = "<group>"; };
+		83FE53BE23E9200F00E04182 /* GameMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMapViewController.swift; sourceTree = "<group>"; };
+		83FE53C023E9202400E04182 /* GameMapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameMapView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83FE53AD23E91A3A00E04182 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +66,7 @@
 			children = (
 				83FE537B23E906C200E04182 /* Ellerbe Creek */,
 				83FE537A23E906C200E04182 /* Products */,
+				83FE53AB23E91A3A00E04182 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +82,57 @@
 			isa = PBXGroup;
 			children = (
 				83FE537C23E906C200E04182 /* AppDelegate.swift */,
-				83FE537E23E906C200E04182 /* SceneDelegate.swift */,
-				83FE538023E906C200E04182 /* ViewController.swift */,
+				83FE53B723E91E5600E04182 /* Common */,
+				83FE53B823E91E5F00E04182 /* Features */,
 				83FE538223E906C200E04182 /* Main.storyboard */,
 				83FE538523E906C300E04182 /* Assets.xcassets */,
 				83FE538723E906C300E04182 /* LaunchScreen.storyboard */,
 				83FE538A23E906C300E04182 /* Info.plist */,
 			);
 			path = "Ellerbe Creek";
+			sourceTree = "<group>";
+		};
+		83FE53AB23E91A3A00E04182 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83FE53AC23E91A3A00E04182 /* Mapbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83FE53B723E91E5600E04182 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				83FE53C223E9204000E04182 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		83FE53B823E91E5F00E04182 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				83FE53B923E91E7B00E04182 /* GameMap */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		83FE53B923E91E7B00E04182 /* GameMap */ = {
+			isa = PBXGroup;
+			children = (
+				83FE53BA23E91EAA00E04182 /* GameMapNavigator.swift */,
+				83FE53BC23E91FFC00E04182 /* GameMapView.swift */,
+				83FE53C023E9202400E04182 /* GameMapView.xib */,
+				83FE53BE23E9200F00E04182 /* GameMapViewController.swift */,
+			);
+			path = GameMap;
+			sourceTree = "<group>";
+		};
+		83FE53C223E9204000E04182 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				83FE53B323E91C3800E04182 /* Colors.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +145,8 @@
 				83FE537523E906C200E04182 /* Sources */,
 				83FE537623E906C200E04182 /* Frameworks */,
 				83FE537723E906C200E04182 /* Resources */,
+				83FE53AF23E91A3A00E04182 /* Embed Frameworks */,
+				83FE53B023E91A4A00E04182 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -128,19 +198,44 @@
 				83FE538923E906C300E04182 /* LaunchScreen.storyboard in Resources */,
 				83FE538623E906C300E04182 /* Assets.xcassets in Resources */,
 				83FE538423E906C200E04182 /* Main.storyboard in Resources */,
+				83FE53C123E9202400E04182 /* GameMapView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83FE53B023E91A4A00E04182 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Mapbox.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MapboxMobileEvents.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83FE537523E906C200E04182 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83FE538123E906C200E04182 /* ViewController.swift in Sources */,
+				83FE53BD23E91FFC00E04182 /* GameMapView.swift in Sources */,
+				83FE53BF23E9200F00E04182 /* GameMapViewController.swift in Sources */,
+				83FE53BB23E91EAA00E04182 /* GameMapNavigator.swift in Sources */,
+				83FE53B423E91C3800E04182 /* Colors.swift in Sources */,
 				83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */,
-				83FE537F23E906C200E04182 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +381,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMYMB448CY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Ellerbe Creek/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +395,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ryananderson.Ellerbe-Creek";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +405,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMYMB448CY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Ellerbe Creek/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ryananderson.Ellerbe-Creek";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
