@@ -43,7 +43,7 @@ class GameMapView: NibBasedView {
         let headerText = NSMutableAttributedString.init(string: "\(sightings) sightings nearby")
 
         // Adds a custom font and size for sightings value in the headerText string
-        headerText.setAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 86.0, weight: .bold)],
+        headerText.setAttributes([NSAttributedString.Key.font: Fonts.bold.withSize(86.0)],
                                  range: NSMakeRange(0, "\(sightings)".count))
         
         // Vertically centers the 'sightings nearby' description following the sighting value in the headerText string

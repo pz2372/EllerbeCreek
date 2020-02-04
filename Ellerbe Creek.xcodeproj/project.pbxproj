@@ -30,6 +30,10 @@
 		83FE53D823E9C8F200E04182 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53D723E9C8F200E04182 /* MainNavigationController.swift */; };
 		83FE53DA23E9D34600E04182 /* NavigationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53D923E9D34600E04182 /* NavigationHeaderView.swift */; };
 		83FE53DC23E9D53A00E04182 /* NavigationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83FE53DB23E9D53A00E04182 /* NavigationHeaderView.xib */; };
+		83FE53E223E9F82E00E04182 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FE53E123E9F82800E04182 /* SF-Pro-Rounded-Bold.otf */; };
+		83FE53E423E9F83700E04182 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FE53E323E9F83600E04182 /* SF-Pro-Rounded-Regular.otf */; };
+		83FE53E623E9F83F00E04182 /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FE53E523E9F83F00E04182 /* SF-Pro-Rounded-Semibold.otf */; };
+		83FE53E823E9F8C800E04182 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53E723E9F8C800E04182 /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +75,10 @@
 		83FE53D723E9C8F200E04182 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		83FE53D923E9D34600E04182 /* NavigationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHeaderView.swift; sourceTree = "<group>"; };
 		83FE53DB23E9D53A00E04182 /* NavigationHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationHeaderView.xib; sourceTree = "<group>"; };
+		83FE53E123E9F82800E04182 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		83FE53E323E9F83600E04182 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
+		83FE53E523E9F83F00E04182 /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
+		83FE53E723E9F8C800E04182 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 				83FE538523E906C300E04182 /* Assets.xcassets */,
 				83FE538723E906C300E04182 /* LaunchScreen.storyboard */,
 				83FE538A23E906C300E04182 /* Info.plist */,
+				83FE53E023E9F7D100E04182 /* Fonts */,
 			);
 			path = "Ellerbe Creek";
 			sourceTree = "<group>";
@@ -159,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				83FE53B323E91C3800E04182 /* Colors.swift */,
+				83FE53E723E9F8C800E04182 /* Fonts.swift */,
 				83FE53D523E9B3AA00E04182 /* NibBasedView.swift */,
 				83FE53D323E9B39100E04182 /* UIViewController+NibLoadable.swift */,
 				83FE53D723E9C8F200E04182 /* MainNavigationController.swift */,
@@ -193,6 +203,16 @@
 				83FE53DB23E9D53A00E04182 /* NavigationHeaderView.xib */,
 			);
 			path = NavigationHeader;
+			sourceTree = "<group>";
+		};
+		83FE53E023E9F7D100E04182 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				83FE53E323E9F83600E04182 /* SF-Pro-Rounded-Regular.otf */,
+				83FE53E523E9F83F00E04182 /* SF-Pro-Rounded-Semibold.otf */,
+				83FE53E123E9F82800E04182 /* SF-Pro-Rounded-Bold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				83FE538923E906C300E04182 /* LaunchScreen.storyboard in Resources */,
+				83FE53E423E9F83700E04182 /* SF-Pro-Rounded-Regular.otf in Resources */,
 				83FE53DC23E9D53A00E04182 /* NavigationHeaderView.xib in Resources */,
+				83FE53E623E9F83F00E04182 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				83FE538623E906C300E04182 /* Assets.xcassets in Resources */,
+				83FE53E223E9F82E00E04182 /* SF-Pro-Rounded-Bold.otf in Resources */,
 				83FE538423E906C200E04182 /* Main.storyboard in Resources */,
 				83FE53C123E9202400E04182 /* GameMapView.xib in Resources */,
 			);
@@ -299,6 +322,7 @@
 				83FE53BF23E9200F00E04182 /* GameMapViewController.swift in Sources */,
 				83FE53BB23E91EAA00E04182 /* GameMapNavigator.swift in Sources */,
 				83FE53B423E91C3800E04182 /* Colors.swift in Sources */,
+				83FE53E823E9F8C800E04182 /* Fonts.swift in Sources */,
 				83FE53D023E9AFFB00E04182 /* Game.swift in Sources */,
 				83FE53D623E9B3AA00E04182 /* NibBasedView.swift in Sources */,
 				83FE53DA23E9D34600E04182 /* NavigationHeaderView.swift in Sources */,

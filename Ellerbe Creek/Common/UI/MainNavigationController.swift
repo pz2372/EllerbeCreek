@@ -26,7 +26,7 @@ class MainNavigationController: UINavigationController {
             appearance.configureWithOpaqueBackground()
             appearance.backgroundColor = Colors.darkGreen
             appearance.titleTextAttributes = [.foregroundColor: Colors.white,
-                                              .font: UIFont.systemFont(ofSize: 22.0, weight: .semibold)]
+                                              .font: Fonts.semibold.withSize(22.0)]
             
             // Removes shadow from bottom of the default navigationBar
             appearance.shadowColor = .clear

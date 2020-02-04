@@ -13,7 +13,7 @@ class NavigationHeaderView: NibBasedView {
     @IBOutlet var mainLabel: UILabel! {
         willSet {
             if let label: UILabel = newValue {
-                label.font = UIFont.systemFont(ofSize: 32.0, weight: .semibold)
+                label.font = Fonts.semibold.withSize(32.0)
                 label.textColor = Colors.white
                 label.baselineAdjustment = .alignCenters
             }
