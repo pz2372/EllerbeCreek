@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameMapView" customModule="Ellerbe_Creek" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="8wF-Ev-Epb"/>
+                <outlet property="headerView" destination="Jdp-zd-u77" id="ixO-a2-emK"/>
                 <outlet property="mapView" destination="tdN-SY-ipR" id="Y4y-vQ-1xD"/>
             </connections>
         </placeholder>
@@ -26,10 +27,20 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/andersonmryan/ck5vaidw2045l1iqs79sxubqg"/>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jdp-zd-u77" customClass="NavigationHeaderView" customModule="Ellerbe_Creek" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="108"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="108" id="Tq4-yG-dhl"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="tdN-SY-ipR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="A7r-g0-WpY"/>
+                <constraint firstItem="Jdp-zd-u77" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="C9F-uZ-e7b"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Jdp-zd-u77" secondAttribute="trailing" id="HCH-bj-YT5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="Jdp-zd-u77" secondAttribute="top" id="JPO-8j-0qW"/>
                 <constraint firstAttribute="top" secondItem="tdN-SY-ipR" secondAttribute="top" id="V5t-ZN-McY"/>
                 <constraint firstItem="tdN-SY-ipR" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="pmv-hD-RyZ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tdN-SY-ipR" secondAttribute="trailing" id="vQI-gO-5Rl"/>

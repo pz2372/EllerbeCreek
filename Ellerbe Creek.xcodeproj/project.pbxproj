@@ -27,6 +27,9 @@
 		83FE53D223E9B00600E04182 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53D123E9B00600E04182 /* User.swift */; };
 		83FE53D423E9B39100E04182 /* UIViewController+NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53D323E9B39100E04182 /* UIViewController+NibLoadable.swift */; };
 		83FE53D623E9B3AA00E04182 /* NibBasedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53D523E9B3AA00E04182 /* NibBasedView.swift */; };
+		83FE53D823E9C8F200E04182 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53D723E9C8F200E04182 /* MainNavigationController.swift */; };
+		83FE53DA23E9D34600E04182 /* NavigationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53D923E9D34600E04182 /* NavigationHeaderView.swift */; };
+		83FE53DC23E9D53A00E04182 /* NavigationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83FE53DB23E9D53A00E04182 /* NavigationHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +68,9 @@
 		83FE53D123E9B00600E04182 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		83FE53D323E9B39100E04182 /* UIViewController+NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NibLoadable.swift"; sourceTree = "<group>"; };
 		83FE53D523E9B3AA00E04182 /* NibBasedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibBasedView.swift; sourceTree = "<group>"; };
+		83FE53D723E9C8F200E04182 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		83FE53D923E9D34600E04182 /* NavigationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHeaderView.swift; sourceTree = "<group>"; };
+		83FE53DB23E9D53A00E04182 /* NavigationHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,8 @@
 				83FE53B323E91C3800E04182 /* Colors.swift */,
 				83FE53D523E9B3AA00E04182 /* NibBasedView.swift */,
 				83FE53D323E9B39100E04182 /* UIViewController+NibLoadable.swift */,
+				83FE53D723E9C8F200E04182 /* MainNavigationController.swift */,
+				83FE53DD23E9D54000E04182 /* NavigationHeader */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -176,6 +184,15 @@
 				83FE53CF23E9AFFB00E04182 /* Game.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		83FE53DD23E9D54000E04182 /* NavigationHeader */ = {
+			isa = PBXGroup;
+			children = (
+				83FE53D923E9D34600E04182 /* NavigationHeaderView.swift */,
+				83FE53DB23E9D53A00E04182 /* NavigationHeaderView.xib */,
+			);
+			path = NavigationHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83FE538923E906C300E04182 /* LaunchScreen.storyboard in Resources */,
+				83FE53DC23E9D53A00E04182 /* NavigationHeaderView.xib in Resources */,
 				83FE538623E906C300E04182 /* Assets.xcassets in Resources */,
 				83FE538423E906C200E04182 /* Main.storyboard in Resources */,
 				83FE53C123E9202400E04182 /* GameMapView.xib in Resources */,
@@ -283,7 +301,9 @@
 				83FE53B423E91C3800E04182 /* Colors.swift in Sources */,
 				83FE53D023E9AFFB00E04182 /* Game.swift in Sources */,
 				83FE53D623E9B3AA00E04182 /* NibBasedView.swift in Sources */,
+				83FE53DA23E9D34600E04182 /* NavigationHeaderView.swift in Sources */,
 				83FE53CB23E9AFAE00E04182 /* SystemNavigatable.swift in Sources */,
+				83FE53D823E9C8F200E04182 /* MainNavigationController.swift in Sources */,
 				83FE53D223E9B00600E04182 /* User.swift in Sources */,
 				83FE53C923E9AF9100E04182 /* Navigator.swift in Sources */,
 				83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */,
