@@ -10,6 +10,16 @@ import UIKit
 
 class NavigationHeaderView: NibBasedView {
     
+    @IBOutlet var mainLabel: UILabel! {
+        willSet {
+            if let label: UILabel = newValue {
+                label.font = UIFont.systemFont(ofSize: 32.0, weight: .semibold)
+                label.textColor = Colors.white
+                label.baselineAdjustment = .alignCenters
+            }
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         

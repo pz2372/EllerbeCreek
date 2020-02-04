@@ -25,15 +25,24 @@ class MainNavigationController: UINavigationController {
             let appearance = UINavigationBarAppearance()
             appearance.configureWithOpaqueBackground()
             appearance.backgroundColor = Colors.darkGreen
-            appearance.titleTextAttributes = [.foregroundColor: Colors.white]
+            appearance.titleTextAttributes = [.foregroundColor: Colors.white,
+                                              .font: UIFont.systemFont(ofSize: 22.0, weight: .semibold)]
+            
+            // Removes shadow from bottom of the default navigationBar
+            appearance.shadowColor = .clear
             
             navigationBar.standardAppearance = appearance
             navigationBar.scrollEdgeAppearance = appearance
             navigationBar.compactAppearance = appearance
         } else {
             navigationBar.isTranslucent = false
-            navigationBar.titleTextAttributes = [.foregroundColor: Colors.white]
             navigationBar.tintColor = Colors.darkGreen
+            navigationBar.titleTextAttributes = [.foregroundColor: Colors.white,
+                                                 .font: UIFont.systemFont(ofSize: 22.0, weight: .semibold)]
+            
+            // Removes shadow from bottom of the default navigationBar
+            navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+            navigationBar.shadowImage = UIImage()
         }
 
     }
