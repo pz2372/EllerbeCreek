@@ -17,10 +17,20 @@ class GameMapView: NibBasedView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        setUp()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setUp() {
+        setMapView()
+    }
+    
+    private func setMapView() {
+        mapView.setCenter(CLLocationCoordinate2D(latitude: 36.018097, longitude: -78.882764), zoomLevel: 16.25, animated: false)
     }
     
 }
