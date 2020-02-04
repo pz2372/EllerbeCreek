@@ -9,5 +9,5 @@
 import UIKit
 
 protocol SystemNavigatable {
-    var navigationController: UINavigationController { get }
+    var navigationController: MainNavigationController { get }
 }

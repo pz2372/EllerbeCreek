@@ -16,7 +16,7 @@ class DependencyContainer: CoreDependencyContainer, KeyValueStorable {
     // When possible, make all properties lazy to avoid circular dependencies and allow to be created in any order
     
     // MARK: - SystemNavigatable
-    let navigationController = UINavigationController()
+    let navigationController = MainNavigationController()
     
     // MARK: - KeyValueStorable
     lazy var storage = Storage()

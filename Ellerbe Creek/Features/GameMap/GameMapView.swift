@@ -14,6 +14,7 @@ class GameMapView: NibBasedView {
     public weak var delegate: GameMapViewControllerDelegate?
     
     @IBOutlet var mapView: MGLMapView!
+    @IBOutlet var headerView: NavigationHeaderView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,6 +33,10 @@ class GameMapView: NibBasedView {
     private func setMapView() {
         mapView.showsUserLocation = true
         mapView.setCenter(CLLocationCoordinate2D(latitude: 36.018097, longitude: -78.882764), zoomLevel: 16.25, animated: false)
+    }
+    
+    private func setHeaderView() {
+        headerView.backgroundColor = Colors.darkGreen
     }
     
 }

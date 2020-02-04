@@ -41,6 +41,19 @@ class GameMapViewController: UIViewController, NibLoadable {
         super.viewDidLoad()
 
         self.gameMapView.delegate = self
+        
+        // TODO: Update this title with the name of the user's current location
+        self.title = "Beaver Marsh Preserve"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setNeedsStatusBarAppearanceUpdate()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 
 }
