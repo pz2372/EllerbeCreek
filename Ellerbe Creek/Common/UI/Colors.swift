@@ -18,6 +18,14 @@ struct Colors {
         return UIColor(red: 4.0/255.0, green: 204.0/255.0, blue: 168.0/255.0, alpha: 1.0)
     }()
     
+    static let darkOrange: UIColor = {
+        return UIColor(red: 255.0/255.0, green: 117.0/255.0, blue: 80.0/255.0, alpha: 1.0)
+    }()
+    
+    static let lightOrange: UIColor = {
+        return UIColor(red: 255.0/255.0, green: 141.0/255.0, blue: 109.0/255.0, alpha: 1.0)
+    }()
+    
     static let white: UIColor = {
         return UIColor.white
     }()
