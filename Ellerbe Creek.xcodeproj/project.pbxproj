@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83936E2123EB3D3300C9FA1A /* Preserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83936E2023EB3D3300C9FA1A /* Preserve.swift */; };
 		83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE537C23E906C200E04182 /* AppDelegate.swift */; };
 		83FE538423E906C200E04182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FE538223E906C200E04182 /* Main.storyboard */; };
 		83FE538623E906C300E04182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FE538523E906C300E04182 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		83936E2023EB3D3300C9FA1A /* Preserve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preserve.swift; sourceTree = "<group>"; };
 		83FE537923E906C200E04182 /* Ellerbe Creek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ellerbe Creek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FE537C23E906C200E04182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83FE538323E906C200E04182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			children = (
 				83FE53D123E9B00600E04182 /* User.swift */,
 				83FE53CF23E9AFFB00E04182 /* Game.swift */,
+				83936E2023EB3D3300C9FA1A /* Preserve.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				83FE53C623E9AF0F00E04182 /* DependencyContainer.swift in Sources */,
 				83FE53CD23E9AFC000E04182 /* ViewControllerFactory.swift in Sources */,
 				83FE53D423E9B39100E04182 /* UIViewController+NibLoadable.swift in Sources */,
+				83936E2123EB3D3300C9FA1A /* Preserve.swift in Sources */,
 				83FE53BD23E91FFC00E04182 /* GameMapView.swift in Sources */,
 				83FE53BF23E9200F00E04182 /* GameMapViewController.swift in Sources */,
 				83FE53BB23E91EAA00E04182 /* GameMapNavigator.swift in Sources */,
