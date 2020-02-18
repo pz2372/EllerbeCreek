@@ -25,15 +25,23 @@ class GameMapNavigator: Navigator {
         dependencyContainer.navigationController.viewControllers = [viewController]
     }
     
+    func present(_ destination: Destination, with presentationStyle: UIModalPresentationStyle = .fullScreen) {
+        if let rootController = dependencyContainer.navigationController.viewControllers.first {
+            let viewController = makeViewController(for: destination)
+            viewController.modalPresentationStyle = presentationStyle
+            rootController.present(viewController, animated: true, completion: nil)
+        }
+    }
+    
     private func makeViewController(for destination: Destination) -> UIViewController {
-        // TODO: Create profile and sighting view controllers
+        // TODO: Create profile view controller
         
-//        switch destination {
-//        case .profile:
-//            return dependencyContainer.makeProfileViewController()
-//        case .sighting:
-//            return dependencyContainer.makeSightingViewController()
-//        }
+        switch destination {
+        case .profile:
+            break
+        case .sighting:
+            return dependencyContainer.makeSightingViewController()
+        }
         
         return UIViewController()
     }
