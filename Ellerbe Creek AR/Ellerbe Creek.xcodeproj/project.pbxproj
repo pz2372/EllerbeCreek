@@ -14,6 +14,11 @@
 		E2606C6023FB91470027B024 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2606C5F23FB91470027B024 /* Preview Assets.xcassets */; };
 		E2606C6323FB91470027B024 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2606C6123FB91470027B024 /* LaunchScreen.storyboard */; };
 		E2606C6E23FB91470027B024 /* Ellerbe_CreekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2606C6D23FB91470027B024 /* Ellerbe_CreekTests.swift */; };
+		E2606C7923FB99C50027B024 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E2606C7823FB99C50027B024 /* Actions.sks */; };
+		E2606C7B23FB99D60027B024 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E2606C7A23FB99D60027B024 /* GameScene.sks */; };
+		E2606C7D23FB99EC0027B024 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2606C7C23FB99EB0027B024 /* GameViewController.swift */; };
+		E2606C7F23FB99FC0027B024 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2606C7E23FB99FC0027B024 /* Types.swift */; };
+		E2606C8223FB9A0A0027B024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2606C8023FB9A0A0027B024 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		E2606C6923FB91470027B024 /* Ellerbe CreekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ellerbe CreekTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2606C6D23FB91470027B024 /* Ellerbe_CreekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ellerbe_CreekTests.swift; sourceTree = "<group>"; };
 		E2606C6F23FB91470027B024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2606C7823FB99C50027B024 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Actions.sks; path = ../../../Downloads/starter/ARniegeddon/ARniegeddon/Actions.sks; sourceTree = "<group>"; };
+		E2606C7A23FB99D60027B024 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = ../../../Downloads/starter/ARniegeddon/ARniegeddon/GameScene.sks; sourceTree = "<group>"; };
+		E2606C7C23FB99EB0027B024 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = ../../../Downloads/starter/ARniegeddon/ARniegeddon/GameViewController.swift; sourceTree = "<group>"; };
+		E2606C7E23FB99FC0027B024 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Types.swift; path = ../../../Downloads/starter/ARniegeddon/ARniegeddon/Types.swift; sourceTree = "<group>"; };
+		E2606C8123FB9A0A0027B024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../Downloads/starter/ARniegeddon/ARniegeddon/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +90,15 @@
 			isa = PBXGroup;
 			children = (
 				E2606C5623FB91450027B024 /* AppDelegate.swift */,
+				E2606C7823FB99C50027B024 /* Actions.sks */,
+				E2606C7A23FB99D60027B024 /* GameScene.sks */,
+				E2606C7C23FB99EB0027B024 /* GameViewController.swift */,
 				E2606C5823FB91450027B024 /* ContentView.swift */,
 				E2606C5A23FB91450027B024 /* Experience.rcproject */,
+				E2606C8023FB9A0A0027B024 /* Main.storyboard */,
 				E2606C5C23FB91470027B024 /* Assets.xcassets */,
 				E2606C6123FB91470027B024 /* LaunchScreen.storyboard */,
+				E2606C7E23FB99FC0027B024 /* Types.swift */,
 				E2606C6423FB91470027B024 /* Info.plist */,
 				E2606C5E23FB91470027B024 /* Preview Content */,
 			);
@@ -189,8 +204,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2606C6323FB91470027B024 /* LaunchScreen.storyboard in Resources */,
+				E2606C7B23FB99D60027B024 /* GameScene.sks in Resources */,
 				E2606C6023FB91470027B024 /* Preview Assets.xcassets in Resources */,
+				E2606C8223FB9A0A0027B024 /* Main.storyboard in Resources */,
 				E2606C5D23FB91470027B024 /* Assets.xcassets in Resources */,
+				E2606C7923FB99C50027B024 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,8 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2606C7D23FB99EC0027B024 /* GameViewController.swift in Sources */,
 				E2606C5923FB91450027B024 /* ContentView.swift in Sources */,
 				E2606C5723FB91450027B024 /* AppDelegate.swift in Sources */,
+				E2606C7F23FB99FC0027B024 /* Types.swift in Sources */,
 				E2606C5B23FB91450027B024 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +259,14 @@
 				E2606C6223FB91470027B024 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E2606C8023FB9A0A0027B024 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2606C8123FB9A0A0027B024 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
