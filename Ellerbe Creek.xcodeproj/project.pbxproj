@@ -69,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		837ADE0A23F307AE00F88979 /* EllerbeCreek.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EllerbeCreek.xcdatamodel; sourceTree = "<group>"; };
 		838D485123F0FB9A00E9FAAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		838D485323F2480800E9FAAD /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = Carthage/Build/iOS/FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
 		838D485523F2481000E9FAAD /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
@@ -173,6 +174,7 @@
 				83FE538723E906C300E04182 /* LaunchScreen.storyboard */,
 				838D485123F0FB9A00E9FAAD /* GoogleService-Info.plist */,
 				83FE538A23E906C300E04182 /* Info.plist */,
+				837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */,
 				83FE53E023E9F7D100E04182 /* Fonts */,
 			);
 			path = "Ellerbe Creek";
@@ -405,6 +407,7 @@
 				83FE53D223E9B00600E04182 /* User.swift in Sources */,
 				83FE53C923E9AF9100E04182 /* Navigator.swift in Sources */,
 				83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */,
+				837ADE0B23F307AE00F88979 /* EllerbeCreek.xcdatamodeld in Sources */,
 				83FE53C423E9AE9200E04182 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,6 +626,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				837ADE0A23F307AE00F88979 /* EllerbeCreek.xcdatamodel */,
+			);
+			currentVersion = 837ADE0A23F307AE00F88979 /* EllerbeCreek.xcdatamodel */;
+			path = EllerbeCreek.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 83FE537123E906C100E04182 /* Project object */;
 }
