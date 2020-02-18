@@ -167,10 +167,17 @@
 			path = Sighting;
 			sourceTree = "<group>";
 		};
-		83FE537023E906C100E04182 = {
+		831C245C23FC7EB900369C31 /* GPX */ = {
 			isa = PBXGroup;
 			children = (
 				83A96B0723F71F48009C9954 /* BeaverMarshPreserve.gpx */,
+			);
+			path = GPX;
+			sourceTree = "<group>";
+		};
+		83FE537023E906C100E04182 = {
+			isa = PBXGroup;
+			children = (
 				83FE537B23E906C200E04182 /* Ellerbe Creek */,
 				83FE537A23E906C200E04182 /* Products */,
 				83FE53AB23E91A3A00E04182 /* Frameworks */,
@@ -198,6 +205,7 @@
 				83FE538A23E906C300E04182 /* Info.plist */,
 				837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */,
 				83FE53E023E9F7D100E04182 /* Fonts */,
+				831C245C23FC7EB900369C31 /* GPX */,
 			);
 			path = "Ellerbe Creek";
 			sourceTree = "<group>";
