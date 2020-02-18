@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Firebase
 import CoreData
+import CoreLocation
 
 protocol GameMapViewControllerDelegate: class {
-    
+    func checkForPreserves(near userLocation: CLLocation) -> Preserve?
+    func presentSighting()
 }
 
 class GameMapViewController: UIViewController, NibLoadable {
@@ -20,6 +23,11 @@ class GameMapViewController: UIViewController, NibLoadable {
     private let navigator: GameMapNavigator
     private let storage: Storage
     private let gameMapView: GameMapView = GameMapView()
+    
+    // MARK - Variables
+    
+    var ref: DatabaseReference!
+    var preserves: [Preserve] = []
     
     // MARK: - UIViewController Lifecycle
     
@@ -44,7 +52,10 @@ class GameMapViewController: UIViewController, NibLoadable {
         self.gameMapView.delegate = self
         
         // TODO: Update this title with the name of the user's current location
-        self.title = "Beaver Marsh Preserve"
+        self.title = "Find a Preserve"
+        
+        ref = Database.database().reference()
+        fetchPreserves()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -119,4 +130,25 @@ class GameMapViewController: UIViewController, NibLoadable {
 
 extension GameMapViewController: GameMapViewControllerDelegate {
     
+    func checkForPreserves(near userLocation: CLLocation) -> Preserve? {
+        if !preserves.isEmpty {
+            for preserve in preserves {
+                let preserveLocation = CLLocation(latitude: preserve.center[0], longitude: preserve.center[1])
+                let distance = userLocation.distance(from: preserveLocation)
+                
+                if distance < 1610.0 {
+                    self.title = preserve.name + " Preserve"
+                    return preserve
+                } else {
+                    self.title = "Find a Preserve"
+                }
+            }
+        }
+        
+        return nil
+    }
+    
+    func presentSighting() {
+        navigator.present(.sighting)
+    }
 }
