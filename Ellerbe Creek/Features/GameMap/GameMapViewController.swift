@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Firebase
+import CoreData
+import CoreLocation
 
 protocol GameMapViewControllerDelegate: class {
-    
+    func checkForPreserves(near userLocation: CLLocation) -> Preserve?
+    func presentSighting()
 }
 
 class GameMapViewController: UIViewController, NibLoadable {
@@ -19,6 +23,11 @@ class GameMapViewController: UIViewController, NibLoadable {
     private let navigator: GameMapNavigator
     private let storage: Storage
     private let gameMapView: GameMapView = GameMapView()
+    
+    // MARK - Variables
+    
+    var ref: DatabaseReference!
+    var preserves: [Preserve] = []
     
     // MARK: - UIViewController Lifecycle
     
@@ -43,7 +52,10 @@ class GameMapViewController: UIViewController, NibLoadable {
         self.gameMapView.delegate = self
         
         // TODO: Update this title with the name of the user's current location
-        self.title = "Beaver Marsh Preserve"
+        self.title = "Find a Preserve"
+        
+        ref = Database.database().reference()
+        fetchPreserves()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,9 +67,88 @@ class GameMapViewController: UIViewController, NibLoadable {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    private func fetchPreserves() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "ManagedPreserve")
+        do {
+            let managedPreserves = try managedContext.fetch(fetchRequest)
+            preserves = decodeManagedObjects(objects: managedPreserves) as! [Preserve]
+            if preserves.isEmpty {
+                ref.child("Preserves").observe(DataEventType.value, with: { (snapshot) in
+                    let data = snapshot.value as! [Dictionary<String, Any>]
+                    for d in data {
+                        guard let name = d["name"] as? String else { return }
+                        
+                        if let bounds = d["bounds"] as? [String:[Double]], let center = d["center"] as? [Double] {
+                            let newPreserve = Preserve(name: name, center: center, bounds: bounds)
+                            self.savePreserve(newPreserve)
+                        }
+                    }
+                })
+            }
+        } catch let error as NSError {
+          print("Could not fetch. \(error), \(error.userInfo)")
+        }
+    }
+    
+    private func decodeManagedObjects(objects: [NSManagedObject]) -> [Any] {
+        var tempPreserves:[Preserve] = []
+        for object in objects {
+            let name = object.value(forKey: "name") as! String
+            let bounds = object.value(forKey: "bounds") as! [String:[Double]]
+            let center = object.value(forKey: "center") as! [Double]
+            
+            let tempPreserve = Preserve(name: name, center: center, bounds: bounds)
+            tempPreserves.append(tempPreserve)
+        }
+        return tempPreserves
+    }
+    
+    private func savePreserve(_ preserve: Preserve) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let entity = NSEntityDescription.entity(forEntityName: "ManagedPreserve", in: managedContext)!
+        
+        let preserveObject = NSManagedObject(entity: entity, insertInto: managedContext)
+        preserveObject.setValue(preserve.name, forKeyPath: "name")
+        preserveObject.setValue(preserve.bounds, forKeyPath: "bounds")
+        preserveObject.setValue(preserve.center, forKey: "center")
+        
+        do {
+            try managedContext.save()
+            preserves.append(preserve)
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
 
 }
 
 extension GameMapViewController: GameMapViewControllerDelegate {
     
+    func checkForPreserves(near userLocation: CLLocation) -> Preserve? {
+        if !preserves.isEmpty {
+            for preserve in preserves {
+                let preserveLocation = CLLocation(latitude: preserve.center[0], longitude: preserve.center[1])
+                let distance = userLocation.distance(from: preserveLocation)
+                
+                if distance < 1610.0 {
+                    self.title = preserve.name + " Preserve"
+                    return preserve
+                } else {
+                    self.title = "Find a Preserve"
+                }
+            }
+        }
+        
+        return nil
+    }
+    
+    func presentSighting() {
+        navigator.present(.sighting)
+    }
 }

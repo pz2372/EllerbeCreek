@@ -26,5 +26,9 @@ class DependencyContainer: CoreDependencyContainer, KeyValueStorable {
         return GameMapViewController(navigator: GameMapNavigator(dependencyContainer: self))
     }
     
+    func makeSightingViewController() -> SightingViewController {
+        return SightingViewController(navigator: SightingNavigator(dependencyContainer: self))
+    }
+    
 }
 

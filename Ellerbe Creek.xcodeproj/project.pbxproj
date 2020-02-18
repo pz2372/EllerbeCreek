@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831C245523F755BD00369C31 /* SightingNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C245423F755BD00369C31 /* SightingNavigator.swift */; };
+		831C245723F755CB00369C31 /* SightingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C245623F755CB00369C31 /* SightingView.swift */; };
+		831C245923F755DD00369C31 /* SightingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C245823F755DD00369C31 /* SightingViewController.swift */; };
+		831C245B23F755FB00369C31 /* SightingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831C245A23F755FB00369C31 /* SightingView.xib */; };
+		837ADE0B23F307AE00F88979 /* EllerbeCreek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */; };
+		838D485223F0FB9A00E9FAAD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 838D485123F0FB9A00E9FAAD /* GoogleService-Info.plist */; };
 		838D485423F2480800E9FAAD /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485323F2480800E9FAAD /* FIRAnalyticsConnector.framework */; };
 		838D485823F2481700E9FAAD /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485723F2481600E9FAAD /* FirebaseAnalytics.framework */; };
 		838D485A23F2481D00E9FAAD /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485923F2481D00E9FAAD /* FirebaseCore.framework */; };
@@ -68,6 +74,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		831C245423F755BD00369C31 /* SightingNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingNavigator.swift; sourceTree = "<group>"; };
+		831C245623F755CB00369C31 /* SightingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingView.swift; sourceTree = "<group>"; };
+		831C245823F755DD00369C31 /* SightingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingViewController.swift; sourceTree = "<group>"; };
+		831C245A23F755FB00369C31 /* SightingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SightingView.xib; sourceTree = "<group>"; };
+		837ADE0A23F307AE00F88979 /* EllerbeCreek.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EllerbeCreek.xcdatamodel; sourceTree = "<group>"; };
+		838D485123F0FB9A00E9FAAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		838D485323F2480800E9FAAD /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = Carthage/Build/iOS/FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
 		838D485523F2481000E9FAAD /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
 		838D485723F2481600E9FAAD /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Carthage/Build/iOS/FirebaseAnalytics.framework; sourceTree = "<group>"; };
@@ -86,6 +98,7 @@
 		838D487123F24C1C00E9FAAD /* PromisesObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromisesObjC.framework; path = Carthage/Build/iOS/PromisesObjC.framework; sourceTree = "<group>"; };
 		83936E2023EB3D3300C9FA1A /* Preserve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preserve.swift; sourceTree = "<group>"; };
 		83936E2223EB3D9000C9FA1A /* SightingAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingAnnotationView.swift; sourceTree = "<group>"; };
+		83A96B0723F71F48009C9954 /* BeaverMarshPreserve.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BeaverMarshPreserve.gpx; sourceTree = "<group>"; };
 		83FE537923E906C200E04182 /* Ellerbe Creek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ellerbe Creek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FE537C23E906C200E04182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83FE538323E906C200E04182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,6 +156,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		831C244B23F754BA00369C31 /* Sighting */ = {
+			isa = PBXGroup;
+			children = (
+				831C245423F755BD00369C31 /* SightingNavigator.swift */,
+				831C245623F755CB00369C31 /* SightingView.swift */,
+				831C245A23F755FB00369C31 /* SightingView.xib */,
+				831C245823F755DD00369C31 /* SightingViewController.swift */,
+			);
+			path = Sighting;
+			sourceTree = "<group>";
+		};
+		831C245C23FC7EB900369C31 /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				83A96B0723F71F48009C9954 /* BeaverMarshPreserve.gpx */,
+			);
+			path = GPX;
+			sourceTree = "<group>";
+		};
 		83FE537023E906C100E04182 = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +202,9 @@
 				83FE538523E906C300E04182 /* Assets.xcassets */,
 				83FE538723E906C300E04182 /* LaunchScreen.storyboard */,
 				83FE538A23E906C300E04182 /* Info.plist */,
+				837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */,
 				83FE53E023E9F7D100E04182 /* Fonts */,
+				831C245C23FC7EB900369C31 /* GPX */,
 			);
 			path = "Ellerbe Creek";
 			sourceTree = "<group>";
@@ -214,6 +248,7 @@
 		83FE53B823E91E5F00E04182 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				831C244B23F754BA00369C31 /* Sighting */,
 				83FE53B923E91E7B00E04182 /* GameMap */,
 			);
 			path = Features;
@@ -351,6 +386,7 @@
 				83FE53E223E9F82E00E04182 /* SF-Pro-Rounded-Bold.otf in Resources */,
 				83FE538423E906C200E04182 /* Main.storyboard in Resources */,
 				83FE53C123E9202400E04182 /* GameMapView.xib in Resources */,
+				831C245B23F755FB00369C31 /* SightingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,10 +422,12 @@
 				83FE53C623E9AF0F00E04182 /* DependencyContainer.swift in Sources */,
 				83FE53CD23E9AFC000E04182 /* ViewControllerFactory.swift in Sources */,
 				83FE53D423E9B39100E04182 /* UIViewController+NibLoadable.swift in Sources */,
+				831C245523F755BD00369C31 /* SightingNavigator.swift in Sources */,
 				83936E2123EB3D3300C9FA1A /* Preserve.swift in Sources */,
 				83FE53BD23E91FFC00E04182 /* GameMapView.swift in Sources */,
 				83FE53BF23E9200F00E04182 /* GameMapViewController.swift in Sources */,
 				83FE53BB23E91EAA00E04182 /* GameMapNavigator.swift in Sources */,
+				831C245923F755DD00369C31 /* SightingViewController.swift in Sources */,
 				83FE53B423E91C3800E04182 /* Colors.swift in Sources */,
 				83FE53E823E9F8C800E04182 /* Fonts.swift in Sources */,
 				83FE53D023E9AFFB00E04182 /* Game.swift in Sources */,
@@ -399,8 +437,10 @@
 				83936E2323EB3D9000C9FA1A /* SightingAnnotationView.swift in Sources */,
 				83FE53D823E9C8F200E04182 /* MainNavigationController.swift in Sources */,
 				83FE53D223E9B00600E04182 /* User.swift in Sources */,
+				831C245723F755CB00369C31 /* SightingView.swift in Sources */,
 				83FE53C923E9AF9100E04182 /* Navigator.swift in Sources */,
 				83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */,
+				837ADE0B23F307AE00F88979 /* EllerbeCreek.xcdatamodeld in Sources */,
 				83FE53C423E9AE9200E04182 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,7 +602,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ryananderson.Ellerbe-Creek";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.unc.cs.ellerbecreek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -590,7 +630,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ryananderson.Ellerbe-Creek";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.unc.cs.ellerbecreek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -619,6 +659,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				837ADE0A23F307AE00F88979 /* EllerbeCreek.xcdatamodel */,
+			);
+			currentVersion = 837ADE0A23F307AE00F88979 /* EllerbeCreek.xcdatamodel */;
+			path = EllerbeCreek.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 83FE537123E906C100E04182 /* Project object */;
 }

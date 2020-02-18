@@ -8,4 +8,5 @@
 
 protocol ViewControllerFactory {
     func makeGameMapViewController() -> GameMapViewController
+    func makeSightingViewController() -> SightingViewController
 }

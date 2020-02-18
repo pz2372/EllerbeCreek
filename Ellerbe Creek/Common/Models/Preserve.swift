@@ -9,5 +9,7 @@
 import Foundation
 
 struct Preserve {
-    
+    var name: String
+    var center: [Double]
+    var bounds: [String:[Double]]
 }
