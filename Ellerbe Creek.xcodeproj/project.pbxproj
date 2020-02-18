@@ -596,7 +596,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ryananderson.Ellerbe-Creek";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.unc.cs.ellerbecreek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -624,7 +624,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ryananderson.Ellerbe-Creek";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.unc.cs.ellerbecreek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
