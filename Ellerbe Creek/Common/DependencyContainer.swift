@@ -30,5 +30,9 @@ class DependencyContainer: CoreDependencyContainer, KeyValueStorable {
         return SightingViewController(navigator: SightingNavigator(dependencyContainer: self))
     }
     
+    func makeSightingDetailViewController() -> SightingDetailViewController {
+        return SightingDetailViewController(navigator: SightingDetailNavigator(dependencyContainer: self))
+    }
+    
 }
 

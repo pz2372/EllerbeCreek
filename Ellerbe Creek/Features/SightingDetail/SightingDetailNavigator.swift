@@ -1,17 +1,16 @@
 //
-//  SightingNavigator.swift
+//  SightingDetailNavigator.swift
 //  Ellerbe Creek
 //
-//  Created by Ryan Anderson on 2/14/20.
+//  Created by Ryan Anderson on 2/24/20.
 //  Copyright © 2020 Ryan Anderson. All rights reserved.
 //
 
 import UIKit
 
-class SightingNavigator: Navigator {
+class SightingDetailNavigator: Navigator {
     enum Destination {
         case gameMap
-        case sightingDetail
     }
     
     var dependencyContainer: CoreDependencyContainer & KeyValueStorable
@@ -20,26 +19,15 @@ class SightingNavigator: Navigator {
         self.dependencyContainer = dependencyContainer
     }
     
-    func navigate(to destination: SightingNavigator.Destination) {
+    func navigate(to destination: SightingDetailNavigator.Destination) {
         let viewController = makeViewController(for: destination)
         dependencyContainer.navigationController.viewControllers = [viewController]
-    }
-    
-    func present(_ destination: Destination, with presentationStyle: UIModalPresentationStyle = .fullScreen) {
-        if let rootController = dependencyContainer.navigationController.viewControllers.first {
-            let viewController = makeViewController(for: destination)
-            viewController.modalPresentationStyle = presentationStyle
-            rootController.present(viewController, animated: true, completion: nil)
-        }
     }
     
     private func makeViewController(for destination: Destination) -> UIViewController {
         switch destination {
         case .gameMap:
             return dependencyContainer.makeGameMapViewController()
-        case .sightingDetail:
-            return dependencyContainer.makeSightingDetailViewController()
         }
     }
 }
-
