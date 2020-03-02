@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8314B0512404C4D900894333 /* SightingDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314B0502404C4D900894333 /* SightingDetailNavigator.swift */; };
+		8314B0532404C4E700894333 /* SightingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314B0522404C4E700894333 /* SightingDetailView.swift */; };
+		8314B0552404C4F200894333 /* SightingDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8314B0542404C4F200894333 /* SightingDetailView.xib */; };
+		8314B0572404C50500894333 /* SightingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314B0562404C50500894333 /* SightingDetailViewController.swift */; };
+		8314B0592404C96800894333 /* SightingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314B0582404C96800894333 /* SightingScene.swift */; };
+		8314B05B2404CB8300894333 /* AnchorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314B05A2404CB8300894333 /* AnchorType.swift */; };
+		8314B05D2404CBA800894333 /* NodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314B05C2404CBA800894333 /* NodeType.swift */; };
+		8314B05F2404CC2F00894333 /* SightingScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8314B05E2404CC2F00894333 /* SightingScene.sks */; };
 		831C245523F755BD00369C31 /* SightingNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C245423F755BD00369C31 /* SightingNavigator.swift */; };
 		831C245723F755CB00369C31 /* SightingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C245623F755CB00369C31 /* SightingView.swift */; };
 		831C245923F755DD00369C31 /* SightingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C245823F755DD00369C31 /* SightingViewController.swift */; };
 		831C245B23F755FB00369C31 /* SightingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831C245A23F755FB00369C31 /* SightingView.xib */; };
+		8346C8CF240588D600843887 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8346C8CE240588D600843887 /* Separator.swift */; };
 		837ADE0B23F307AE00F88979 /* EllerbeCreek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */; };
-		838D485223F0FB9A00E9FAAD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 838D485123F0FB9A00E9FAAD /* GoogleService-Info.plist */; };
 		838D485423F2480800E9FAAD /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485323F2480800E9FAAD /* FIRAnalyticsConnector.framework */; };
 		838D485823F2481700E9FAAD /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485723F2481600E9FAAD /* FirebaseAnalytics.framework */; };
 		838D485A23F2481D00E9FAAD /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485923F2481D00E9FAAD /* FirebaseCore.framework */; };
@@ -74,12 +82,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8314B0502404C4D900894333 /* SightingDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingDetailNavigator.swift; sourceTree = "<group>"; };
+		8314B0522404C4E700894333 /* SightingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingDetailView.swift; sourceTree = "<group>"; };
+		8314B0542404C4F200894333 /* SightingDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SightingDetailView.xib; sourceTree = "<group>"; };
+		8314B0562404C50500894333 /* SightingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingDetailViewController.swift; sourceTree = "<group>"; };
+		8314B0582404C96800894333 /* SightingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingScene.swift; sourceTree = "<group>"; };
+		8314B05A2404CB8300894333 /* AnchorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorType.swift; sourceTree = "<group>"; };
+		8314B05C2404CBA800894333 /* NodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeType.swift; sourceTree = "<group>"; };
+		8314B05E2404CC2F00894333 /* SightingScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SightingScene.sks; sourceTree = "<group>"; };
 		831C245423F755BD00369C31 /* SightingNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingNavigator.swift; sourceTree = "<group>"; };
 		831C245623F755CB00369C31 /* SightingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingView.swift; sourceTree = "<group>"; };
 		831C245823F755DD00369C31 /* SightingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingViewController.swift; sourceTree = "<group>"; };
 		831C245A23F755FB00369C31 /* SightingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SightingView.xib; sourceTree = "<group>"; };
+		8346C8CE240588D600843887 /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
 		837ADE0A23F307AE00F88979 /* EllerbeCreek.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EllerbeCreek.xcdatamodel; sourceTree = "<group>"; };
-		838D485123F0FB9A00E9FAAD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		838D485323F2480800E9FAAD /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = Carthage/Build/iOS/FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
 		838D485523F2481000E9FAAD /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
 		838D485723F2481600E9FAAD /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Carthage/Build/iOS/FirebaseAnalytics.framework; sourceTree = "<group>"; };
@@ -156,6 +172,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8314B04F2404C4BD00894333 /* SightingDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8314B0502404C4D900894333 /* SightingDetailNavigator.swift */,
+				8314B0522404C4E700894333 /* SightingDetailView.swift */,
+				8314B0542404C4F200894333 /* SightingDetailView.xib */,
+				8314B0562404C50500894333 /* SightingDetailViewController.swift */,
+			);
+			path = SightingDetail;
+			sourceTree = "<group>";
+		};
 		831C244B23F754BA00369C31 /* Sighting */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +190,8 @@
 				831C245623F755CB00369C31 /* SightingView.swift */,
 				831C245A23F755FB00369C31 /* SightingView.xib */,
 				831C245823F755DD00369C31 /* SightingViewController.swift */,
+				8314B05E2404CC2F00894333 /* SightingScene.sks */,
+				8314B0582404C96800894333 /* SightingScene.swift */,
 			);
 			path = Sighting;
 			sourceTree = "<group>";
@@ -236,8 +265,10 @@
 		83FE53B723E91E5600E04182 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				83FE53C323E9AE9200E04182 /* Storage.swift */,
+				8314B05A2404CB8300894333 /* AnchorType.swift */,
 				83FE53C523E9AF0F00E04182 /* DependencyContainer.swift */,
+				8314B05C2404CBA800894333 /* NodeType.swift */,
+				83FE53C323E9AE9200E04182 /* Storage.swift */,
 				83FE53C223E9204000E04182 /* UI */,
 				83FE53C723E9AF7E00E04182 /* Protocols */,
 				83FE53CE23E9AFDD00E04182 /* Models */,
@@ -248,6 +279,7 @@
 		83FE53B823E91E5F00E04182 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				8314B04F2404C4BD00894333 /* SightingDetail */,
 				831C244B23F754BA00369C31 /* Sighting */,
 				83FE53B923E91E7B00E04182 /* GameMap */,
 			);
@@ -273,6 +305,7 @@
 				83FE53D523E9B3AA00E04182 /* NibBasedView.swift */,
 				83FE53D323E9B39100E04182 /* UIViewController+NibLoadable.swift */,
 				83FE53D723E9C8F200E04182 /* MainNavigationController.swift */,
+				8346C8CE240588D600843887 /* Separator.swift */,
 				83936E2223EB3D9000C9FA1A /* SightingAnnotationView.swift */,
 				83FE53DD23E9D54000E04182 /* NavigationHeader */,
 			);
@@ -386,6 +419,8 @@
 				83FE53E223E9F82E00E04182 /* SF-Pro-Rounded-Bold.otf in Resources */,
 				83FE538423E906C200E04182 /* Main.storyboard in Resources */,
 				83FE53C123E9202400E04182 /* GameMapView.xib in Resources */,
+				8314B0552404C4F200894333 /* SightingDetailView.xib in Resources */,
+				8314B05F2404CC2F00894333 /* SightingScene.sks in Resources */,
 				831C245B23F755FB00369C31 /* SightingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,14 +458,20 @@
 				83FE53CD23E9AFC000E04182 /* ViewControllerFactory.swift in Sources */,
 				83FE53D423E9B39100E04182 /* UIViewController+NibLoadable.swift in Sources */,
 				831C245523F755BD00369C31 /* SightingNavigator.swift in Sources */,
+				8314B0532404C4E700894333 /* SightingDetailView.swift in Sources */,
 				83936E2123EB3D3300C9FA1A /* Preserve.swift in Sources */,
 				83FE53BD23E91FFC00E04182 /* GameMapView.swift in Sources */,
 				83FE53BF23E9200F00E04182 /* GameMapViewController.swift in Sources */,
+				8314B0572404C50500894333 /* SightingDetailViewController.swift in Sources */,
 				83FE53BB23E91EAA00E04182 /* GameMapNavigator.swift in Sources */,
 				831C245923F755DD00369C31 /* SightingViewController.swift in Sources */,
 				83FE53B423E91C3800E04182 /* Colors.swift in Sources */,
+				8314B05B2404CB8300894333 /* AnchorType.swift in Sources */,
 				83FE53E823E9F8C800E04182 /* Fonts.swift in Sources */,
+				8314B0512404C4D900894333 /* SightingDetailNavigator.swift in Sources */,
+				8314B0592404C96800894333 /* SightingScene.swift in Sources */,
 				83FE53D023E9AFFB00E04182 /* Game.swift in Sources */,
+				8346C8CF240588D600843887 /* Separator.swift in Sources */,
 				83FE53D623E9B3AA00E04182 /* NibBasedView.swift in Sources */,
 				83FE53DA23E9D34600E04182 /* NavigationHeaderView.swift in Sources */,
 				83FE53CB23E9AFAE00E04182 /* SystemNavigatable.swift in Sources */,
@@ -439,6 +480,7 @@
 				83FE53D223E9B00600E04182 /* User.swift in Sources */,
 				831C245723F755CB00369C31 /* SightingView.swift in Sources */,
 				83FE53C923E9AF9100E04182 /* Navigator.swift in Sources */,
+				8314B05D2404CBA800894333 /* NodeType.swift in Sources */,
 				83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */,
 				837ADE0B23F307AE00F88979 /* EllerbeCreek.xcdatamodeld in Sources */,
 				83FE53C423E9AE9200E04182 /* Storage.swift in Sources */,
