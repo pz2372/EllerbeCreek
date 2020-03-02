@@ -1,31 +1,30 @@
 //
-//  SightingViewController.swift
+//  SightingDetailViewController.swift
 //  Ellerbe Creek
 //
-//  Created by Ryan Anderson on 2/14/20.
+//  Created by Ryan Anderson on 2/24/20.
 //  Copyright © 2020 Ryan Anderson. All rights reserved.
 //
 
 import UIKit
 
-protocol SightingViewControllerDelegate: class {
-    func showSightingDetail()
+protocol SightingDetailViewControllerDelegate: class {
     func showGameMap()
 }
 
-class SightingViewController: UIViewController, NibLoadable {
-
+class SightingDetailViewController: UIViewController {
+    
     // MARK - Constants
 
-    private let navigator: SightingNavigator
+    private let navigator: SightingDetailNavigator
     private let storage: Storage
-    private let sightingView: SightingView = SightingView()
+    private let sightingDetailView: SightingDetailView = SightingDetailView()
 
     // MARK - Variables
 
     // MARK: - UIViewController Lifecycle
 
-    required init(navigator: SightingNavigator) {
+    required init(navigator: SightingDetailNavigator) {
         self.navigator = navigator
         self.storage = navigator.dependencyContainer.storage
         super.init(nibName: nil, bundle: nil)
@@ -37,13 +36,13 @@ class SightingViewController: UIViewController, NibLoadable {
 
     override func loadView() {
         super.loadView()
-        self.view = self.sightingView
+        self.view = self.sightingDetailView
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.sightingView.delegate = self
+        self.sightingDetailView.delegate = self
         
     }
 
@@ -52,19 +51,14 @@ class SightingViewController: UIViewController, NibLoadable {
         
         setNeedsStatusBarAppearanceUpdate()
     }
-
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
     }
-
+    
 }
 
-extension SightingViewController: SightingViewControllerDelegate {
-    
-    func showSightingDetail() {
-        dismiss(animated: true, completion: nil)
-        navigator.present(.sightingDetail)
-    }
+extension SightingDetailViewController: SightingDetailViewControllerDelegate {
     
     func showGameMap() {
         dismiss(animated: true, completion: nil)
