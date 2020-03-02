@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SightingViewControllerDelegate: class {
-    func presentSightingDetail()
+    func showSightingDetail()
     func showGameMap()
 }
 
@@ -61,8 +61,9 @@ class SightingViewController: UIViewController, NibLoadable {
 
 extension SightingViewController: SightingViewControllerDelegate {
     
-    func presentSightingDetail() {
-        
+    func showSightingDetail() {
+        dismiss(animated: true, completion: nil)
+        navigator.present(.sightingDetail)
     }
     
     func showGameMap() {
