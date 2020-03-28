@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PermissionsView" customModule="Ellerbe_Creek" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraPermissionDescription" destination="nfN-Hm-my2" id="tFa-NL-ghU"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="NMt-EP-7Gj"/>
+                <outlet property="headerLabel" destination="mRp-pP-dRM" id="2Ud-DR-AuP"/>
+                <outlet property="locationPermissionDescription" destination="GuN-e3-BXN" id="4HB-FQ-6kq"/>
+                <outlet property="notificationPermissionDescription" destination="dix-s8-z16" id="Il6-aZ-9fh"/>
+                <outlet property="subHeaderLabel" destination="fxN-SV-zYK" id="Nf7-qf-doS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Deh-q4-HCG">
+                    <rect key="frame" x="32" y="204.5" width="350" height="49"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxN-SV-zYK">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Permissions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRp-pP-dRM">
+                            <rect key="frame" x="0.0" y="28.5" width="350" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="QD7-ry-kgx">
+                    <rect key="frame" x="32" y="389" width="350" height="256"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GuN-e3-BXN" customClass="PermissionDescriptionView" customModule="Ellerbe_Creek" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="77.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dix-s8-z16" customClass="PermissionDescriptionView" customModule="Ellerbe_Creek" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="89.5" width="350" height="77"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfN-Hm-my2" customClass="PermissionDescriptionView" customModule="Ellerbe_Creek" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="178.5" width="350" height="77.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="256" id="Gc1-gw-UNq"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Deh-q4-HCG" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="3zo-3z-hNl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Deh-q4-HCG" secondAttribute="trailing" constant="32" id="7FR-aC-vXC"/>
+                <constraint firstItem="Deh-q4-HCG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="CYg-Zh-vKa"/>
+                <constraint firstItem="Deh-q4-HCG" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-224" id="epP-7s-W8P"/>
+                <constraint firstItem="QD7-ry-kgx" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="kYY-3v-lc3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QD7-ry-kgx" secondAttribute="trailing" constant="32" id="ly7-Cz-mPQ"/>
+                <constraint firstItem="QD7-ry-kgx" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="64" id="uAB-bw-Owe"/>
+                <constraint firstItem="QD7-ry-kgx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="w6Q-XL-uqY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="128"/>
+        </view>
+    </objects>
+</document>

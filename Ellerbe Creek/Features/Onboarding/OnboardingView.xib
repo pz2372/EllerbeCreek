@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingView" customModule="Ellerbe_Creek" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="Npo-tZ-6c1" id="01M-6L-m3q"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="81e-ge-bTr"/>
+                <outlet property="navButton" destination="ovH-XV-N8K" id="1fN-qC-wbt"/>
+                <outlet property="scrollView" destination="xEM-jc-0Sn" id="Zrz-qy-UII"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEM-jc-0Sn">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovH-XV-N8K">
+                    <rect key="frame" x="32" y="784" width="350" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="7du-Ow-jyt"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="scrollToNextSlide" destination="-1" eventType="touchUpInside" id="Qhv-Ux-KiB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npo-tZ-6c1">
+                    <rect key="frame" x="32" y="52" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="scrollToPreviousSlide" destination="-1" eventType="touchUpInside" id="2dv-EL-PFQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ovH-XV-N8K" secondAttribute="bottom" constant="24" id="2zf-4x-KgW"/>
+                <constraint firstItem="ovH-XV-N8K" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="I2s-UG-wwj"/>
+                <constraint firstItem="xEM-jc-0Sn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Jee-FO-87y"/>
+                <constraint firstItem="Npo-tZ-6c1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="KzL-1H-LjJ"/>
+                <constraint firstItem="Npo-tZ-6c1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="MuY-xS-xvk"/>
+                <constraint firstItem="xEM-jc-0Sn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Skr-i8-AKs"/>
+                <constraint firstAttribute="bottom" secondItem="xEM-jc-0Sn" secondAttribute="bottom" id="TCu-13-9li"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ovH-XV-N8K" secondAttribute="trailing" constant="32" id="Zjq-yp-Oks"/>
+                <constraint firstAttribute="trailing" secondItem="xEM-jc-0Sn" secondAttribute="trailing" id="cOn-Jq-k24"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="127.90178571428571"/>
+        </view>
+    </objects>
+</document>

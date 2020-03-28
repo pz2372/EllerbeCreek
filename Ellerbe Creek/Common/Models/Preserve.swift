@@ -9,7 +9,9 @@
 import Foundation
 
 struct Preserve {
+    var id: Int
     var name: String
     var center: [Double]
     var bounds: [String:[Double]]
+    var animals: [Int:[Any]]
 }

@@ -8,7 +8,18 @@
 
 import UIKit
 
+enum SeparatorStyle {
+    case horizontal
+    case vertical
+}
+
 class Separator: UIView {
+    
+    public var style: SeparatorStyle = .horizontal {
+        didSet {
+            updateStyle()
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,7 +40,18 @@ class Separator: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        layer.cornerRadius = bounds.height * 0.5
+        updateStyle()
+    }
+    
+    private func updateStyle() {
+        switch style {
+        case .horizontal:
+            layer.cornerRadius = bounds.height * 0.5
+        case .vertical:
+            layer.cornerRadius = bounds.width * 0.5
+            let widthConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 6)
+            NSLayoutConstraint.activate([widthConstraint])
+        }
         layer.masksToBounds = true
     }
     

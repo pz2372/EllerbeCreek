@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16085" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16078.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InterestView" customModule="Ellerbe_Creek" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="1fu-O7-aMi"/>
+                <outlet property="emailDescriptionLabel" destination="Ppp-0S-20N" id="gVk-IG-Rbl"/>
+                <outlet property="emailTextField" destination="HG8-eX-2q5" id="oBu-GT-CTh"/>
+                <outlet property="headerLabel" destination="8nd-zL-yQK" id="jlt-Jr-8zZ"/>
+                <outlet property="subHeaderLabel" destination="kNt-uK-Emq" id="1AO-Yc-wwM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pip-eA-nxR">
+                    <rect key="frame" x="32" y="204.5" width="350" height="49"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ECWA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNt-uK-Emq">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nd-zL-yQK">
+                            <rect key="frame" x="0.0" y="28.5" width="350" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="FdP-y3-am9">
+                    <rect key="frame" x="32" y="409" width="350" height="88.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppp-0S-20N">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HG8-eX-2q5">
+                            <rect key="frame" x="0.0" y="44.5" width="350" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Z1w-MT-yhJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pip-eA-nxR" secondAttribute="trailing" constant="32" id="0WM-9S-yFR"/>
+                <constraint firstItem="pip-eA-nxR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="G5K-jt-45W"/>
+                <constraint firstItem="FdP-y3-am9" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="SGT-XL-lxN"/>
+                <constraint firstItem="FdP-y3-am9" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="b5i-io-oQE"/>
+                <constraint firstItem="FdP-y3-am9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="jIg-EM-rZc"/>
+                <constraint firstItem="pip-eA-nxR" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-224" id="jhQ-ch-QfI"/>
+                <constraint firstItem="pip-eA-nxR" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ouR-BF-wUL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FdP-y3-am9" secondAttribute="trailing" constant="32" id="u2v-yQ-STK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="128"/>
+        </view>
+    </objects>
+</document>

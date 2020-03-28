@@ -34,5 +34,9 @@ class DependencyContainer: CoreDependencyContainer, KeyValueStorable {
         return SightingDetailViewController(navigator: SightingDetailNavigator(dependencyContainer: self))
     }
     
+    func makeOnboardingViewController() -> OnboardingViewController {
+        return OnboardingViewController(navigator: OnboardingNavigator(dependencyContainer: self))
+    }
+    
 }
 
