@@ -305,6 +305,17 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
+		834D65D0242997EA008587DC /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				834D65CF24295F91008587DC /* Welcome */,
+				834D65BE24283125008587DC /* UserCreation */,
+				834D65C8242833B9008587DC /* Permissions */,
+				834D65C324283208008587DC /* Interest */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
 		83FE537023E906C100E04182 = {
 			isa = PBXGroup;
 			children = (
