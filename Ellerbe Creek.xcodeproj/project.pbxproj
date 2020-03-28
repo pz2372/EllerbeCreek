@@ -37,6 +37,7 @@
 		834D65C7242833B1008587DC /* PermissionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834D65C6242833B1008587DC /* PermissionsView.xib */; };
 		834D65CC24295F70008587DC /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65CB24295F70008587DC /* WelcomeView.swift */; };
 		834D65CE24295F8B008587DC /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834D65CD24295F8B008587DC /* WelcomeView.xib */; };
+		83719E7E242A86F6007BB8B4 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83719E7D242A86F6007BB8B4 /* Animal.swift */; };
 		837ADE0B23F307AE00F88979 /* EllerbeCreek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */; };
 		838D485423F2480800E9FAAD /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485323F2480800E9FAAD /* FIRAnalyticsConnector.framework */; };
 		838D485823F2481700E9FAAD /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485723F2481600E9FAAD /* FirebaseAnalytics.framework */; };
@@ -130,6 +131,7 @@
 		834D65C6242833B1008587DC /* PermissionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionsView.xib; sourceTree = "<group>"; };
 		834D65CB24295F70008587DC /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		834D65CD24295F8B008587DC /* WelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
+		83719E7D242A86F6007BB8B4 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		837ADE0A23F307AE00F88979 /* EllerbeCreek.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EllerbeCreek.xcdatamodel; sourceTree = "<group>"; };
 		838D485323F2480800E9FAAD /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = Carthage/Build/iOS/FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
 		838D485523F2481000E9FAAD /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
@@ -447,6 +449,7 @@
 				83FE53D123E9B00600E04182 /* User.swift */,
 				83FE53CF23E9AFFB00E04182 /* Game.swift */,
 				83936E2023EB3D3300C9FA1A /* Preserve.swift */,
+				83719E7D242A86F6007BB8B4 /* Animal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				834D65CC24295F70008587DC /* WelcomeView.swift in Sources */,
 				83FE53BB23E91EAA00E04182 /* GameMapNavigator.swift in Sources */,
 				8335C64E2429C9F500AA9BF3 /* PermissionDescriptionView.swift in Sources */,
+				83719E7E242A86F6007BB8B4 /* Animal.swift in Sources */,
 				831C245923F755DD00369C31 /* SightingViewController.swift in Sources */,
 				83FE53B423E91C3800E04182 /* Colors.swift in Sources */,
 				8335C653242A537800AA9BF3 /* GCHelper.swift in Sources */,
