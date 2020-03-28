@@ -26,7 +26,11 @@ class GameMapView: NibBasedView {
     @IBOutlet var headerView: NavigationHeaderView!
     
     private var sightings = 0
-    private var currentPreserve: Preserve?
+    private var currentPreserve: Preserve? {
+        didSet {
+            getSightings()
+        }
+    }
     private var currentBounds: MGLCoordinateBounds?
     
     override init(frame: CGRect) {
@@ -49,7 +53,6 @@ class GameMapView: NibBasedView {
     private func setUpLocationManager() {
         locationManager = CLLocationManager()
         locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
     
@@ -59,6 +62,14 @@ class GameMapView: NibBasedView {
         mapView.userTrackingMode = .follow
         mapView.setCenter(CLLocationCoordinate2D(latitude: 36.018467, longitude: -78.883501), zoomLevel: 16.25, animated: false)
         mapView.minimumZoomLevel = 16.0
+    }
+    
+    private func getSightings() {
+        guard let currentPreserve = currentPreserve else { return }
+        let animals = DatabaseManager.shared.loadData(from: .animals) as! [Animal]
+        for a in currentPreserve.animals {
+            print(a)
+        }
     }
     
     private func updateHeaderView(with value: Int) {
@@ -141,7 +152,7 @@ extension GameMapView: MGLMapViewDelegate {
         // If there’s no reusable annotation view available, initialize a new one.
         if annotationView == nil {
             annotationView = SightingAnnotationView(reuseIdentifier: reuseIdentifier)
-            annotationView!.bounds = CGRect(x: 0, y: 0, width: 42, height: 42)
+            annotationView!.bounds = CGRect(x: 0, y: 0, width: 21, height: 21)
 
             annotationView!.backgroundColor = Colors.lightOrange
         }
