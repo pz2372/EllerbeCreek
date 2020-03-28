@@ -21,6 +21,9 @@
 		831C245B23F755FB00369C31 /* SightingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831C245A23F755FB00369C31 /* SightingView.xib */; };
 		8346C8CF240588D600843887 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8346C8CE240588D600843887 /* Separator.swift */; };
 		837ADE0B23F307AE00F88979 /* EllerbeCreek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */; };
+		83879C0C24268C630022F7DD /* LocationNotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83879C0B24268C630022F7DD /* LocationNotificationScheduler.swift */; };
+		83879C0E24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83879C0D24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift */; };
+		83879C1024268E900022F7DD /* LocationNotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83879C0F24268E900022F7DD /* LocationNotificationInfo.swift */; };
 		838D485423F2480800E9FAAD /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485323F2480800E9FAAD /* FIRAnalyticsConnector.framework */; };
 		838D485823F2481700E9FAAD /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485723F2481600E9FAAD /* FirebaseAnalytics.framework */; };
 		838D485A23F2481D00E9FAAD /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485923F2481D00E9FAAD /* FirebaseCore.framework */; };
