@@ -222,6 +222,16 @@
 			path = LocationNotification;
 			sourceTree = "<group>";
 		};
+		83879C1124268E940022F7DD /* LocationNotification */ = {
+			isa = PBXGroup;
+			children = (
+				83879C0B24268C630022F7DD /* LocationNotificationScheduler.swift */,
+				83879C0D24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift */,
+				83879C0F24268E900022F7DD /* LocationNotificationInfo.swift */,
+			);
+			path = LocationNotification;
+			sourceTree = "<group>";
+		};
 		83FE537023E906C100E04182 = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +295,7 @@
 			children = (
 				8314B05A2404CB8300894333 /* AnchorType.swift */,
 				83FE53C523E9AF0F00E04182 /* DependencyContainer.swift */,
+				83879C1124268E940022F7DD /* LocationNotification */,
 				8314B05C2404CBA800894333 /* NodeType.swift */,
 				83FE53C323E9AE9200E04182 /* Storage.swift */,
 				83FE53C223E9204000E04182 /* UI */,
