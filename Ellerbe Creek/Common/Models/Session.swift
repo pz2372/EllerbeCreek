@@ -1,5 +1,5 @@
 //
-//  Game.swift
+//  Session.swift
 //  Ellerbe Creek
 //
 //  Created by Ryan Anderson on 2/4/20.
@@ -8,6 +8,8 @@
 
 import Foundation
 
-struct Game {
-    
+struct Session {
+    var date: String
+    var preserve: Int
+    var animals: [Int:[Any]]
 }

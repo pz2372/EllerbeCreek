@@ -39,6 +39,9 @@
 		834D65CE24295F8B008587DC /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834D65CD24295F8B008587DC /* WelcomeView.xib */; };
 		83719E7E242A86F6007BB8B4 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83719E7D242A86F6007BB8B4 /* Animal.swift */; };
 		837ADE0B23F307AE00F88979 /* EllerbeCreek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */; };
+		83879C0C24268C630022F7DD /* LocationNotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83879C0B24268C630022F7DD /* LocationNotificationScheduler.swift */; };
+		83879C0E24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83879C0D24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift */; };
+		83879C1024268E900022F7DD /* LocationNotificationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83879C0F24268E900022F7DD /* LocationNotificationInfo.swift */; };
 		838D485423F2480800E9FAAD /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485323F2480800E9FAAD /* FIRAnalyticsConnector.framework */; };
 		838D485823F2481700E9FAAD /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485723F2481600E9FAAD /* FirebaseAnalytics.framework */; };
 		838D485A23F2481D00E9FAAD /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485923F2481D00E9FAAD /* FirebaseCore.framework */; };
@@ -56,6 +59,7 @@
 		838D487223F24C1C00E9FAAD /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D487123F24C1C00E9FAAD /* PromisesObjC.framework */; };
 		83936E2123EB3D3300C9FA1A /* Preserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83936E2023EB3D3300C9FA1A /* Preserve.swift */; };
 		83936E2323EB3D9000C9FA1A /* SightingAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83936E2223EB3D9000C9FA1A /* SightingAnnotationView.swift */; };
+		83EB13C42426C89800D337C2 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB13C32426C89800D337C2 /* SessionManager.swift */; };
 		83EB13C22426B51500D337C2 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB13C12426B51500D337C2 /* DatabaseManager.swift */; };
 		83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE537C23E906C200E04182 /* AppDelegate.swift */; };
 		83FE538423E906C200E04182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FE538223E906C200E04182 /* Main.storyboard */; };
@@ -73,7 +77,7 @@
 		83FE53C923E9AF9100E04182 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53C823E9AF9100E04182 /* Navigator.swift */; };
 		83FE53CB23E9AFAE00E04182 /* SystemNavigatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53CA23E9AFAE00E04182 /* SystemNavigatable.swift */; };
 		83FE53CD23E9AFC000E04182 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53CC23E9AFC000E04182 /* ViewControllerFactory.swift */; };
-		83FE53D023E9AFFB00E04182 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53CF23E9AFFB00E04182 /* Game.swift */; };
+		83FE53D023E9AFFB00E04182 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53CF23E9AFFB00E04182 /* Session.swift */; };
 		83FE53D223E9B00600E04182 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53D123E9B00600E04182 /* User.swift */; };
 		83FE53D423E9B39100E04182 /* UIViewController+NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53D323E9B39100E04182 /* UIViewController+NibLoadable.swift */; };
 		83FE53D623E9B3AA00E04182 /* NibBasedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53D523E9B3AA00E04182 /* NibBasedView.swift */; };
@@ -133,6 +137,9 @@
 		834D65CD24295F8B008587DC /* WelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
 		83719E7D242A86F6007BB8B4 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		837ADE0A23F307AE00F88979 /* EllerbeCreek.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EllerbeCreek.xcdatamodel; sourceTree = "<group>"; };
+		83879C0B24268C630022F7DD /* LocationNotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNotificationScheduler.swift; sourceTree = "<group>"; };
+		83879C0D24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNotificationSchedulerDelegate.swift; sourceTree = "<group>"; };
+		83879C0F24268E900022F7DD /* LocationNotificationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNotificationInfo.swift; sourceTree = "<group>"; };
 		838D485323F2480800E9FAAD /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = Carthage/Build/iOS/FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
 		838D485523F2481000E9FAAD /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
 		838D485723F2481600E9FAAD /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Carthage/Build/iOS/FirebaseAnalytics.framework; sourceTree = "<group>"; };
@@ -152,6 +159,7 @@
 		83936E2023EB3D3300C9FA1A /* Preserve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preserve.swift; sourceTree = "<group>"; };
 		83936E2223EB3D9000C9FA1A /* SightingAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingAnnotationView.swift; sourceTree = "<group>"; };
 		83A96B0723F71F48009C9954 /* BeaverMarshPreserve.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BeaverMarshPreserve.gpx; sourceTree = "<group>"; };
+		83EB13C32426C89800D337C2 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		83EB13C12426B51500D337C2 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		83FE537923E906C200E04182 /* Ellerbe Creek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ellerbe Creek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FE537C23E906C200E04182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,7 +178,7 @@
 		83FE53C823E9AF9100E04182 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		83FE53CA23E9AFAE00E04182 /* SystemNavigatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNavigatable.swift; sourceTree = "<group>"; };
 		83FE53CC23E9AFC000E04182 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
-		83FE53CF23E9AFFB00E04182 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		83FE53CF23E9AFFB00E04182 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		83FE53D123E9B00600E04182 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		83FE53D323E9B39100E04182 /* UIViewController+NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NibLoadable.swift"; sourceTree = "<group>"; };
 		83FE53D523E9B3AA00E04182 /* NibBasedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibBasedView.swift; sourceTree = "<group>"; };
@@ -242,6 +250,26 @@
 			);
 			path = GPX;
 			sourceTree = "<group>";
+		};
+		83879C1124268E940022F7DD /* LocationNotification */ = {
+			isa = PBXGroup;
+			children = (
+				83879C0B24268C630022F7DD /* LocationNotificationScheduler.swift */,
+				83879C0D24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift */,
+				83879C0F24268E900022F7DD /* LocationNotificationInfo.swift */,
+			);
+			path = LocationNotification;
+			sourceTree = "<group>";
+		};
+		83879C1124268E940022F7DD /* LocationNotification */ = {
+			isa = PBXGroup;
+			children = (
+				83879C0B24268C630022F7DD /* LocationNotificationScheduler.swift */,
+				83879C0D24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift */,
+				83879C0F24268E900022F7DD /* LocationNotificationInfo.swift */,
+			);
+			path = LocationNotification;
+      sourceTree = "<group>";
 		};
 		8335C6512429CA0F00AA9BF3 /* PermissionDescription */ = {
 			isa = PBXGroup;
@@ -384,12 +412,14 @@
 			children = (
 				8314B05A2404CB8300894333 /* AnchorType.swift */,
 				83FE53C523E9AF0F00E04182 /* DependencyContainer.swift */,
+				83879C1124268E940022F7DD /* LocationNotification */,
 				8335C656242A540400AA9BF3 /* Helpers */,
 				8314B05C2404CBA800894333 /* NodeType.swift */,
 				83FE53C323E9AE9200E04182 /* Storage.swift */,
 				83FE53C223E9204000E04182 /* UI */,
 				83FE53C723E9AF7E00E04182 /* Protocols */,
 				83FE53CE23E9AFDD00E04182 /* Models */,
+				83EB13C32426C89800D337C2 /* SessionManager.swift */,
 				83EB13C12426B51500D337C2 /* DatabaseManager.swift */,
 			);
 			path = Common;
@@ -447,7 +477,7 @@
 			isa = PBXGroup;
 			children = (
 				83FE53D123E9B00600E04182 /* User.swift */,
-				83FE53CF23E9AFFB00E04182 /* Game.swift */,
+				83FE53CF23E9AFFB00E04182 /* Session.swift */,
 				83936E2023EB3D3300C9FA1A /* Preserve.swift */,
 				83719E7D242A86F6007BB8B4 /* Animal.swift */,
 			);
@@ -582,6 +612,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83879C0E24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift in Sources */,
 				83FE53C623E9AF0F00E04182 /* DependencyContainer.swift in Sources */,
 				83FE53CD23E9AFC000E04182 /* ViewControllerFactory.swift in Sources */,
 				83FE53D423E9B39100E04182 /* UIViewController+NibLoadable.swift in Sources */,
@@ -589,12 +620,14 @@
 				831C245523F755BD00369C31 /* SightingNavigator.swift in Sources */,
 				8314B0532404C4E700894333 /* SightingDetailView.swift in Sources */,
 				83936E2123EB3D3300C9FA1A /* Preserve.swift in Sources */,
+				83879C0C24268C630022F7DD /* LocationNotificationScheduler.swift in Sources */,
 				83FE53BD23E91FFC00E04182 /* GameMapView.swift in Sources */,
 				83FE53BF23E9200F00E04182 /* GameMapViewController.swift in Sources */,
 				834D65C0242831F4008587DC /* InterestView.swift in Sources */,
 				8314B0572404C50500894333 /* SightingDetailViewController.swift in Sources */,
 				834D65CC24295F70008587DC /* WelcomeView.swift in Sources */,
 				83FE53BB23E91EAA00E04182 /* GameMapNavigator.swift in Sources */,
+				83EB13C42426C89800D337C2 /* SessionManager.swift in Sources */,
 				8335C64E2429C9F500AA9BF3 /* PermissionDescriptionView.swift in Sources */,
 				83719E7E242A86F6007BB8B4 /* Animal.swift in Sources */,
 				831C245923F755DD00369C31 /* SightingViewController.swift in Sources */,
@@ -605,6 +638,7 @@
 				8314B0512404C4D900894333 /* SightingDetailNavigator.swift in Sources */,
 				8314B0592404C96800894333 /* SightingScene.swift in Sources */,
 				83FE53D023E9AFFB00E04182 /* Game.swift in Sources */,
+				83FE53D023E9AFFB00E04182 /* Session.swift in Sources */,
 				834D65B22427F4FB008587DC /* OnboardingView.swift in Sources */,
 				834D65B92427F57A008587DC /* OnboardingNavigator.swift in Sources */,
 				8346C8CF240588D600843887 /* Separator.swift in Sources */,
@@ -617,6 +651,7 @@
 				83FE53D823E9C8F200E04182 /* MainNavigationController.swift in Sources */,
 				83FE53D223E9B00600E04182 /* User.swift in Sources */,
 				831C245723F755CB00369C31 /* SightingView.swift in Sources */,
+				83879C1024268E900022F7DD /* LocationNotificationInfo.swift in Sources */,
 				834D65BB242830C0008587DC /* UserCreationView.swift in Sources */,
 				834D65B42427F534008587DC /* OnboardingViewController.swift in Sources */,
 				83FE53C923E9AF9100E04182 /* Navigator.swift in Sources */,
