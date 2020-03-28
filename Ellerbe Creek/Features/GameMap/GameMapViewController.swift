@@ -28,6 +28,14 @@ class GameMapViewController: UIViewController, NibLoadable {
     
     var ref: DatabaseReference!
     var preserves: [Preserve] = []
+    private var profileButton: UIBarButtonItem! {
+        let button = UIButton(frame: CGRect(x: 0.0, y: 0.0, width: 36.0, height: 36.0))
+        button.setTitle("", for: .normal)
+        button.setBackgroundImage(UIImage(named: "User"), for: .normal)
+        button.addTarget(self, action: #selector(profileButtonAction), for: .touchUpInside)
+        
+        return UIBarButtonItem(customView: button)
+    }
     
     // MARK: - UIViewController Lifecycle
     
@@ -56,6 +64,7 @@ class GameMapViewController: UIViewController, NibLoadable {
         
         ref = Database.database().reference()
         fetchPreserves()
+        navigationItem.leftBarButtonItem = profileButton
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -124,6 +133,11 @@ class GameMapViewController: UIViewController, NibLoadable {
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
+    @objc private func profileButtonAction() {
+//        navigator.navigate(to: .profile)
+        let alertController = UIAlertController(title: "User", message: "\(GCHelper.sharedInstance.getLocalUser())", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        present(alertController, animated: true, completion: nil)
     }
 
 }
