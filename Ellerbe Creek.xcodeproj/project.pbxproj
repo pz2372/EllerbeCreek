@@ -135,7 +135,7 @@
 		83FE53C823E9AF9100E04182 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		83FE53CA23E9AFAE00E04182 /* SystemNavigatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNavigatable.swift; sourceTree = "<group>"; };
 		83FE53CC23E9AFC000E04182 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
-		83FE53CF23E9AFFB00E04182 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		83FE53CF23E9AFFB00E04182 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		83FE53D123E9B00600E04182 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		83FE53D323E9B39100E04182 /* UIViewController+NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NibLoadable.swift"; sourceTree = "<group>"; };
 		83FE53D523E9B3AA00E04182 /* NibBasedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibBasedView.swift; sourceTree = "<group>"; };
