@@ -55,6 +55,7 @@
 		838D487223F24C1C00E9FAAD /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D487123F24C1C00E9FAAD /* PromisesObjC.framework */; };
 		83936E2123EB3D3300C9FA1A /* Preserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83936E2023EB3D3300C9FA1A /* Preserve.swift */; };
 		83936E2323EB3D9000C9FA1A /* SightingAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83936E2223EB3D9000C9FA1A /* SightingAnnotationView.swift */; };
+		83EB13C22426B51500D337C2 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB13C12426B51500D337C2 /* DatabaseManager.swift */; };
 		83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE537C23E906C200E04182 /* AppDelegate.swift */; };
 		83FE538423E906C200E04182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FE538223E906C200E04182 /* Main.storyboard */; };
 		83FE538623E906C300E04182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FE538523E906C300E04182 /* Assets.xcassets */; };
@@ -149,6 +150,7 @@
 		83936E2023EB3D3300C9FA1A /* Preserve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preserve.swift; sourceTree = "<group>"; };
 		83936E2223EB3D9000C9FA1A /* SightingAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingAnnotationView.swift; sourceTree = "<group>"; };
 		83A96B0723F71F48009C9954 /* BeaverMarshPreserve.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BeaverMarshPreserve.gpx; sourceTree = "<group>"; };
+		83EB13C12426B51500D337C2 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		83FE537923E906C200E04182 /* Ellerbe Creek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ellerbe Creek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FE537C23E906C200E04182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83FE538323E906C200E04182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 				83FE53C223E9204000E04182 /* UI */,
 				83FE53C723E9AF7E00E04182 /* Protocols */,
 				83FE53CE23E9AFDD00E04182 /* Models */,
+				83EB13C12426B51500D337C2 /* DatabaseManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				83FE53C623E9AF0F00E04182 /* DependencyContainer.swift in Sources */,
 				83FE53CD23E9AFC000E04182 /* ViewControllerFactory.swift in Sources */,
 				83FE53D423E9B39100E04182 /* UIViewController+NibLoadable.swift in Sources */,
+				83EB13C22426B51500D337C2 /* DatabaseManager.swift in Sources */,
 				831C245523F755BD00369C31 /* SightingNavigator.swift in Sources */,
 				8314B0532404C4E700894333 /* SightingDetailView.swift in Sources */,
 				83936E2123EB3D3300C9FA1A /* Preserve.swift in Sources */,
