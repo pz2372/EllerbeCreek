@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16114.2" systemVersion="19E224g" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19E250c" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ManagedAnimal" representedClassName="ManagedAnimal" syncable="YES" codeGenerationType="class">
+        <attribute name="detail" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="infoLink" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="points" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rarity" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="ManagedPreserve" representedClassName="ManagedPreserve" syncable="YES" codeGenerationType="class">
+        <attribute name="animals" optional="YES" attributeType="Transformable"/>
         <attribute name="bounds" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String:[Double]]"/>
         <attribute name="center" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformer" customClassName="[Double]"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="ManagedSession" representedClassName="ManagedSession" syncable="YES" codeGenerationType="class">
+        <attribute name="animals" optional="YES" attributeType="Transformable"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="preserve" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
     <elements>
-        <element name="ManagedPreserve" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="ManagedAnimal" positionX="-63" positionY="9" width="128" height="163"/>
+        <element name="ManagedPreserve" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="ManagedSession" positionX="-54" positionY="45" width="128" height="88"/>
     </elements>
 </model>

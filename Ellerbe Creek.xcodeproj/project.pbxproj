@@ -19,7 +19,25 @@
 		831C245723F755CB00369C31 /* SightingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C245623F755CB00369C31 /* SightingView.swift */; };
 		831C245923F755DD00369C31 /* SightingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C245823F755DD00369C31 /* SightingViewController.swift */; };
 		831C245B23F755FB00369C31 /* SightingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831C245A23F755FB00369C31 /* SightingView.xib */; };
+		8335C64C2429B08C00AA9BF3 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8335C64B2429B08C00AA9BF3 /* GameKit.framework */; };
+		8335C64E2429C9F500AA9BF3 /* PermissionDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335C64D2429C9F500AA9BF3 /* PermissionDescriptionView.swift */; };
+		8335C6502429CA0500AA9BF3 /* PermissionDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8335C64F2429CA0500AA9BF3 /* PermissionDescriptionView.xib */; };
+		8335C653242A537800AA9BF3 /* GCHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335C652242A537800AA9BF3 /* GCHelper.swift */; };
+		8335C655242A540000AA9BF3 /* PermissionsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335C654242A540000AA9BF3 /* PermissionsHelper.swift */; };
 		8346C8CF240588D600843887 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8346C8CE240588D600843887 /* Separator.swift */; };
+		834D65B22427F4FB008587DC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65B12427F4FB008587DC /* OnboardingView.swift */; };
+		834D65B42427F534008587DC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65B32427F534008587DC /* OnboardingViewController.swift */; };
+		834D65B62427F549008587DC /* OnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834D65B52427F549008587DC /* OnboardingView.xib */; };
+		834D65B92427F57A008587DC /* OnboardingNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65B82427F57A008587DC /* OnboardingNavigator.swift */; };
+		834D65BB242830C0008587DC /* UserCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65BA242830C0008587DC /* UserCreationView.swift */; };
+		834D65BD24283103008587DC /* UserCreationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834D65BC24283103008587DC /* UserCreationView.xib */; };
+		834D65C0242831F4008587DC /* InterestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65BF242831F4008587DC /* InterestView.swift */; };
+		834D65C224283204008587DC /* InterestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834D65C124283204008587DC /* InterestView.xib */; };
+		834D65C52428339A008587DC /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65C42428339A008587DC /* PermissionsView.swift */; };
+		834D65C7242833B1008587DC /* PermissionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834D65C6242833B1008587DC /* PermissionsView.xib */; };
+		834D65CC24295F70008587DC /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65CB24295F70008587DC /* WelcomeView.swift */; };
+		834D65CE24295F8B008587DC /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834D65CD24295F8B008587DC /* WelcomeView.xib */; };
+		83719E7E242A86F6007BB8B4 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83719E7D242A86F6007BB8B4 /* Animal.swift */; };
 		837ADE0B23F307AE00F88979 /* EllerbeCreek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */; };
 		83879C0C24268C630022F7DD /* LocationNotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83879C0B24268C630022F7DD /* LocationNotificationScheduler.swift */; };
 		83879C0E24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83879C0D24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift */; };
@@ -42,6 +60,7 @@
 		83936E2123EB3D3300C9FA1A /* Preserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83936E2023EB3D3300C9FA1A /* Preserve.swift */; };
 		83936E2323EB3D9000C9FA1A /* SightingAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83936E2223EB3D9000C9FA1A /* SightingAnnotationView.swift */; };
 		83EB13C42426C89800D337C2 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB13C32426C89800D337C2 /* SessionManager.swift */; };
+		83EB13C22426B51500D337C2 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB13C12426B51500D337C2 /* DatabaseManager.swift */; };
 		83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE537C23E906C200E04182 /* AppDelegate.swift */; };
 		83FE538423E906C200E04182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FE538223E906C200E04182 /* Main.storyboard */; };
 		83FE538623E906C300E04182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FE538523E906C300E04182 /* Assets.xcassets */; };
@@ -98,7 +117,25 @@
 		831C245623F755CB00369C31 /* SightingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingView.swift; sourceTree = "<group>"; };
 		831C245823F755DD00369C31 /* SightingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingViewController.swift; sourceTree = "<group>"; };
 		831C245A23F755FB00369C31 /* SightingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SightingView.xib; sourceTree = "<group>"; };
+		8335C64B2429B08C00AA9BF3 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		8335C64D2429C9F500AA9BF3 /* PermissionDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionDescriptionView.swift; sourceTree = "<group>"; };
+		8335C64F2429CA0500AA9BF3 /* PermissionDescriptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionDescriptionView.xib; sourceTree = "<group>"; };
+		8335C652242A537800AA9BF3 /* GCHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCHelper.swift; sourceTree = "<group>"; };
+		8335C654242A540000AA9BF3 /* PermissionsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsHelper.swift; sourceTree = "<group>"; };
 		8346C8CE240588D600843887 /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
+		834D65B12427F4FB008587DC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		834D65B32427F534008587DC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		834D65B52427F549008587DC /* OnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingView.xib; sourceTree = "<group>"; };
+		834D65B82427F57A008587DC /* OnboardingNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigator.swift; sourceTree = "<group>"; };
+		834D65BA242830C0008587DC /* UserCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreationView.swift; sourceTree = "<group>"; };
+		834D65BC24283103008587DC /* UserCreationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCreationView.xib; sourceTree = "<group>"; };
+		834D65BF242831F4008587DC /* InterestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestView.swift; sourceTree = "<group>"; };
+		834D65C124283204008587DC /* InterestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterestView.xib; sourceTree = "<group>"; };
+		834D65C42428339A008587DC /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
+		834D65C6242833B1008587DC /* PermissionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionsView.xib; sourceTree = "<group>"; };
+		834D65CB24295F70008587DC /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		834D65CD24295F8B008587DC /* WelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
+		83719E7D242A86F6007BB8B4 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		837ADE0A23F307AE00F88979 /* EllerbeCreek.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EllerbeCreek.xcdatamodel; sourceTree = "<group>"; };
 		83879C0B24268C630022F7DD /* LocationNotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNotificationScheduler.swift; sourceTree = "<group>"; };
 		83879C0D24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNotificationSchedulerDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +160,7 @@
 		83936E2223EB3D9000C9FA1A /* SightingAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingAnnotationView.swift; sourceTree = "<group>"; };
 		83A96B0723F71F48009C9954 /* BeaverMarshPreserve.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BeaverMarshPreserve.gpx; sourceTree = "<group>"; };
 		83EB13C32426C89800D337C2 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		83EB13C12426B51500D337C2 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		83FE537923E906C200E04182 /* Ellerbe Creek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ellerbe Creek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FE537C23E906C200E04182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83FE538323E906C200E04182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -171,6 +209,7 @@
 				83FE53AD23E91A3A00E04182 /* Mapbox.framework in Frameworks */,
 				838D485C23F2482400E9FAAD /* FirebaseCoreDiagnostics.framework in Frameworks */,
 				838D486623F2484200E9FAAD /* FirebaseInstanceID.framework in Frameworks */,
+				8335C64C2429B08C00AA9BF3 /* GameKit.framework in Frameworks */,
 				838D486823F2484200E9FAAD /* GoogleDataTransport.framework in Frameworks */,
 				838D486A23F2484F00E9FAAD /* GoogleUtilities.framework in Frameworks */,
 				838D485423F2480800E9FAAD /* FIRAnalyticsConnector.framework in Frameworks */,
@@ -230,6 +269,83 @@
 				83879C0F24268E900022F7DD /* LocationNotificationInfo.swift */,
 			);
 			path = LocationNotification;
+      sourceTree = "<group>";
+		};
+		8335C6512429CA0F00AA9BF3 /* PermissionDescription */ = {
+			isa = PBXGroup;
+			children = (
+				8335C64D2429C9F500AA9BF3 /* PermissionDescriptionView.swift */,
+				8335C64F2429CA0500AA9BF3 /* PermissionDescriptionView.xib */,
+			);
+			path = PermissionDescription;
+			sourceTree = "<group>";
+		};
+		8335C656242A540400AA9BF3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8335C652242A537800AA9BF3 /* GCHelper.swift */,
+				8335C654242A540000AA9BF3 /* PermissionsHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		834D65B72427F557008587DC /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				834D65B82427F57A008587DC /* OnboardingNavigator.swift */,
+				834D65B12427F4FB008587DC /* OnboardingView.swift */,
+				834D65B52427F549008587DC /* OnboardingView.xib */,
+				834D65B32427F534008587DC /* OnboardingViewController.swift */,
+				834D65D0242997EA008587DC /* Pages */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		834D65BE24283125008587DC /* UserCreation */ = {
+			isa = PBXGroup;
+			children = (
+				834D65BA242830C0008587DC /* UserCreationView.swift */,
+				834D65BC24283103008587DC /* UserCreationView.xib */,
+			);
+			path = UserCreation;
+			sourceTree = "<group>";
+		};
+		834D65C324283208008587DC /* Interest */ = {
+			isa = PBXGroup;
+			children = (
+				834D65BF242831F4008587DC /* InterestView.swift */,
+				834D65C124283204008587DC /* InterestView.xib */,
+			);
+			path = Interest;
+			sourceTree = "<group>";
+		};
+		834D65C8242833B9008587DC /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				834D65C42428339A008587DC /* PermissionsView.swift */,
+				834D65C6242833B1008587DC /* PermissionsView.xib */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		834D65CF24295F91008587DC /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				834D65CB24295F70008587DC /* WelcomeView.swift */,
+				834D65CD24295F8B008587DC /* WelcomeView.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		834D65D0242997EA008587DC /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				834D65CF24295F91008587DC /* Welcome */,
+				834D65BE24283125008587DC /* UserCreation */,
+				834D65C8242833B9008587DC /* Permissions */,
+				834D65C324283208008587DC /* Interest */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 		83FE537023E906C100E04182 = {
@@ -269,6 +385,7 @@
 		83FE53AB23E91A3A00E04182 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8335C64B2429B08C00AA9BF3 /* GameKit.framework */,
 				838D486F23F24B2700E9FAAD /* libc++.tbd */,
 				838D487123F24C1C00E9FAAD /* PromisesObjC.framework */,
 				838D486D23F24A3500E9FAAD /* leveldb-library.framework */,
@@ -296,12 +413,14 @@
 				8314B05A2404CB8300894333 /* AnchorType.swift */,
 				83FE53C523E9AF0F00E04182 /* DependencyContainer.swift */,
 				83879C1124268E940022F7DD /* LocationNotification */,
+				8335C656242A540400AA9BF3 /* Helpers */,
 				8314B05C2404CBA800894333 /* NodeType.swift */,
 				83FE53C323E9AE9200E04182 /* Storage.swift */,
 				83FE53C223E9204000E04182 /* UI */,
 				83FE53C723E9AF7E00E04182 /* Protocols */,
 				83FE53CE23E9AFDD00E04182 /* Models */,
 				83EB13C32426C89800D337C2 /* SessionManager.swift */,
+				83EB13C12426B51500D337C2 /* DatabaseManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -309,6 +428,7 @@
 		83FE53B823E91E5F00E04182 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				834D65B72427F557008587DC /* Onboarding */,
 				8314B04F2404C4BD00894333 /* SightingDetail */,
 				831C244B23F754BA00369C31 /* Sighting */,
 				83FE53B923E91E7B00E04182 /* GameMap */,
@@ -338,6 +458,7 @@
 				8346C8CE240588D600843887 /* Separator.swift */,
 				83936E2223EB3D9000C9FA1A /* SightingAnnotationView.swift */,
 				83FE53DD23E9D54000E04182 /* NavigationHeader */,
+				8335C6512429CA0F00AA9BF3 /* PermissionDescription */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -358,6 +479,7 @@
 				83FE53D123E9B00600E04182 /* User.swift */,
 				83FE53CF23E9AFFB00E04182 /* Session.swift */,
 				83936E2023EB3D3300C9FA1A /* Preserve.swift */,
+				83719E7D242A86F6007BB8B4 /* Animal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -443,15 +565,21 @@
 			files = (
 				83FE538923E906C300E04182 /* LaunchScreen.storyboard in Resources */,
 				83FE53E423E9F83700E04182 /* SF-Pro-Rounded-Regular.otf in Resources */,
+				834D65BD24283103008587DC /* UserCreationView.xib in Resources */,
 				83FE53DC23E9D53A00E04182 /* NavigationHeaderView.xib in Resources */,
+				834D65B62427F549008587DC /* OnboardingView.xib in Resources */,
 				83FE53E623E9F83F00E04182 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				83FE538623E906C300E04182 /* Assets.xcassets in Resources */,
 				83FE53E223E9F82E00E04182 /* SF-Pro-Rounded-Bold.otf in Resources */,
 				83FE538423E906C200E04182 /* Main.storyboard in Resources */,
 				83FE53C123E9202400E04182 /* GameMapView.xib in Resources */,
+				834D65C7242833B1008587DC /* PermissionsView.xib in Resources */,
 				8314B0552404C4F200894333 /* SightingDetailView.xib in Resources */,
+				834D65C224283204008587DC /* InterestView.xib in Resources */,
 				8314B05F2404CC2F00894333 /* SightingScene.sks in Resources */,
+				834D65CE24295F8B008587DC /* WelcomeView.xib in Resources */,
 				831C245B23F755FB00369C31 /* SightingView.xib in Resources */,
+				8335C6502429CA0500AA9BF3 /* PermissionDescriptionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,32 +616,44 @@
 				83FE53C623E9AF0F00E04182 /* DependencyContainer.swift in Sources */,
 				83FE53CD23E9AFC000E04182 /* ViewControllerFactory.swift in Sources */,
 				83FE53D423E9B39100E04182 /* UIViewController+NibLoadable.swift in Sources */,
+				83EB13C22426B51500D337C2 /* DatabaseManager.swift in Sources */,
 				831C245523F755BD00369C31 /* SightingNavigator.swift in Sources */,
 				8314B0532404C4E700894333 /* SightingDetailView.swift in Sources */,
 				83936E2123EB3D3300C9FA1A /* Preserve.swift in Sources */,
 				83879C0C24268C630022F7DD /* LocationNotificationScheduler.swift in Sources */,
 				83FE53BD23E91FFC00E04182 /* GameMapView.swift in Sources */,
 				83FE53BF23E9200F00E04182 /* GameMapViewController.swift in Sources */,
+				834D65C0242831F4008587DC /* InterestView.swift in Sources */,
 				8314B0572404C50500894333 /* SightingDetailViewController.swift in Sources */,
+				834D65CC24295F70008587DC /* WelcomeView.swift in Sources */,
 				83FE53BB23E91EAA00E04182 /* GameMapNavigator.swift in Sources */,
 				83EB13C42426C89800D337C2 /* SessionManager.swift in Sources */,
+				8335C64E2429C9F500AA9BF3 /* PermissionDescriptionView.swift in Sources */,
+				83719E7E242A86F6007BB8B4 /* Animal.swift in Sources */,
 				831C245923F755DD00369C31 /* SightingViewController.swift in Sources */,
 				83FE53B423E91C3800E04182 /* Colors.swift in Sources */,
+				8335C653242A537800AA9BF3 /* GCHelper.swift in Sources */,
 				8314B05B2404CB8300894333 /* AnchorType.swift in Sources */,
 				83FE53E823E9F8C800E04182 /* Fonts.swift in Sources */,
 				8314B0512404C4D900894333 /* SightingDetailNavigator.swift in Sources */,
 				8314B0592404C96800894333 /* SightingScene.swift in Sources */,
 				83FE53D023E9AFFB00E04182 /* Game.swift in Sources */,
 				83FE53D023E9AFFB00E04182 /* Session.swift in Sources */,
+				834D65B22427F4FB008587DC /* OnboardingView.swift in Sources */,
+				834D65B92427F57A008587DC /* OnboardingNavigator.swift in Sources */,
 				8346C8CF240588D600843887 /* Separator.swift in Sources */,
 				83FE53D623E9B3AA00E04182 /* NibBasedView.swift in Sources */,
 				83FE53DA23E9D34600E04182 /* NavigationHeaderView.swift in Sources */,
 				83FE53CB23E9AFAE00E04182 /* SystemNavigatable.swift in Sources */,
+				8335C655242A540000AA9BF3 /* PermissionsHelper.swift in Sources */,
 				83936E2323EB3D9000C9FA1A /* SightingAnnotationView.swift in Sources */,
+				834D65C52428339A008587DC /* PermissionsView.swift in Sources */,
 				83FE53D823E9C8F200E04182 /* MainNavigationController.swift in Sources */,
 				83FE53D223E9B00600E04182 /* User.swift in Sources */,
 				831C245723F755CB00369C31 /* SightingView.swift in Sources */,
 				83879C1024268E900022F7DD /* LocationNotificationInfo.swift in Sources */,
+				834D65BB242830C0008587DC /* UserCreationView.swift in Sources */,
+				834D65B42427F534008587DC /* OnboardingViewController.swift in Sources */,
 				83FE53C923E9AF9100E04182 /* Navigator.swift in Sources */,
 				8314B05D2404CBA800894333 /* NodeType.swift in Sources */,
 				83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */,
@@ -663,7 +803,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HMYMB448CY;
+				DEVELOPMENT_TEAM = BFZYMS7L7S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -691,7 +831,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HMYMB448CY;
+				DEVELOPMENT_TEAM = BFZYMS7L7S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

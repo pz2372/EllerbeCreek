@@ -10,4 +10,5 @@ protocol ViewControllerFactory {
     func makeGameMapViewController() -> GameMapViewController
     func makeSightingViewController() -> SightingViewController
     func makeSightingDetailViewController() -> SightingDetailViewController
+    func makeOnboardingViewController() -> OnboardingViewController
 }

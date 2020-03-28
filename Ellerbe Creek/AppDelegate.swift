@@ -9,9 +9,12 @@
 import UIKit
 import Firebase
 import CoreData
+import GameKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    let databaseManager = DatabaseManager.shared
 
     var window: UIWindow?
 
@@ -19,15 +22,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
+        databaseManager.reference = Database.database().reference()
+        databaseManager.managedContext = persistentContainer.viewContext
+        databaseManager.locationNotificationScheduler = LocationNotificationScheduler()
+        
+        databaseManager.fetchData(from: .animals)
+        
         createAndDisplayRootViewController()
         return true
     }
 
     func createAndDisplayRootViewController() {
         let dependencyContainer = DependencyContainer()
-        let gameMapViewController = dependencyContainer.makeGameMapViewController()
-        dependencyContainer.navigationController.viewControllers = [gameMapViewController]
-        setWindow(rootViewController: dependencyContainer.navigationController)
+        
+        let isOnboardingCompleted = UserDefaults.standard.bool(forKey: "ONBOARDING_COMPLETED")
+        if isOnboardingCompleted {
+            let gameMapViewController = dependencyContainer.makeGameMapViewController()
+            dependencyContainer.navigationController.viewControllers = [gameMapViewController]
+            setWindow(rootViewController: dependencyContainer.navigationController)
+            
+            GKLocalPlayer.local.authenticateHandler = { gcAuthVC, error in
+                if GKLocalPlayer.local.isAuthenticated {
+                    print("Game Center Authenticated")
+                } else if let vc = gcAuthVC {
+                    UIApplication.shared.keyWindow?.rootViewController?.present(vc, animated: true)
+                } else {
+                    print("Error authentication to GameCenter: " + "\(error?.localizedDescription ?? "none")")
+                }
+            }
+            
+            databaseManager.fetchData(from: .preserves)
+        } else {
+            let onboardingViewController = dependencyContainer.makeOnboardingViewController()
+            setWindow(rootViewController: onboardingViewController)
+        }
     }
     
     func setWindow(rootViewController: UIViewController) {
