@@ -10,7 +10,13 @@ import UIKit
 
 class NibBasedView: UIView {
     
-    @IBOutlet var contentView: UIView!
+    @IBOutlet var contentView: UIView! {
+        willSet {
+            if let view: UIView = newValue {
+                view.backgroundColor = .clear
+            }
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
