@@ -20,6 +20,10 @@
 		831C245923F755DD00369C31 /* SightingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C245823F755DD00369C31 /* SightingViewController.swift */; };
 		831C245B23F755FB00369C31 /* SightingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831C245A23F755FB00369C31 /* SightingView.xib */; };
 		8346C8CF240588D600843887 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8346C8CE240588D600843887 /* Separator.swift */; };
+		834D65B22427F4FB008587DC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65B12427F4FB008587DC /* OnboardingView.swift */; };
+		834D65B42427F534008587DC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65B32427F534008587DC /* OnboardingViewController.swift */; };
+		834D65B62427F549008587DC /* OnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834D65B52427F549008587DC /* OnboardingView.xib */; };
+		834D65B92427F57A008587DC /* OnboardingNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65B82427F57A008587DC /* OnboardingNavigator.swift */; };
 		837ADE0B23F307AE00F88979 /* EllerbeCreek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */; };
 		838D485423F2480800E9FAAD /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485323F2480800E9FAAD /* FIRAnalyticsConnector.framework */; };
 		838D485823F2481700E9FAAD /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485723F2481600E9FAAD /* FirebaseAnalytics.framework */; };
@@ -95,6 +99,10 @@
 		831C245823F755DD00369C31 /* SightingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingViewController.swift; sourceTree = "<group>"; };
 		831C245A23F755FB00369C31 /* SightingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SightingView.xib; sourceTree = "<group>"; };
 		8346C8CE240588D600843887 /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
+		834D65B12427F4FB008587DC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		834D65B32427F534008587DC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		834D65B52427F549008587DC /* OnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingView.xib; sourceTree = "<group>"; };
+		834D65B82427F57A008587DC /* OnboardingNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigator.swift; sourceTree = "<group>"; };
 		837ADE0A23F307AE00F88979 /* EllerbeCreek.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EllerbeCreek.xcdatamodel; sourceTree = "<group>"; };
 		838D485323F2480800E9FAAD /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = Carthage/Build/iOS/FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
 		838D485523F2481000E9FAAD /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
@@ -204,6 +212,18 @@
 			path = GPX;
 			sourceTree = "<group>";
 		};
+		834D65B72427F557008587DC /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				834D65B82427F57A008587DC /* OnboardingNavigator.swift */,
+				834D65B12427F4FB008587DC /* OnboardingView.swift */,
+				834D65B52427F549008587DC /* OnboardingView.xib */,
+				834D65B32427F534008587DC /* OnboardingViewController.swift */,
+				834D65D0242997EA008587DC /* Pages */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		83FE537023E906C100E04182 = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +299,7 @@
 		83FE53B823E91E5F00E04182 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				834D65B72427F557008587DC /* Onboarding */,
 				8314B04F2404C4BD00894333 /* SightingDetail */,
 				831C244B23F754BA00369C31 /* Sighting */,
 				83FE53B923E91E7B00E04182 /* GameMap */,
@@ -414,6 +435,7 @@
 				83FE538923E906C300E04182 /* LaunchScreen.storyboard in Resources */,
 				83FE53E423E9F83700E04182 /* SF-Pro-Rounded-Regular.otf in Resources */,
 				83FE53DC23E9D53A00E04182 /* NavigationHeaderView.xib in Resources */,
+				834D65B62427F549008587DC /* OnboardingView.xib in Resources */,
 				83FE53E623E9F83F00E04182 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				83FE538623E906C300E04182 /* Assets.xcassets in Resources */,
 				83FE53E223E9F82E00E04182 /* SF-Pro-Rounded-Bold.otf in Resources */,
@@ -471,6 +493,8 @@
 				8314B0512404C4D900894333 /* SightingDetailNavigator.swift in Sources */,
 				8314B0592404C96800894333 /* SightingScene.swift in Sources */,
 				83FE53D023E9AFFB00E04182 /* Game.swift in Sources */,
+				834D65B22427F4FB008587DC /* OnboardingView.swift in Sources */,
+				834D65B92427F57A008587DC /* OnboardingNavigator.swift in Sources */,
 				8346C8CF240588D600843887 /* Separator.swift in Sources */,
 				83FE53D623E9B3AA00E04182 /* NibBasedView.swift in Sources */,
 				83FE53DA23E9D34600E04182 /* NavigationHeaderView.swift in Sources */,
@@ -479,6 +503,7 @@
 				83FE53D823E9C8F200E04182 /* MainNavigationController.swift in Sources */,
 				83FE53D223E9B00600E04182 /* User.swift in Sources */,
 				831C245723F755CB00369C31 /* SightingView.swift in Sources */,
+				834D65B42427F534008587DC /* OnboardingViewController.swift in Sources */,
 				83FE53C923E9AF9100E04182 /* Navigator.swift in Sources */,
 				8314B05D2404CBA800894333 /* NodeType.swift in Sources */,
 				83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */,
