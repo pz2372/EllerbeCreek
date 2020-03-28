@@ -31,6 +31,8 @@
 		834D65B92427F57A008587DC /* OnboardingNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65B82427F57A008587DC /* OnboardingNavigator.swift */; };
 		834D65BB242830C0008587DC /* UserCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65BA242830C0008587DC /* UserCreationView.swift */; };
 		834D65BD24283103008587DC /* UserCreationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834D65BC24283103008587DC /* UserCreationView.xib */; };
+		834D65C0242831F4008587DC /* InterestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65BF242831F4008587DC /* InterestView.swift */; };
+		834D65C224283204008587DC /* InterestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834D65C124283204008587DC /* InterestView.xib */; };
 		834D65C52428339A008587DC /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65C42428339A008587DC /* PermissionsView.swift */; };
 		834D65C7242833B1008587DC /* PermissionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834D65C6242833B1008587DC /* PermissionsView.xib */; };
 		837ADE0B23F307AE00F88979 /* EllerbeCreek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */; };
@@ -119,6 +121,8 @@
 		834D65B82427F57A008587DC /* OnboardingNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigator.swift; sourceTree = "<group>"; };
 		834D65BA242830C0008587DC /* UserCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreationView.swift; sourceTree = "<group>"; };
 		834D65BC24283103008587DC /* UserCreationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCreationView.xib; sourceTree = "<group>"; };
+		834D65BF242831F4008587DC /* InterestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestView.swift; sourceTree = "<group>"; };
+		834D65C124283204008587DC /* InterestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterestView.xib; sourceTree = "<group>"; };
 		834D65C42428339A008587DC /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		834D65C6242833B1008587DC /* PermissionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionsView.xib; sourceTree = "<group>"; };
 		837ADE0A23F307AE00F88979 /* EllerbeCreek.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EllerbeCreek.xcdatamodel; sourceTree = "<group>"; };
@@ -268,6 +272,15 @@
 				834D65BC24283103008587DC /* UserCreationView.xib */,
 			);
 			path = UserCreation;
+			sourceTree = "<group>";
+		};
+		834D65C324283208008587DC /* Interest */ = {
+			isa = PBXGroup;
+			children = (
+				834D65BF242831F4008587DC /* InterestView.swift */,
+				834D65C124283204008587DC /* InterestView.xib */,
+			);
+			path = Interest;
 			sourceTree = "<group>";
 		};
 		834D65C8242833B9008587DC /* Permissions */ = {
@@ -502,6 +515,7 @@
 				83FE53C123E9202400E04182 /* GameMapView.xib in Resources */,
 				834D65C7242833B1008587DC /* PermissionsView.xib in Resources */,
 				8314B0552404C4F200894333 /* SightingDetailView.xib in Resources */,
+				834D65C224283204008587DC /* InterestView.xib in Resources */,
 				8314B05F2404CC2F00894333 /* SightingScene.sks in Resources */,
 				831C245B23F755FB00369C31 /* SightingView.xib in Resources */,
 				8335C6502429CA0500AA9BF3 /* PermissionDescriptionView.xib in Resources */,
@@ -545,6 +559,7 @@
 				83936E2123EB3D3300C9FA1A /* Preserve.swift in Sources */,
 				83FE53BD23E91FFC00E04182 /* GameMapView.swift in Sources */,
 				83FE53BF23E9200F00E04182 /* GameMapViewController.swift in Sources */,
+				834D65C0242831F4008587DC /* InterestView.swift in Sources */,
 				8314B0572404C50500894333 /* SightingDetailViewController.swift in Sources */,
 				83FE53BB23E91EAA00E04182 /* GameMapNavigator.swift in Sources */,
 				8335C64E2429C9F500AA9BF3 /* PermissionDescriptionView.swift in Sources */,
