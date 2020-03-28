@@ -20,8 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>Location</key>
+	<string></string>
 	<key>MGLMapboxAccessToken</key>
 	<string>pk.eyJ1IjoiYW5kZXJzb25tcnlhbiIsImEiOiJjaXRxanYyZGYwMGp6MnpvYnZiYnliaGZ4In0.FbYGRs-sFZIUOUyJOEGUJg</string>
+	<key>NSCameraUsageDescription</key>
+	<string>For an immersive augmented reality experience, Ellerbe Creek requires access to the camera.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Shows your location on the map and helps improve the map.</string>
 	<key>UIAppFonts</key>
@@ -37,6 +41,7 @@
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+		<string>gamekit</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
@@ -51,7 +56,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
-	<key>NSCameraUsageDescription</key>
-	<string>For an immersive augmented reality experience, Ellerbe Creek requires access to the camera.</string>
 </dict>
 </plist>

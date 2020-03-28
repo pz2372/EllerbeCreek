@@ -20,7 +20,10 @@
 		831C245923F755DD00369C31 /* SightingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C245823F755DD00369C31 /* SightingViewController.swift */; };
 		831C245B23F755FB00369C31 /* SightingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831C245A23F755FB00369C31 /* SightingView.xib */; };
 		8335C64C2429B08C00AA9BF3 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8335C64B2429B08C00AA9BF3 /* GameKit.framework */; };
+		8335C64E2429C9F500AA9BF3 /* PermissionDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335C64D2429C9F500AA9BF3 /* PermissionDescriptionView.swift */; };
+		8335C6502429CA0500AA9BF3 /* PermissionDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8335C64F2429CA0500AA9BF3 /* PermissionDescriptionView.xib */; };
 		8335C653242A537800AA9BF3 /* GCHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335C652242A537800AA9BF3 /* GCHelper.swift */; };
+		8335C655242A540000AA9BF3 /* PermissionsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335C654242A540000AA9BF3 /* PermissionsHelper.swift */; };
 		8346C8CF240588D600843887 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8346C8CE240588D600843887 /* Separator.swift */; };
 		834D65B22427F4FB008587DC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65B12427F4FB008587DC /* OnboardingView.swift */; };
 		834D65B42427F534008587DC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65B32427F534008587DC /* OnboardingViewController.swift */; };
@@ -28,6 +31,8 @@
 		834D65B92427F57A008587DC /* OnboardingNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65B82427F57A008587DC /* OnboardingNavigator.swift */; };
 		834D65BB242830C0008587DC /* UserCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65BA242830C0008587DC /* UserCreationView.swift */; };
 		834D65BD24283103008587DC /* UserCreationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834D65BC24283103008587DC /* UserCreationView.xib */; };
+		834D65C52428339A008587DC /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65C42428339A008587DC /* PermissionsView.swift */; };
+		834D65C7242833B1008587DC /* PermissionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834D65C6242833B1008587DC /* PermissionsView.xib */; };
 		837ADE0B23F307AE00F88979 /* EllerbeCreek.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */; };
 		838D485423F2480800E9FAAD /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485323F2480800E9FAAD /* FIRAnalyticsConnector.framework */; };
 		838D485823F2481700E9FAAD /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485723F2481600E9FAAD /* FirebaseAnalytics.framework */; };
@@ -103,7 +108,10 @@
 		831C245823F755DD00369C31 /* SightingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingViewController.swift; sourceTree = "<group>"; };
 		831C245A23F755FB00369C31 /* SightingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SightingView.xib; sourceTree = "<group>"; };
 		8335C64B2429B08C00AA9BF3 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		8335C64D2429C9F500AA9BF3 /* PermissionDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionDescriptionView.swift; sourceTree = "<group>"; };
+		8335C64F2429CA0500AA9BF3 /* PermissionDescriptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionDescriptionView.xib; sourceTree = "<group>"; };
 		8335C652242A537800AA9BF3 /* GCHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCHelper.swift; sourceTree = "<group>"; };
+		8335C654242A540000AA9BF3 /* PermissionsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsHelper.swift; sourceTree = "<group>"; };
 		8346C8CE240588D600843887 /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
 		834D65B12427F4FB008587DC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		834D65B32427F534008587DC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +119,8 @@
 		834D65B82427F57A008587DC /* OnboardingNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNavigator.swift; sourceTree = "<group>"; };
 		834D65BA242830C0008587DC /* UserCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreationView.swift; sourceTree = "<group>"; };
 		834D65BC24283103008587DC /* UserCreationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCreationView.xib; sourceTree = "<group>"; };
+		834D65C42428339A008587DC /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
+		834D65C6242833B1008587DC /* PermissionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionsView.xib; sourceTree = "<group>"; };
 		837ADE0A23F307AE00F88979 /* EllerbeCreek.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EllerbeCreek.xcdatamodel; sourceTree = "<group>"; };
 		838D485323F2480800E9FAAD /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = Carthage/Build/iOS/FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
 		838D485523F2481000E9FAAD /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
@@ -221,10 +231,20 @@
 			path = GPX;
 			sourceTree = "<group>";
 		};
+		8335C6512429CA0F00AA9BF3 /* PermissionDescription */ = {
+			isa = PBXGroup;
+			children = (
+				8335C64D2429C9F500AA9BF3 /* PermissionDescriptionView.swift */,
+				8335C64F2429CA0500AA9BF3 /* PermissionDescriptionView.xib */,
+			);
+			path = PermissionDescription;
+			sourceTree = "<group>";
+		};
 		8335C656242A540400AA9BF3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				8335C652242A537800AA9BF3 /* GCHelper.swift */,
+				8335C654242A540000AA9BF3 /* PermissionsHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -248,6 +268,15 @@
 				834D65BC24283103008587DC /* UserCreationView.xib */,
 			);
 			path = UserCreation;
+			sourceTree = "<group>";
+		};
+		834D65C8242833B9008587DC /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				834D65C42428339A008587DC /* PermissionsView.swift */,
+				834D65C6242833B1008587DC /* PermissionsView.xib */,
+			);
+			path = Permissions;
 			sourceTree = "<group>";
 		};
 		83FE537023E906C100E04182 = {
@@ -314,6 +343,7 @@
 			children = (
 				8314B05A2404CB8300894333 /* AnchorType.swift */,
 				83FE53C523E9AF0F00E04182 /* DependencyContainer.swift */,
+				8335C656242A540400AA9BF3 /* Helpers */,
 				8314B05C2404CBA800894333 /* NodeType.swift */,
 				83FE53C323E9AE9200E04182 /* Storage.swift */,
 				83FE53C223E9204000E04182 /* UI */,
@@ -356,6 +386,7 @@
 				8346C8CE240588D600843887 /* Separator.swift */,
 				83936E2223EB3D9000C9FA1A /* SightingAnnotationView.swift */,
 				83FE53DD23E9D54000E04182 /* NavigationHeader */,
+				8335C6512429CA0F00AA9BF3 /* PermissionDescription */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -469,9 +500,11 @@
 				83FE53E223E9F82E00E04182 /* SF-Pro-Rounded-Bold.otf in Resources */,
 				83FE538423E906C200E04182 /* Main.storyboard in Resources */,
 				83FE53C123E9202400E04182 /* GameMapView.xib in Resources */,
+				834D65C7242833B1008587DC /* PermissionsView.xib in Resources */,
 				8314B0552404C4F200894333 /* SightingDetailView.xib in Resources */,
 				8314B05F2404CC2F00894333 /* SightingScene.sks in Resources */,
 				831C245B23F755FB00369C31 /* SightingView.xib in Resources */,
+				8335C6502429CA0500AA9BF3 /* PermissionDescriptionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +547,7 @@
 				83FE53BF23E9200F00E04182 /* GameMapViewController.swift in Sources */,
 				8314B0572404C50500894333 /* SightingDetailViewController.swift in Sources */,
 				83FE53BB23E91EAA00E04182 /* GameMapNavigator.swift in Sources */,
+				8335C64E2429C9F500AA9BF3 /* PermissionDescriptionView.swift in Sources */,
 				831C245923F755DD00369C31 /* SightingViewController.swift in Sources */,
 				83FE53B423E91C3800E04182 /* Colors.swift in Sources */,
 				8335C653242A537800AA9BF3 /* GCHelper.swift in Sources */,
@@ -528,7 +562,9 @@
 				83FE53D623E9B3AA00E04182 /* NibBasedView.swift in Sources */,
 				83FE53DA23E9D34600E04182 /* NavigationHeaderView.swift in Sources */,
 				83FE53CB23E9AFAE00E04182 /* SystemNavigatable.swift in Sources */,
+				8335C655242A540000AA9BF3 /* PermissionsHelper.swift in Sources */,
 				83936E2323EB3D9000C9FA1A /* SightingAnnotationView.swift in Sources */,
+				834D65C52428339A008587DC /* PermissionsView.swift in Sources */,
 				83FE53D823E9C8F200E04182 /* MainNavigationController.swift in Sources */,
 				83FE53D223E9B00600E04182 /* User.swift in Sources */,
 				831C245723F755CB00369C31 /* SightingView.swift in Sources */,
