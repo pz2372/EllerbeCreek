@@ -12,12 +12,20 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    let databaseManager = DatabaseManager.shared
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         FirebaseApp.configure()
+        
+        databaseManager.reference = Database.database().reference()
+        databaseManager.managedContext = persistentContainer.viewContext
+        databaseManager.locationNotificationScheduler = LocationNotificationScheduler()
+        
+        databaseManager.fetchData(from: .animals)
         
         createAndDisplayRootViewController()
         return true
