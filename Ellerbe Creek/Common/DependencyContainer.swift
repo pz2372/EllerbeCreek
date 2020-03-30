@@ -38,5 +38,9 @@ class DependencyContainer: CoreDependencyContainer, KeyValueStorable {
         return OnboardingViewController(navigator: OnboardingNavigator(dependencyContainer: self))
     }
     
+    func makeNewSessionViewController() -> NewSessionViewController {
+        return NewSessionViewController(navigator: NewSessionNavigator(dependencyContainer: self))
+    }
+    
 }
 
