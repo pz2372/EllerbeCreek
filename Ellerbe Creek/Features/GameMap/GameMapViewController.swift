@@ -61,11 +61,13 @@ class GameMapViewController: UIViewController, NibLoadable {
         self.title = "Find a Preserve"
         
         navigationItem.leftBarButtonItem = profileButton
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(presentNavigationBar), name: Notification.Name(rawValue: "OnViewWillAppear"), object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+    
         setNeedsStatusBarAppearanceUpdate()
     }
     
@@ -74,10 +76,28 @@ class GameMapViewController: UIViewController, NibLoadable {
     }
     
     @objc private func profileButtonAction() {
-//        navigator.navigate(to: .profile)
-        let alertController = UIAlertController(title: "User", message: "\(GCHelper.sharedInstance.getLocalUser())", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
-        present(alertController, animated: true, completion: nil)
+    
+    @objc private func presentNavigationBar() {
+        let animated = true
+        guard let navigationController = navigationController else { return }
+        navigationController.setNavigationBarHidden(false, animated: animated)
+        
+        self.gameMapView.headerViewTopConstraint.constant = 0.0
+        self.gameMapView.setNeedsUpdateConstraints()
+        UIView.animate(withDuration: TimeInterval(UINavigationController.hideShowBarDuration), animations: {
+            self.gameMapView.layoutIfNeeded()
+        })
+    }
+    
+    private func dismissNavigationBar(_ animated: Bool = true) {
+        guard let navigationController = navigationController else { return }
+        navigationController.setNavigationBarHidden(true, animated: animated)
+        
+        self.gameMapView.headerViewTopConstraint.constant = self.gameMapView.headerViewHeightConstraint.constant*2
+        self.gameMapView.setNeedsUpdateConstraints()
+        UIView.animate(withDuration: TimeInterval(UINavigationController.hideShowBarDuration), animations: {
+            self.gameMapView.layoutIfNeeded()
+        })
     }
 
 }

@@ -23,7 +23,10 @@ class GameMapView: NibBasedView {
     private let minSightingDistance: Double = 15.24  // 50ft
     
     @IBOutlet var mapView: MGLMapView!
+    
     @IBOutlet var headerView: NavigationHeaderView!
+    @IBOutlet var headerViewTopConstraint: NSLayoutConstraint!
+    @IBOutlet var headerViewHeightConstraint: NSLayoutConstraint!
     
     private var sightings = 0
     private var currentPreserve: Preserve? {
