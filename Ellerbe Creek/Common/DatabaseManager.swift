@@ -206,7 +206,7 @@ class DatabaseManager: NSObject {
                                                                     radius: 1610.0,
                                                                     latitude: preserve.center[0],
                                                                     longitude: preserve.center[1],
-                                                                    title: "Your Near a Preserve",
+                                                                    title: "You're Near a Preserve",
                                                                     body: "Check out \(preserve.name) Preserve for a quick game.",
                                                                     data: nil)
                     self.requestLocationNotifition(with: notificationInfo)
