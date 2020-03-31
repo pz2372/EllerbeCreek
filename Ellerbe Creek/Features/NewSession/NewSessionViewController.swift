@@ -73,8 +73,8 @@ extension NewSessionViewController: NewSessionViewControllerDelegate {
         dismiss(animated: true)
         NotificationCenter.default.post(name: Notification.Name(rawValue: "OnViewWillAppear"), object: nil)
         
-        let currentPreserve = storage.get(key: .currentPreserve, defaultValue: Preserve()) as Preserve
-        SessionManager.shared.start(at: currentPreserve)
+//        let currentPreserve = storage.get(key: .currentPreserve, defaultValue: Preserve()) as Preserve
+//        SessionManager.shared.start(at: currentPreserve)
     }
     
 }

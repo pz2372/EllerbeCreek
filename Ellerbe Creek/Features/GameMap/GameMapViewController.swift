@@ -70,6 +70,7 @@ class GameMapViewController: UIViewController, NibLoadable {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     
+        isNewSessionViewPresented = false
         setNeedsStatusBarAppearanceUpdate()
     }
     
@@ -122,8 +123,10 @@ extension GameMapViewController: GameMapViewControllerDelegate {
                         if !isNewSessionViewPresented {
                             isNewSessionViewPresented = true
                             
-                            storage.set(value: preserve, forKey: .currentPreserve)
-                            navigator.present(.profile, with: .overCurrentContext)
+                            dismissNavigationBar()
+                            
+//                            storage.set(value: preserve, forKey: .currentPreserve)
+                            navigator.present(.newSession, with: .overCurrentContext)
                         }
                         
                         self.title = preserve.name + " Preserve"
