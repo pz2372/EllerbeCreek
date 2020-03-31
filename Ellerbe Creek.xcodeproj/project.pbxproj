@@ -214,6 +214,7 @@
 				838D486023F2483A00E9FAAD /* FirebaseInstallations.framework in Frameworks */,
 				838D486C23F249C800E9FAAD /* nanopb.framework in Frameworks */,
 				838D486E23F24A3500E9FAAD /* leveldb-library.framework in Frameworks */,
+				83C925592432F9AA001E38FE /* AnyCodable.framework in Frameworks */,
 				838D485823F2481700E9FAAD /* FirebaseAnalytics.framework in Frameworks */,
 				838D485A23F2481D00E9FAAD /* FirebaseCore.framework in Frameworks */,
 				83FE53AD23E91A3A00E04182 /* Mapbox.framework in Frameworks */,
