@@ -12,6 +12,7 @@ class GameMapNavigator: Navigator {
     enum Destination {
         case profile
         case sighting
+        case newSession
     }
     
     var dependencyContainer: CoreDependencyContainer & KeyValueStorable
@@ -41,6 +42,8 @@ class GameMapNavigator: Navigator {
             break
         case .sighting:
             return dependencyContainer.makeSightingViewController()
+        case .newSession:
+            return dependencyContainer.makeNewSessionViewController()
         }
         
         return UIViewController()
