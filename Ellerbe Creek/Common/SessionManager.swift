@@ -23,11 +23,11 @@ class SessionManager {
     
     // MARK: Public Functions
     
-    func start(at preserveID: Int) {
+    func start(at preserve: Preserve) {
         let date = ""
-        let preserve = preserveID
+        let preserveID = preserve.id
         
-        currentSession = Session(date: date, preserve: preserve, animals: [Int:[Double]]())
+        currentSession = Session(date: date, preserve: preserveID, animals: [Int:[Double]]())
     }
     
     func end() {

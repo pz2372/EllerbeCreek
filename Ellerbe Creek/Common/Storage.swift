@@ -21,6 +21,7 @@ public struct StorageKey: RawRepresentable {
 
 extension StorageKey {
     static let username = StorageKey("username")
+    static let currentPreserve = StorageKey("currentPreserve")
 }
 
 struct Storage {

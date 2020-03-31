@@ -59,8 +59,13 @@
 		838D487223F24C1C00E9FAAD /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D487123F24C1C00E9FAAD /* PromisesObjC.framework */; };
 		83936E2123EB3D3300C9FA1A /* Preserve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83936E2023EB3D3300C9FA1A /* Preserve.swift */; };
 		83936E2323EB3D9000C9FA1A /* SightingAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83936E2223EB3D9000C9FA1A /* SightingAnnotationView.swift */; };
-		83EB13C42426C89800D337C2 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB13C32426C89800D337C2 /* SessionManager.swift */; };
+		83C925422432391F001E38FE /* NewSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C925412432391F001E38FE /* NewSessionViewController.swift */; };
+		83C925462432393B001E38FE /* NewSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C925452432393B001E38FE /* NewSessionView.swift */; };
+		83C925482432394B001E38FE /* NewSessionNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C925472432394B001E38FE /* NewSessionNavigator.swift */; };
+		83C9254A24323968001E38FE /* NewSessionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83C9254924323968001E38FE /* NewSessionView.xib */; };
+		83C925592432F9AA001E38FE /* AnyCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C925582432F9AA001E38FE /* AnyCodable.framework */; };
 		83EB13C22426B51500D337C2 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB13C12426B51500D337C2 /* DatabaseManager.swift */; };
+		83EB13C42426C89800D337C2 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB13C32426C89800D337C2 /* SessionManager.swift */; };
 		83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE537C23E906C200E04182 /* AppDelegate.swift */; };
 		83FE538423E906C200E04182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FE538223E906C200E04182 /* Main.storyboard */; };
 		83FE538623E906C300E04182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FE538523E906C300E04182 /* Assets.xcassets */; };
@@ -159,8 +164,13 @@
 		83936E2023EB3D3300C9FA1A /* Preserve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preserve.swift; sourceTree = "<group>"; };
 		83936E2223EB3D9000C9FA1A /* SightingAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingAnnotationView.swift; sourceTree = "<group>"; };
 		83A96B0723F71F48009C9954 /* BeaverMarshPreserve.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BeaverMarshPreserve.gpx; sourceTree = "<group>"; };
-		83EB13C32426C89800D337C2 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		83C925412432391F001E38FE /* NewSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionViewController.swift; sourceTree = "<group>"; };
+		83C925452432393B001E38FE /* NewSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionView.swift; sourceTree = "<group>"; };
+		83C925472432394B001E38FE /* NewSessionNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionNavigator.swift; sourceTree = "<group>"; };
+		83C9254924323968001E38FE /* NewSessionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewSessionView.xib; sourceTree = "<group>"; };
+		83C925582432F9AA001E38FE /* AnyCodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnyCodable.framework; path = Carthage/Build/iOS/AnyCodable.framework; sourceTree = "<group>"; };
 		83EB13C12426B51500D337C2 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		83EB13C32426C89800D337C2 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		83FE537923E906C200E04182 /* Ellerbe Creek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ellerbe Creek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FE537C23E906C200E04182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83FE538323E906C200E04182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -204,6 +214,7 @@
 				838D486023F2483A00E9FAAD /* FirebaseInstallations.framework in Frameworks */,
 				838D486C23F249C800E9FAAD /* nanopb.framework in Frameworks */,
 				838D486E23F24A3500E9FAAD /* leveldb-library.framework in Frameworks */,
+				83C925592432F9AA001E38FE /* AnyCodable.framework in Frameworks */,
 				838D485823F2481700E9FAAD /* FirebaseAnalytics.framework in Frameworks */,
 				838D485A23F2481D00E9FAAD /* FirebaseCore.framework in Frameworks */,
 				83FE53AD23E91A3A00E04182 /* Mapbox.framework in Frameworks */,
@@ -250,26 +261,6 @@
 			);
 			path = GPX;
 			sourceTree = "<group>";
-		};
-		83879C1124268E940022F7DD /* LocationNotification */ = {
-			isa = PBXGroup;
-			children = (
-				83879C0B24268C630022F7DD /* LocationNotificationScheduler.swift */,
-				83879C0D24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift */,
-				83879C0F24268E900022F7DD /* LocationNotificationInfo.swift */,
-			);
-			path = LocationNotification;
-			sourceTree = "<group>";
-		};
-		83879C1124268E940022F7DD /* LocationNotification */ = {
-			isa = PBXGroup;
-			children = (
-				83879C0B24268C630022F7DD /* LocationNotificationScheduler.swift */,
-				83879C0D24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift */,
-				83879C0F24268E900022F7DD /* LocationNotificationInfo.swift */,
-			);
-			path = LocationNotification;
-      sourceTree = "<group>";
 		};
 		8335C6512429CA0F00AA9BF3 /* PermissionDescription */ = {
 			isa = PBXGroup;
@@ -348,6 +339,27 @@
 			path = Pages;
 			sourceTree = "<group>";
 		};
+		83879C1124268E940022F7DD /* LocationNotification */ = {
+			isa = PBXGroup;
+			children = (
+				83879C0B24268C630022F7DD /* LocationNotificationScheduler.swift */,
+				83879C0D24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift */,
+				83879C0F24268E900022F7DD /* LocationNotificationInfo.swift */,
+			);
+			path = LocationNotification;
+			sourceTree = "<group>";
+		};
+		83C9254B2432396F001E38FE /* NewSession */ = {
+			isa = PBXGroup;
+			children = (
+				83C925472432394B001E38FE /* NewSessionNavigator.swift */,
+				83C925452432393B001E38FE /* NewSessionView.swift */,
+				83C9254924323968001E38FE /* NewSessionView.xib */,
+				83C925412432391F001E38FE /* NewSessionViewController.swift */,
+			);
+			path = NewSession;
+			sourceTree = "<group>";
+		};
 		83FE537023E906C100E04182 = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +397,7 @@
 		83FE53AB23E91A3A00E04182 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83C925582432F9AA001E38FE /* AnyCodable.framework */,
 				8335C64B2429B08C00AA9BF3 /* GameKit.framework */,
 				838D486F23F24B2700E9FAAD /* libc++.tbd */,
 				838D487123F24C1C00E9FAAD /* PromisesObjC.framework */,
@@ -432,6 +445,7 @@
 				8314B04F2404C4BD00894333 /* SightingDetail */,
 				831C244B23F754BA00369C31 /* Sighting */,
 				83FE53B923E91E7B00E04182 /* GameMap */,
+				83C9254B2432396F001E38FE /* NewSession */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -571,6 +585,7 @@
 				83FE53E623E9F83F00E04182 /* SF-Pro-Rounded-Semibold.otf in Resources */,
 				83FE538623E906C300E04182 /* Assets.xcassets in Resources */,
 				83FE53E223E9F82E00E04182 /* SF-Pro-Rounded-Bold.otf in Resources */,
+				83C9254A24323968001E38FE /* NewSessionView.xib in Resources */,
 				83FE538423E906C200E04182 /* Main.storyboard in Resources */,
 				83FE53C123E9202400E04182 /* GameMapView.xib in Resources */,
 				834D65C7242833B1008587DC /* PermissionsView.xib in Resources */,
@@ -596,6 +611,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Mapbox.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/MapboxMobileEvents.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AnyCodable.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -615,9 +631,12 @@
 				83879C0E24268E7E0022F7DD /* LocationNotificationSchedulerDelegate.swift in Sources */,
 				83FE53C623E9AF0F00E04182 /* DependencyContainer.swift in Sources */,
 				83FE53CD23E9AFC000E04182 /* ViewControllerFactory.swift in Sources */,
+				83C925482432394B001E38FE /* NewSessionNavigator.swift in Sources */,
 				83FE53D423E9B39100E04182 /* UIViewController+NibLoadable.swift in Sources */,
 				83EB13C22426B51500D337C2 /* DatabaseManager.swift in Sources */,
+				83C925462432393B001E38FE /* NewSessionView.swift in Sources */,
 				831C245523F755BD00369C31 /* SightingNavigator.swift in Sources */,
+				83C925422432391F001E38FE /* NewSessionViewController.swift in Sources */,
 				8314B0532404C4E700894333 /* SightingDetailView.swift in Sources */,
 				83936E2123EB3D3300C9FA1A /* Preserve.swift in Sources */,
 				83879C0C24268C630022F7DD /* LocationNotificationScheduler.swift in Sources */,
@@ -637,7 +656,7 @@
 				83FE53E823E9F8C800E04182 /* Fonts.swift in Sources */,
 				8314B0512404C4D900894333 /* SightingDetailNavigator.swift in Sources */,
 				8314B0592404C96800894333 /* SightingScene.swift in Sources */,
-				83FE53D023E9AFFB00E04182 /* Game.swift in Sources */,
+				83FE53D023E9AFFB00E04182 /* Session.swift in Sources */,
 				83FE53D023E9AFFB00E04182 /* Session.swift in Sources */,
 				834D65B22427F4FB008587DC /* OnboardingView.swift in Sources */,
 				834D65B92427F57A008587DC /* OnboardingNavigator.swift in Sources */,

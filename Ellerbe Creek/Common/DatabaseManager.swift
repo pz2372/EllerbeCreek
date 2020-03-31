@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import CoreData
 import UserNotifications
+import AnyCodable
 
 enum DatabaseType: String {
     case animals
@@ -120,8 +121,9 @@ class DatabaseManager: NSObject {
         let data = object.value as! [String:Any]
         guard let name = data["name"] as? String,
               let center = data["center"] as? [Double],
-              let bounds = data["bounds"] as? [String:[Double]],
-              let animals = data["animals"] as? [Int:[Any]] else { return }
+              let bounds = data["bounds"] as? [String:[Double]] else { return }
+//              let animals = data["animals"] as? [AnyCodable] else { return }
+              let animals = [AnyCodable]()
 
         guard let managedContext = managedContext else { return }
         let entity = NSEntityDescription.entity(forEntityName: "ManagedPreserve", in: managedContext)!
@@ -181,7 +183,7 @@ class DatabaseManager: NSObject {
                 let name = object.value(forKey: "name") as! String
                 let center = object.value(forKey: "center") as! [Double]
                 let bounds = object.value(forKey: "bounds") as! [String:[Double]]
-                let animals = object.value(forKey: "animals") as! [Int:[Any]]
+                let animals = object.value(forKey: "animals") as! [AnyCodable]
                 
                 let preserve = Preserve(id: id, name: name, center: center, bounds: bounds, animals: animals)
                 preserves.append(preserve)
@@ -206,7 +208,7 @@ class DatabaseManager: NSObject {
                                                                     radius: 1610.0,
                                                                     latitude: preserve.center[0],
                                                                     longitude: preserve.center[1],
-                                                                    title: "Your Near a Preserve",
+                                                                    title: "You're Near a Preserve",
                                                                     body: "Check out \(preserve.name) Preserve for a quick game.",
                                                                     data: nil)
                     self.requestLocationNotifition(with: notificationInfo)
