@@ -6,12 +6,12 @@
 //  Copyright © 2020 Ryan Anderson. All rights reserved.
 //
 
-import Foundation
+import AnyCodable
 
-struct Preserve {
-    var id: Int
-    var name: String
-    var center: [Double]
-    var bounds: [String:[Double]]
-    var animals: [Int:[Any]]
+struct Preserve: Codable {
+    var id: Int = Int()
+    var name: String = ""
+    var center: [Double] = [Double]()
+    var bounds: [String:[Double]] = [String:[Double]]()
+    var animals: [AnyCodable] = [AnyCodable]()
 }
