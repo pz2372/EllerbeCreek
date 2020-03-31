@@ -121,8 +121,9 @@ class DatabaseManager: NSObject {
         let data = object.value as! [String:Any]
         guard let name = data["name"] as? String,
               let center = data["center"] as? [Double],
-              let bounds = data["bounds"] as? [String:[Double]],
-              let animals = data["animals"] as? [AnyCodable] else { return }
+              let bounds = data["bounds"] as? [String:[Double]] else { return }
+//              let animals = data["animals"] as? [AnyCodable] else { return }
+              let animals = [AnyCodable]()
 
         guard let managedContext = managedContext else { return }
         let entity = NSEntityDescription.entity(forEntityName: "ManagedPreserve", in: managedContext)!
