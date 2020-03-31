@@ -3,3 +3,5 @@ github "mapbox/mapbox-events-ios" ~> 0.10
 
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseDatabaseBinary.json"
+
+github "Flight-School/AnyCodable" ~> 0.2.3

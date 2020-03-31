@@ -63,6 +63,7 @@
 		83C925462432393B001E38FE /* NewSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C925452432393B001E38FE /* NewSessionView.swift */; };
 		83C925482432394B001E38FE /* NewSessionNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C925472432394B001E38FE /* NewSessionNavigator.swift */; };
 		83C9254A24323968001E38FE /* NewSessionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83C9254924323968001E38FE /* NewSessionView.xib */; };
+		83C925592432F9AA001E38FE /* AnyCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C925582432F9AA001E38FE /* AnyCodable.framework */; };
 		83EB13C22426B51500D337C2 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB13C12426B51500D337C2 /* DatabaseManager.swift */; };
 		83EB13C42426C89800D337C2 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB13C32426C89800D337C2 /* SessionManager.swift */; };
 		83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE537C23E906C200E04182 /* AppDelegate.swift */; };
@@ -167,6 +168,7 @@
 		83C925452432393B001E38FE /* NewSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionView.swift; sourceTree = "<group>"; };
 		83C925472432394B001E38FE /* NewSessionNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionNavigator.swift; sourceTree = "<group>"; };
 		83C9254924323968001E38FE /* NewSessionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewSessionView.xib; sourceTree = "<group>"; };
+		83C925582432F9AA001E38FE /* AnyCodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnyCodable.framework; path = Carthage/Build/iOS/AnyCodable.framework; sourceTree = "<group>"; };
 		83EB13C12426B51500D337C2 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		83EB13C32426C89800D337C2 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		83FE537923E906C200E04182 /* Ellerbe Creek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ellerbe Creek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -394,6 +396,7 @@
 		83FE53AB23E91A3A00E04182 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83C925582432F9AA001E38FE /* AnyCodable.framework */,
 				8335C64B2429B08C00AA9BF3 /* GameKit.framework */,
 				838D486F23F24B2700E9FAAD /* libc++.tbd */,
 				838D487123F24C1C00E9FAAD /* PromisesObjC.framework */,
@@ -607,6 +610,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Mapbox.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/MapboxMobileEvents.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AnyCodable.framework",
 			);
 			outputFileListPaths = (
 			);
