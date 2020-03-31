@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import CoreData
 import UserNotifications
+import AnyCodable
 
 enum DatabaseType: String {
     case animals
@@ -121,7 +122,7 @@ class DatabaseManager: NSObject {
         guard let name = data["name"] as? String,
               let center = data["center"] as? [Double],
               let bounds = data["bounds"] as? [String:[Double]],
-              let animals = data["animals"] as? [Int:[Any]] else { return }
+              let animals = data["animals"] as? [AnyCodable] else { return }
 
         guard let managedContext = managedContext else { return }
         let entity = NSEntityDescription.entity(forEntityName: "ManagedPreserve", in: managedContext)!
@@ -181,7 +182,7 @@ class DatabaseManager: NSObject {
                 let name = object.value(forKey: "name") as! String
                 let center = object.value(forKey: "center") as! [Double]
                 let bounds = object.value(forKey: "bounds") as! [String:[Double]]
-                let animals = object.value(forKey: "animals") as! [Int:[Any]]
+                let animals = object.value(forKey: "animals") as! [AnyCodable]
                 
                 let preserve = Preserve(id: id, name: name, center: center, bounds: bounds, animals: animals)
                 preserves.append(preserve)
