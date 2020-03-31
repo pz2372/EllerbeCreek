@@ -36,6 +36,8 @@ class GameMapViewController: UIViewController, NibLoadable {
         return UIBarButtonItem(customView: button)
     }
     
+    private var isNewSessionViewPresented: Bool = false
+    
     // MARK: - UIViewController Lifecycle
     
     required init(navigator: GameMapNavigator) {
@@ -76,11 +78,18 @@ class GameMapViewController: UIViewController, NibLoadable {
     }
     
     @objc private func profileButtonAction() {
+        let alertController = UIAlertController(title: "User", message: "\(GCHelper.sharedInstance.getLocalUser())", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        present(alertController, animated: true, completion: nil)
+    }
     
     @objc private func presentNavigationBar() {
         let animated = true
+        isNewSessionViewPresented = false
+        
         guard let navigationController = navigationController else { return }
         navigationController.setNavigationBarHidden(false, animated: animated)
+        navigationController.setNavigationBarHidden(false, animated: true)
         
         self.gameMapView.headerViewTopConstraint.constant = 0.0
         self.gameMapView.setNeedsUpdateConstraints()
@@ -112,6 +121,13 @@ extension GameMapViewController: GameMapViewControllerDelegate {
                     let distance = userLocation.distance(from: preserveLocation)
                     
                     if distance < nearbyPreserveRadius {
+                        if !isNewSessionViewPresented {
+                            isNewSessionViewPresented = true
+                            
+                            storage.set(value: preserve, forKey: .currentPreserve)
+                            navigator.present(.profile, with: .overCurrentContext)
+                        }
+                        
                         self.title = preserve.name + " Preserve"
                         return preserve
                     } else {
@@ -127,4 +143,5 @@ extension GameMapViewController: GameMapViewControllerDelegate {
     func presentSighting() {
         navigator.present(.sighting)
     }
+    
 }
