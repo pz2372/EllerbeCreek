@@ -84,11 +84,9 @@ class GameMapViewController: UIViewController, NibLoadable {
     }
     
     @objc private func presentNavigationBar() {
-        let animated = true
         isNewSessionViewPresented = false
         
         guard let navigationController = navigationController else { return }
-        navigationController.setNavigationBarHidden(false, animated: animated)
         navigationController.setNavigationBarHidden(false, animated: true)
         
         self.gameMapView.headerViewTopConstraint.constant = 0.0

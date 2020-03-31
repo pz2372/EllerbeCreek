@@ -38,6 +38,8 @@ class NewSessionView: NibBasedView {
                 label.font = Fonts.bold.withSize(44.0)
                 label.textAlignment = .center
                 label.textColor = Colors.black
+                
+                label.text = "Beaver Marsh Preserve"
         
                 label.layer.shadowColor = Colors.black.cgColor
                 label.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)

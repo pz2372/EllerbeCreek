@@ -51,6 +51,9 @@ class NewSessionViewController: UIViewController {
         super.viewWillAppear(animated)
         
         setNeedsStatusBarAppearanceUpdate()
+        
+        let currentPreserve = storage.get(key: .currentPreserve, defaultValue: Preserve()) as Preserve
+        newSessionView.preserveLabel.text = currentPreserve.name + " Preserve"
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -69,6 +72,9 @@ extension NewSessionViewController: NewSessionViewControllerDelegate {
     func startNewSession() {
         dismiss(animated: true)
         NotificationCenter.default.post(name: Notification.Name(rawValue: "OnViewWillAppear"), object: nil)
+        
+        let currentPreserve = storage.get(key: .currentPreserve, defaultValue: Preserve()) as Preserve
+        SessionManager.shared.start(at: currentPreserve)
     }
     
 }
