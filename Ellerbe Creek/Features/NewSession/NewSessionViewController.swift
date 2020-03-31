@@ -52,8 +52,8 @@ class NewSessionViewController: UIViewController {
         
         setNeedsStatusBarAppearanceUpdate()
         
-        let currentPreserve = storage.get(key: .currentPreserve, defaultValue: Preserve()) as Preserve
-        newSessionView.preserveLabel.text = currentPreserve.name + " Preserve"
+        _ = storage.get(key: .currentPreserve, defaultValue: Preserve()) as Preserve
+        newSessionView.preserveLabel.text = "Beaver Marsh\nPreserve"
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
