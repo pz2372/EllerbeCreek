@@ -30,6 +30,7 @@ class GameMapNavigator: Navigator {
         if let rootController = dependencyContainer.navigationController.viewControllers.first {
             let viewController = makeViewController(for: destination)
             viewController.modalPresentationStyle = presentationStyle
+            viewController.modalPresentationCapturesStatusBarAppearance = true
             rootController.present(viewController, animated: true, completion: nil)
         }
     }
