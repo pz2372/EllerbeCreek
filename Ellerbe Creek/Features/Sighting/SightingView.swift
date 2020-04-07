@@ -9,13 +9,14 @@
 import UIKit
 import ARKit
 
-protocol SightingViewDelegate: class {
-    func sightingCompleted(_ completed: Bool)
-}
-
 class SightingView: NibBasedView {
     
     public weak var delegate: SightingViewControllerDelegate?
+    
+    private let mockNodeNames = ["frog", "fish", "bird", "beaver"]
+    
+    private var nodeName: String = ""
+    private var nodeModel: SCNNode = SCNNode()
     
     @IBOutlet var dismissButton: UIButton! {
         willSet {
@@ -32,16 +33,12 @@ class SightingView: NibBasedView {
     }
     
     
-    @IBOutlet var sceneView: ARSKView! {
+    @IBOutlet var sceneView: ARSCNView! {
         willSet {
             if let sceneView = newValue {
                 sceneView.delegate = self
-                
-                let scene = SightingScene(size: sceneView.bounds.size)
-                scene.scaleMode = .resizeFill
-                scene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-                scene.sightingViewDelegate = self
-                sceneView.presentScene(scene)
+                sceneView.antialiasingMode = .multisampling4X
+                sceneView.scene = SCNScene()
             }
         }
     }
@@ -77,8 +74,26 @@ class SightingView: NibBasedView {
     }
     
     private func setUp() {
+        nodeName = mockNodeNames.randomElement() ?? "beaver"
+        let modelScene = SCNScene(named: "Assets.scnassets/\(nodeName)/\(nodeName).dae")!
+        for child in modelScene.rootNode.childNodes {
+            nodeModel.name = nodeName
+            nodeModel.addChildNode(child as SCNNode)
+        }
+        
         let configuration = ARWorldTrackingConfiguration()
         sceneView.session.run(configuration)
+    }
+    
+    func getParent(_ nodeFound: SCNNode?) -> SCNNode? {
+        if let node = nodeFound {
+            if node.name == nodeName {
+                return node
+            } else if let parent = node.parent {
+                return getParent(parent)
+            }
+        }
+        return nil
     }
     
     @IBAction func dismissButtonAction() {
@@ -90,44 +105,54 @@ class SightingView: NibBasedView {
     
 }
 
-extension SightingView: ARSKViewDelegate {
+extension SightingView {
     
-    func session(_ session: ARSession, didFailWithError error: Error) {
-        print("Session Failed - probably due to lack of camera access")
-    }
-      
-    func sessionWasInterrupted(_ session: ARSession) {
-        print("Session interrupted")
-    }
-      
-    func sessionInterruptionEnded(_ session: ARSession) {
-        print("Session resumed")
-        sceneView.session.run(session.configuration!, options: [.resetTracking, .removeExistingAnchors])
-    }
-    
-    func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
-        var node: SKNode?
-        if let anchor = anchor as? Anchor {
-            if let type = anchor.type {
-                node = SKSpriteNode(imageNamed: type.rawValue)
-                node?.name = type.rawValue
-            }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let location = touches.first!.location(in: sceneView)
+
+        var hitTestOptions = [SCNHitTestOption: Any]()
+        hitTestOptions[SCNHitTestOption.boundingBoxOnly] = true
+        let hitResults: [SCNHitTestResult] = sceneView.hitTest(location, options: hitTestOptions)
+        
+        if let hit = hitResults.first {
+          if let node = getParent(hit.node) {
+            node.removeFromParentNode()
+            
+            guard let delegate = delegate else { return }
+            sceneView.session.pause()
+            delegate.showSightingDetail()
+            
+            return
+          }
         }
         
-        return node
+        let hitResultsFeaturePoints: [ARHitTestResult] = sceneView.hitTest(location, types: .featurePoint)
+        if let hit = hitResultsFeaturePoints.first {
+            // Get a transformation matrix with the euler angle of the camera
+            let rotate = simd_float4x4(SCNMatrix4MakeRotation(sceneView.session.currentFrame!.camera.eulerAngles.y, 0, 1, 0))
+
+            // Combine both transformation matrices
+            let finalTransform = simd_mul(hit.worldTransform, rotate)
+
+            // Use the resulting matrix to position the anchor
+            sceneView.session.add(anchor: ARAnchor(transform: finalTransform))
+        }
     }
     
 }
 
-extension SightingView: SightingViewDelegate {
+extension SightingView: ARSCNViewDelegate {
     
-    func sightingCompleted(_ completed: Bool) {
-        sceneView.session.pause()
-        
-        if completed {
-            delegate?.showSightingDetail()
-        } else {
-            delegate?.showGameMap()
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        if !anchor.isKind(of: ARPlaneAnchor.self) {
+            DispatchQueue.main.async {
+                let modelClone = self.nodeModel.clone()
+                modelClone.position = SCNVector3(0.0, -1.0, -1.0)
+                modelClone.scale = SCNVector3(0.075, 0.075, 0.075)
+
+                // Add model as a child of the node
+                node.addChildNode(modelClone)
+            }
         }
     }
     
