@@ -49,7 +49,6 @@
 		838D485E23F2482A00E9FAAD /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485D23F2482A00E9FAAD /* FirebaseDatabase.framework */; };
 		838D486023F2483A00E9FAAD /* FirebaseInstallations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485F23F2483A00E9FAAD /* FirebaseInstallations.framework */; };
 		838D486523F2484200E9FAAD /* GoogleDataTransportCCTSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D486123F2484200E9FAAD /* GoogleDataTransportCCTSupport.framework */; };
-		838D486623F2484200E9FAAD /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D486223F2484200E9FAAD /* FirebaseInstanceID.framework */; };
 		838D486723F2484200E9FAAD /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D486323F2484200E9FAAD /* GoogleAppMeasurement.framework */; };
 		838D486823F2484200E9FAAD /* GoogleDataTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D486423F2484200E9FAAD /* GoogleDataTransport.framework */; };
 		838D486A23F2484F00E9FAAD /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D486923F2484F00E9FAAD /* GoogleUtilities.framework */; };
@@ -93,6 +92,11 @@
 		83FE53E423E9F83700E04182 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FE53E323E9F83600E04182 /* SF-Pro-Rounded-Regular.otf */; };
 		83FE53E623E9F83F00E04182 /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FE53E523E9F83F00E04182 /* SF-Pro-Rounded-Semibold.otf */; };
 		83FE53E823E9F8C800E04182 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53E723E9F8C800E04182 /* Fonts.swift */; };
+		C42FD0D1243CE77200B7528D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C42FD0D0243CE77200B7528D /* GoogleService-Info.plist */; };
+		C42FD0D8243CEF7E00B7528D /* UserSessionsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FD0D7243CEF7E00B7528D /* UserSessionsNavigator.swift */; };
+		C42FD0DA243CEF8D00B7528D /* UserSessionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FD0D9243CEF8D00B7528D /* UserSessionsView.swift */; };
+		C42FD0DC243CEF9E00B7528D /* UserSessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FD0DB243CEF9E00B7528D /* UserSessionsViewController.swift */; };
+		C42FD0DE243CEFC200B7528D /* UserSessionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C42FD0DD243CEFC200B7528D /* UserSessionsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -153,7 +157,6 @@
 		838D485D23F2482A00E9FAAD /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Carthage/Build/iOS/FirebaseDatabase.framework; sourceTree = "<group>"; };
 		838D485F23F2483A00E9FAAD /* FirebaseInstallations.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstallations.framework; path = Carthage/Build/iOS/FirebaseInstallations.framework; sourceTree = "<group>"; };
 		838D486123F2484200E9FAAD /* GoogleDataTransportCCTSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleDataTransportCCTSupport.framework; path = Carthage/Build/iOS/GoogleDataTransportCCTSupport.framework; sourceTree = "<group>"; };
-		838D486223F2484200E9FAAD /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Carthage/Build/iOS/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		838D486323F2484200E9FAAD /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Carthage/Build/iOS/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
 		838D486423F2484200E9FAAD /* GoogleDataTransport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleDataTransport.framework; path = Carthage/Build/iOS/GoogleDataTransport.framework; sourceTree = "<group>"; };
 		838D486923F2484F00E9FAAD /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Carthage/Build/iOS/GoogleUtilities.framework; sourceTree = "<group>"; };
@@ -199,6 +202,11 @@
 		83FE53E323E9F83600E04182 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
 		83FE53E523E9F83F00E04182 /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
 		83FE53E723E9F8C800E04182 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		C42FD0D0243CE77200B7528D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C42FD0D7243CEF7E00B7528D /* UserSessionsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionsNavigator.swift; sourceTree = "<group>"; };
+		C42FD0D9243CEF8D00B7528D /* UserSessionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionsView.swift; sourceTree = "<group>"; };
+		C42FD0DB243CEF9E00B7528D /* UserSessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionsViewController.swift; sourceTree = "<group>"; };
+		C42FD0DD243CEFC200B7528D /* UserSessionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserSessionsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,7 +227,6 @@
 				838D485A23F2481D00E9FAAD /* FirebaseCore.framework in Frameworks */,
 				83FE53AD23E91A3A00E04182 /* Mapbox.framework in Frameworks */,
 				838D485C23F2482400E9FAAD /* FirebaseCoreDiagnostics.framework in Frameworks */,
-				838D486623F2484200E9FAAD /* FirebaseInstanceID.framework in Frameworks */,
 				8335C64C2429B08C00AA9BF3 /* GameKit.framework in Frameworks */,
 				838D486823F2484200E9FAAD /* GoogleDataTransport.framework in Frameworks */,
 				838D486A23F2484F00E9FAAD /* GoogleUtilities.framework in Frameworks */,
@@ -387,6 +394,7 @@
 				83FE538523E906C300E04182 /* Assets.xcassets */,
 				83FE538723E906C300E04182 /* LaunchScreen.storyboard */,
 				83FE538A23E906C300E04182 /* Info.plist */,
+				C42FD0D0243CE77200B7528D /* GoogleService-Info.plist */,
 				837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */,
 				83FE53E023E9F7D100E04182 /* Fonts */,
 				831C245C23FC7EB900369C31 /* GPX */,
@@ -404,7 +412,6 @@
 				838D486D23F24A3500E9FAAD /* leveldb-library.framework */,
 				838D486B23F249C800E9FAAD /* nanopb.framework */,
 				838D486923F2484F00E9FAAD /* GoogleUtilities.framework */,
-				838D486223F2484200E9FAAD /* FirebaseInstanceID.framework */,
 				838D486323F2484200E9FAAD /* GoogleAppMeasurement.framework */,
 				838D486423F2484200E9FAAD /* GoogleDataTransport.framework */,
 				838D486123F2484200E9FAAD /* GoogleDataTransportCCTSupport.framework */,
@@ -441,6 +448,7 @@
 		83FE53B823E91E5F00E04182 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C42FD0D2243CEB9C00B7528D /* UserSessions */,
 				834D65B72427F557008587DC /* Onboarding */,
 				8314B04F2404C4BD00894333 /* SightingDetail */,
 				831C244B23F754BA00369C31 /* Sighting */,
@@ -517,6 +525,17 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		C42FD0D2243CEB9C00B7528D /* UserSessions */ = {
+			isa = PBXGroup;
+			children = (
+				C42FD0D7243CEF7E00B7528D /* UserSessionsNavigator.swift */,
+				C42FD0D9243CEF8D00B7528D /* UserSessionsView.swift */,
+				C42FD0DB243CEF9E00B7528D /* UserSessionsViewController.swift */,
+				C42FD0DD243CEFC200B7528D /* UserSessionsView.xib */,
+			);
+			path = UserSessions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -546,7 +565,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Ryan Anderson";
 				TargetAttributes = {
 					83FE537823E906C200E04182 = {
@@ -588,12 +607,14 @@
 				83C9254A24323968001E38FE /* NewSessionView.xib in Resources */,
 				83FE538423E906C200E04182 /* Main.storyboard in Resources */,
 				83FE53C123E9202400E04182 /* GameMapView.xib in Resources */,
+				C42FD0D1243CE77200B7528D /* GoogleService-Info.plist in Resources */,
 				834D65C7242833B1008587DC /* PermissionsView.xib in Resources */,
 				8314B0552404C4F200894333 /* SightingDetailView.xib in Resources */,
 				834D65C224283204008587DC /* InterestView.xib in Resources */,
 				8314B05F2404CC2F00894333 /* SightingScene.sks in Resources */,
 				834D65CE24295F8B008587DC /* WelcomeView.xib in Resources */,
 				831C245B23F755FB00369C31 /* SightingView.xib in Resources */,
+				C42FD0DE243CEFC200B7528D /* UserSessionsView.xib in Resources */,
 				8335C6502429CA0500AA9BF3 /* PermissionDescriptionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,10 +656,12 @@
 				83FE53D423E9B39100E04182 /* UIViewController+NibLoadable.swift in Sources */,
 				83EB13C22426B51500D337C2 /* DatabaseManager.swift in Sources */,
 				83C925462432393B001E38FE /* NewSessionView.swift in Sources */,
+				C42FD0D8243CEF7E00B7528D /* UserSessionsNavigator.swift in Sources */,
 				831C245523F755BD00369C31 /* SightingNavigator.swift in Sources */,
 				83C925422432391F001E38FE /* NewSessionViewController.swift in Sources */,
 				8314B0532404C4E700894333 /* SightingDetailView.swift in Sources */,
 				83936E2123EB3D3300C9FA1A /* Preserve.swift in Sources */,
+				C42FD0DC243CEF9E00B7528D /* UserSessionsViewController.swift in Sources */,
 				83879C0C24268C630022F7DD /* LocationNotificationScheduler.swift in Sources */,
 				83FE53BD23E91FFC00E04182 /* GameMapView.swift in Sources */,
 				83FE53BF23E9200F00E04182 /* GameMapViewController.swift in Sources */,
@@ -657,7 +680,6 @@
 				8314B0512404C4D900894333 /* SightingDetailNavigator.swift in Sources */,
 				8314B0592404C96800894333 /* SightingScene.swift in Sources */,
 				83FE53D023E9AFFB00E04182 /* Session.swift in Sources */,
-				83FE53D023E9AFFB00E04182 /* Session.swift in Sources */,
 				834D65B22427F4FB008587DC /* OnboardingView.swift in Sources */,
 				834D65B92427F57A008587DC /* OnboardingNavigator.swift in Sources */,
 				8346C8CF240588D600843887 /* Separator.swift in Sources */,
@@ -675,6 +697,7 @@
 				834D65B42427F534008587DC /* OnboardingViewController.swift in Sources */,
 				83FE53C923E9AF9100E04182 /* Navigator.swift in Sources */,
 				8314B05D2404CBA800894333 /* NodeType.swift in Sources */,
+				C42FD0DA243CEF8D00B7528D /* UserSessionsView.swift in Sources */,
 				83FE537D23E906C200E04182 /* AppDelegate.swift in Sources */,
 				837ADE0B23F307AE00F88979 /* EllerbeCreek.xcdatamodeld in Sources */,
 				83FE53C423E9AE9200E04182 /* Storage.swift in Sources */,
