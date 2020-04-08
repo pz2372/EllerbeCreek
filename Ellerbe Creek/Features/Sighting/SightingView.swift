@@ -15,6 +15,7 @@ class SightingView: NibBasedView {
     
     private let mockNodeNames = ["frog", "fish", "bird", "beaver"]
     
+    private var isNodePresent: Bool = false
     private var nodeName: String = ""
     private var nodeModel: SCNNode = SCNNode()
     
@@ -125,34 +126,21 @@ extension SightingView {
             return
           }
         }
-        
-        let hitResultsFeaturePoints: [ARHitTestResult] = sceneView.hitTest(location, types: .featurePoint)
-        if let hit = hitResultsFeaturePoints.first {
-            // Get a transformation matrix with the euler angle of the camera
-            let rotate = simd_float4x4(SCNMatrix4MakeRotation(sceneView.session.currentFrame!.camera.eulerAngles.y, 0, 1, 0))
-
-            // Combine both transformation matrices
-            let finalTransform = simd_mul(hit.worldTransform, rotate)
-
-            // Use the resulting matrix to position the anchor
-            sceneView.session.add(anchor: ARAnchor(transform: finalTransform))
-        }
     }
     
 }
 
 extension SightingView: ARSCNViewDelegate {
     
-    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        if !anchor.isKind(of: ARPlaneAnchor.self) {
-            DispatchQueue.main.async {
-                let modelClone = self.nodeModel.clone()
-                modelClone.position = SCNVector3(0.0, -1.0, -1.0)
-                modelClone.scale = SCNVector3(0.075, 0.075, 0.075)
+    func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+        if !isNodePresent {
+            isNodePresent = true
 
-                // Add model as a child of the node
-                node.addChildNode(modelClone)
-            }
+            let modelClone = self.nodeModel.clone()
+            modelClone.position = SCNVector3(0.0, -1.0, -1.0)
+            modelClone.scale = SCNVector3(0.075, 0.075, 0.075)
+
+            sceneView.scene.rootNode.addChildNode(modelClone)
         }
     }
     

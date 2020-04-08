@@ -11,7 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SightingView" customModule="Ellerbe_Creek" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="wwx-oe-IY3"/>
-                <outlet property="dismissButton" destination="viN-xT-8dI" id="uYk-1C-zjp"/>
+                <outlet property="dismissButton" destination="viN-xT-8dI" id="TQ0-ki-cvO"/>
                 <outlet property="instructionsLabel" destination="fny-4w-ZWZ" id="1AD-04-8zr"/>
                 <outlet property="sceneView" destination="xcX-o0-tGm" id="MPE-xl-3Dl"/>
             </connections>
@@ -32,6 +32,9 @@
                         <constraint firstAttribute="width" constant="44" id="wlf-hi-g9c"/>
                     </constraints>
                     <state key="normal" title="Dismiss"/>
+                    <connections>
+                        <action selector="dismissButtonAction" destination="-1" eventType="touchUpInside" id="r0V-UZ-Jki"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the animal to observe it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fny-4w-ZWZ">
                     <rect key="frame" x="32" y="825" width="350" height="21"/>
