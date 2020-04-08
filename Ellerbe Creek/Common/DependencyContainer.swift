@@ -42,5 +42,9 @@ class DependencyContainer: CoreDependencyContainer, KeyValueStorable {
         return NewSessionViewController(navigator: NewSessionNavigator(dependencyContainer: self))
     }
     
+    func makeProfileViewController() -> ProfileViewController {
+        return ProfileViewController(navigator: ProfileNavigator(dependencyContainer: self))
+    }
+    
 }
 
