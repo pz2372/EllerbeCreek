@@ -40,7 +40,7 @@ class GameMapNavigator: Navigator {
         
         switch destination {
         case .profile:
-            break
+            return dependencyContainer.makeProfileViewController()
         case .sighting:
             return dependencyContainer.makeSightingViewController()
         case .newSession:
