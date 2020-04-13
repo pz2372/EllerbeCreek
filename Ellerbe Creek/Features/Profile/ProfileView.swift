@@ -30,17 +30,16 @@ class ProfileView: NibBasedView {
     }
     
     private func updateHeaderView(with value: Int) {
-//        let headerText = NSMutableAttributedString.init(string: value == 1 ? "\(value) point" : "\(value) points")
-//
-//        // Adds a custom font and size for sightings value in the headerText string
-//        headerText.setAttributes([NSAttributedString.Key.font: Fonts.bold.withSize(86.0)],
-//                                 range: NSMakeRange(0, "\(value)".count))
-//
-//        // Vertically centers the 'sightings nearby' description following the sighting value in the headerText string
+        let headerText = NSMutableAttributedString.init(string: value == 1 ? "\(value) total\npoint" : "\(value) total\npoints")
+
+        // Adds a custom font and size for sightings value in the headerText string
+        headerText.setAttributes([NSAttributedString.Key.font: Fonts.bold.withSize(86.0)],
+                                 range: NSMakeRange(0, "\(value)".count))
+
+        // Vertically centers the 'sightings nearby' description following the sighting value in the headerText string
 //        headerText.setAttributes([NSAttributedString.Key.baselineOffset: 20.0], range: NSMakeRange("\(value)".count, headerText.length-1))
-//
-//        headerView.mainLabel.attributedText = headerText
-        headerView.mainLabel.text = "12 points"
+
+        headerView.mainLabel.attributedText = headerText
     }
     
 }
