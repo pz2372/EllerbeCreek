@@ -1,18 +1,17 @@
 //
-//  GameMapNavigator.swift
+//  ProfileNavigator.swift
 //  Ellerbe Creek
 //
-//  Created by Ryan Anderson on 2/3/20.
+//  Created by Ryan Anderson on 4/7/20.
 //  Copyright © 2020 Ryan Anderson. All rights reserved.
 //
 
 import UIKit
 
-class GameMapNavigator: Navigator {
+class ProfileNavigator: Navigator {
     enum Destination {
-        case profile
-        case sighting
-        case newSession
+        case gameMap
+        case sessionDetail
     }
     
     var dependencyContainer: CoreDependencyContainer & KeyValueStorable
@@ -21,7 +20,7 @@ class GameMapNavigator: Navigator {
         self.dependencyContainer = dependencyContainer
     }
     
-    func navigate(to destination: GameMapNavigator.Destination) {
+    func navigate(to destination: ProfileNavigator.Destination) {
         let viewController = makeViewController(for: destination)
         dependencyContainer.navigationController.viewControllers = [viewController]
     }
@@ -39,14 +38,14 @@ class GameMapNavigator: Navigator {
         // TODO: Create profile view controller
         
         switch destination {
-        case .profile:
-            let controller = dependencyContainer.makeProfileViewController()
-            dependencyContainer.profileNavigationController.viewControllers = [controller]
-            return dependencyContainer.profileNavigationController
-        case .sighting:
-            return dependencyContainer.makeSightingViewController()
-        case .newSession:
-            return dependencyContainer.makeNewSessionViewController()
+        case .gameMap:
+            return dependencyContainer.makeGameMapViewController()
+        case .sessionDetail:
+            break
         }
+        
+        return UIViewController()
     }
 }
+
+

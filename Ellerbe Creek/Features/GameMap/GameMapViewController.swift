@@ -36,6 +36,15 @@ class GameMapViewController: UIViewController, NibLoadable {
         return UIBarButtonItem(customView: button)
     }
     
+    private var sessionButton: UIBarButtonItem! {
+        let button = UIButton(frame: CGRect(x: 0.0, y: 0.0, width: 36.0, height: 36.0))
+        button.setTitle("", for: .normal)
+        button.setBackgroundImage(UIImage(named: "User"), for: .normal)
+        button.addTarget(self, action: #selector(profileButtonAction), for: .touchUpInside)
+        
+        return UIBarButtonItem(customView: button)
+    }
+    
     private var isNewSessionViewPresented: Bool = false
     
     // MARK: - UIViewController Lifecycle
@@ -79,9 +88,10 @@ class GameMapViewController: UIViewController, NibLoadable {
     }
     
     @objc private func profileButtonAction() {
-        let alertController = UIAlertController(title: "User", message: "\(GCHelper.sharedInstance.getLocalUser())", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
-        present(alertController, animated: true, completion: nil)
+//        let alertController = UIAlertController(title: "User", message: "\(GCHelper.sharedInstance.getLocalUser())", preferredStyle: .alert)
+//        alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+//        present(alertController, animated: true, completion: nil)
+        navigator.present(.profile)
     }
     
     @objc private func presentNavigationBar() {

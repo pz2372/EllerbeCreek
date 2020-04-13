@@ -12,4 +12,5 @@ protocol ViewControllerFactory {
     func makeSightingDetailViewController() -> SightingDetailViewController
     func makeOnboardingViewController() -> OnboardingViewController
     func makeNewSessionViewController() -> NewSessionViewController
+    func makeProfileViewController() -> ProfileViewController
 }

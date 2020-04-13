@@ -17,6 +17,8 @@ class DependencyContainer: CoreDependencyContainer, KeyValueStorable {
     
     // MARK: - SystemNavigatable
     let navigationController = MainNavigationController()
+
+    let profileNavigationController = MainNavigationController()
     
     // MARK: - KeyValueStorable
     lazy var storage = Storage()
@@ -40,6 +42,10 @@ class DependencyContainer: CoreDependencyContainer, KeyValueStorable {
     
     func makeNewSessionViewController() -> NewSessionViewController {
         return NewSessionViewController(navigator: NewSessionNavigator(dependencyContainer: self))
+    }
+    
+    func makeProfileViewController() -> ProfileViewController {
+        return ProfileViewController(navigator: ProfileNavigator(dependencyContainer: self))
     }
     
 }
