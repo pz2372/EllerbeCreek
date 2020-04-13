@@ -91,7 +91,7 @@ class GameMapViewController: UIViewController, NibLoadable {
 //        let alertController = UIAlertController(title: "User", message: "\(GCHelper.sharedInstance.getLocalUser())", preferredStyle: .alert)
 //        alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
 //        present(alertController, animated: true, completion: nil)
-        navigator.navigate(to: .profile)
+        navigator.present(.profile)
     }
     
     @objc private func presentNavigationBar() {

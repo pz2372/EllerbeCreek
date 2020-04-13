@@ -40,13 +40,13 @@ class GameMapNavigator: Navigator {
         
         switch destination {
         case .profile:
-            return dependencyContainer.makeProfileViewController()
+            let controller = dependencyContainer.makeProfileViewController()
+            dependencyContainer.profileNavigationController.viewControllers = [controller]
+            return dependencyContainer.profileNavigationController
         case .sighting:
             return dependencyContainer.makeSightingViewController()
         case .newSession:
             return dependencyContainer.makeNewSessionViewController()
         }
-        
-        return UIViewController()
     }
 }
