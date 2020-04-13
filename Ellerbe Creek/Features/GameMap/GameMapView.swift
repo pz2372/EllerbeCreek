@@ -63,7 +63,6 @@ class GameMapView: NibBasedView {
         mapView.delegate = self
         mapView.showsUserLocation = true
         mapView.userTrackingMode = .follow
-        mapView.setCenter(CLLocationCoordinate2D(latitude: 36.018467, longitude: -78.883501), zoomLevel: 16.25, animated: false)
         mapView.minimumZoomLevel = 16.0
     }
     
@@ -226,6 +225,10 @@ extension GameMapView: CLLocationManagerDelegate {
             } else {
                 currentPreserve = nil
                 currentBounds = nil
+                
+                if let userLocation = locations.first {
+                    mapView.setCenter(userLocation.coordinate, animated: true)
+                }
             }
             
             updateMonitoredSightings()
