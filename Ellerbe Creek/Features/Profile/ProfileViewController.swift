@@ -22,20 +22,20 @@ class ProfileViewController: UIViewController {
     
     // MARK - Variables
     
-    private var gameMapButton: UIBarButtonItem! {
-        let button = UIButton(frame: CGRect(x: 0.0, y: 0.0, width: 36.0, height: 36.0))
+    private var dismissButton: UIBarButtonItem! {
+        let button = UIButton(frame: CGRect(x: 0.0, y: 0.0, width: 26.0, height: 26.0))
         button.setTitle("", for: .normal)
-        button.setBackgroundImage(UIImage(named: "User"), for: .normal)
-        button.addTarget(self, action: #selector(gameMapButtonAction), for: .touchUpInside)
+        button.setBackgroundImage(UIImage(named: "Close-1"), for: .normal)
+        button.addTarget(self, action: #selector(dismissAction), for: .touchUpInside)
         
         return UIBarButtonItem(customView: button)
     }
     
-    private var sessionButton: UIBarButtonItem! {
-        let button = UIButton(frame: CGRect(x: 0.0, y: 0.0, width: 36.0, height: 36.0))
+    private var settingsButton: UIBarButtonItem! {
+        let button = UIButton(frame: CGRect(x: 0.0, y: 0.0, width: 26.0, height: 26.0))
         button.setTitle("", for: .normal)
-        button.setBackgroundImage(UIImage(named: "User"), for: .normal)
-        button.addTarget(self, action: #selector(gameMapButtonAction), for: .touchUpInside)
+        button.setBackgroundImage(UIImage(named: "Settings"), for: .normal)
+        button.addTarget(self, action: #selector(settingsAction), for: .touchUpInside)
         
         return UIBarButtonItem(customView: button)
     }
@@ -66,7 +66,8 @@ class ProfileViewController: UIViewController {
         
         self.title = "andersonmryan"
         
-        navigationItem.leftBarButtonItem = gameMapButton
+        navigationItem.leftBarButtonItem = dismissButton
+        navigationItem.rightBarButtonItem = settingsButton
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -79,8 +80,12 @@ class ProfileViewController: UIViewController {
         return .lightContent
     }
     
-    @objc private func gameMapButtonAction() {
-        navigator.navigate(to: .gameMap)
+    @objc private func dismissAction() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @objc private func settingsAction() {
+        
     }
     
 }
