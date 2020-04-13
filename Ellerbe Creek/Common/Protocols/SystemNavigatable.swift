@@ -10,4 +10,5 @@ import UIKit
 
 protocol SystemNavigatable {
     var navigationController: MainNavigationController { get }
+    var profileNavigationController: MainNavigationController { get }
 }

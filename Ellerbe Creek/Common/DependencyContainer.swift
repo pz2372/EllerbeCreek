@@ -17,6 +17,8 @@ class DependencyContainer: CoreDependencyContainer, KeyValueStorable {
     
     // MARK: - SystemNavigatable
     let navigationController = MainNavigationController()
+
+    let profileNavigationController = MainNavigationController()
     
     // MARK: - KeyValueStorable
     lazy var storage = Storage()
