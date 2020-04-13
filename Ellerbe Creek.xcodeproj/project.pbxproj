@@ -462,6 +462,7 @@
 				831C244B23F754BA00369C31 /* Sighting */,
 				83FE53B923E91E7B00E04182 /* GameMap */,
 				83C9254B2432396F001E38FE /* NewSession */,
+				83A0DA1D243CFFDB00022833 /* Profile */,
 			);
 			path = Features;
 			sourceTree = "<group>";
