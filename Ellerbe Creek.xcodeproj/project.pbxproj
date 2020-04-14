@@ -47,7 +47,6 @@
 		838D485E23F2482A00E9FAAD /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485D23F2482A00E9FAAD /* FirebaseDatabase.framework */; };
 		838D486023F2483A00E9FAAD /* FirebaseInstallations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D485F23F2483A00E9FAAD /* FirebaseInstallations.framework */; };
 		838D486523F2484200E9FAAD /* GoogleDataTransportCCTSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D486123F2484200E9FAAD /* GoogleDataTransportCCTSupport.framework */; };
-		838D486623F2484200E9FAAD /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D486223F2484200E9FAAD /* FirebaseInstanceID.framework */; };
 		838D486723F2484200E9FAAD /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D486323F2484200E9FAAD /* GoogleAppMeasurement.framework */; };
 		838D486823F2484200E9FAAD /* GoogleDataTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D486423F2484200E9FAAD /* GoogleDataTransport.framework */; };
 		838D486A23F2484F00E9FAAD /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838D486923F2484F00E9FAAD /* GoogleUtilities.framework */; };
@@ -96,6 +95,8 @@
 		83FE53E423E9F83700E04182 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FE53E323E9F83600E04182 /* SF-Pro-Rounded-Regular.otf */; };
 		83FE53E623E9F83F00E04182 /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FE53E523E9F83F00E04182 /* SF-Pro-Rounded-Semibold.otf */; };
 		83FE53E823E9F8C800E04182 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE53E723E9F8C800E04182 /* Fonts.swift */; };
+		C436891B24461384007A9EFE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C436891A24461384007A9EFE /* GoogleService-Info.plist */; };
+		C436891D2446162B007A9EFE /* SessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C436891C2446162B007A9EFE /* SessionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -154,7 +155,6 @@
 		838D485D23F2482A00E9FAAD /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Carthage/Build/iOS/FirebaseDatabase.framework; sourceTree = "<group>"; };
 		838D485F23F2483A00E9FAAD /* FirebaseInstallations.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstallations.framework; path = Carthage/Build/iOS/FirebaseInstallations.framework; sourceTree = "<group>"; };
 		838D486123F2484200E9FAAD /* GoogleDataTransportCCTSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleDataTransportCCTSupport.framework; path = Carthage/Build/iOS/GoogleDataTransportCCTSupport.framework; sourceTree = "<group>"; };
-		838D486223F2484200E9FAAD /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Carthage/Build/iOS/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		838D486323F2484200E9FAAD /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Carthage/Build/iOS/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
 		838D486423F2484200E9FAAD /* GoogleDataTransport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleDataTransport.framework; path = Carthage/Build/iOS/GoogleDataTransport.framework; sourceTree = "<group>"; };
 		838D486923F2484F00E9FAAD /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Carthage/Build/iOS/GoogleUtilities.framework; sourceTree = "<group>"; };
@@ -205,6 +205,8 @@
 		83FE53E323E9F83600E04182 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
 		83FE53E523E9F83F00E04182 /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
 		83FE53E723E9F8C800E04182 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		C436891A24461384007A9EFE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C436891C2446162B007A9EFE /* SessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,7 +227,6 @@
 				838D485A23F2481D00E9FAAD /* FirebaseCore.framework in Frameworks */,
 				83FE53AD23E91A3A00E04182 /* Mapbox.framework in Frameworks */,
 				838D485C23F2482400E9FAAD /* FirebaseCoreDiagnostics.framework in Frameworks */,
-				838D486623F2484200E9FAAD /* FirebaseInstanceID.framework in Frameworks */,
 				8335C64C2429B08C00AA9BF3 /* GameKit.framework in Frameworks */,
 				838D486823F2484200E9FAAD /* GoogleDataTransport.framework in Frameworks */,
 				838D486A23F2484F00E9FAAD /* GoogleUtilities.framework in Frameworks */,
@@ -360,6 +361,7 @@
 				83A0DA1B243CFFD300022833 /* ProfileView.xib */,
 				83A0DA17243CFFB900022833 /* ProfileView.swift */,
 				83A0DA15243CFEA500022833 /* ProfileViewController.swift */,
+				C436891C2446162B007A9EFE /* SessionCell.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -403,6 +405,7 @@
 				83E914EF243CE91B002FFB14 /* Assets.scnassets */,
 				83FE538723E906C300E04182 /* LaunchScreen.storyboard */,
 				83FE538A23E906C300E04182 /* Info.plist */,
+				C436891A24461384007A9EFE /* GoogleService-Info.plist */,
 				837ADE0923F307AE00F88979 /* EllerbeCreek.xcdatamodeld */,
 				83FE53E023E9F7D100E04182 /* Fonts */,
 				831C245C23FC7EB900369C31 /* GPX */,
@@ -420,7 +423,6 @@
 				838D486D23F24A3500E9FAAD /* leveldb-library.framework */,
 				838D486B23F249C800E9FAAD /* nanopb.framework */,
 				838D486923F2484F00E9FAAD /* GoogleUtilities.framework */,
-				838D486223F2484200E9FAAD /* FirebaseInstanceID.framework */,
 				838D486323F2484200E9FAAD /* GoogleAppMeasurement.framework */,
 				838D486423F2484200E9FAAD /* GoogleDataTransport.framework */,
 				838D486123F2484200E9FAAD /* GoogleDataTransportCCTSupport.framework */,
@@ -611,6 +613,7 @@
 				834D65CE24295F8B008587DC /* WelcomeView.xib in Resources */,
 				83A0DA1C243CFFD300022833 /* ProfileView.xib in Resources */,
 				831C245B23F755FB00369C31 /* SightingView.xib in Resources */,
+				C436891B24461384007A9EFE /* GoogleService-Info.plist in Resources */,
 				83E914F0243CE91B002FFB14 /* Assets.scnassets in Resources */,
 				8335C6502429CA0500AA9BF3 /* PermissionDescriptionView.xib in Resources */,
 			);
@@ -672,6 +675,7 @@
 				83A0DA16243CFEA500022833 /* ProfileViewController.swift in Sources */,
 				83FE53B423E91C3800E04182 /* Colors.swift in Sources */,
 				8335C653242A537800AA9BF3 /* GCHelper.swift in Sources */,
+				C436891D2446162B007A9EFE /* SessionCell.swift in Sources */,
 				8314B05B2404CB8300894333 /* AnchorType.swift in Sources */,
 				83FE53E823E9F8C800E04182 /* Fonts.swift in Sources */,
 				8314B0512404C4D900894333 /* SightingDetailNavigator.swift in Sources */,

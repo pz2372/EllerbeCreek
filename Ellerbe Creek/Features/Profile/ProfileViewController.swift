@@ -12,13 +12,21 @@ protocol ProfileViewControllerDelegate: class {
     
 }
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
     
     // MARK - Constants
     
     private let navigator: ProfileNavigator
     private let storage: Storage
     private let profileView: ProfileView = ProfileView()
+    private let tableview: UITableView = {
+        let tv = UITableView()
+        tv.backgroundColor = UIColor.white
+        tv.translatesAutoresizingMaskIntoConstraints = false
+        return tv
+    }()
     
     // MARK - Variables
     
@@ -64,10 +72,45 @@ class ProfileViewController: UIViewController {
 
         self.profileView.delegate = self
         
+        //TODO: fetch profile object from db
+        
         self.title = "andersonmryan"
         
         navigationItem.leftBarButtonItem = dismissButton
         navigationItem.rightBarButtonItem = settingsButton
+        setupTableView()
+    }
+    
+    func setupTableView() {
+        tableview.delegate = self
+        tableview.dataSource = self
+        tableview.register(SessionCell.self, forCellReuseIdentifier: "cellId")
+        
+        view.addSubview(tableview)
+        
+        NSLayoutConstraint.activate([
+            tableview.topAnchor.constraint(equalTo: self.view.topAnchor),
+            tableview.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            tableview.rightAnchor.constraint(equalTo: self.view.rightAnchor),
+            tableview.leftAnchor.constraint(equalTo: self.view.leftAnchor)
+        ])
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableview.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! SessionCell
+        cell.backgroundColor = UIColor.white
+        
+        //MARK data fetch for cells happens here
+        
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
     override func viewWillAppear(_ animated: Bool) {
