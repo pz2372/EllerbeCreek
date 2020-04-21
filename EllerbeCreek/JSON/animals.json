@@ -42,7 +42,7 @@
     {
         "id":           5,
         "name":         "Bluebird",
-        "description":  "Description of bluebird",
+        "description":  "Description of Bluebird",
         "infoLink":     "https://en.wikipedia.org/wiki/Bluebird",
         "type":         "bird",
         "rarity":       "low"
@@ -50,7 +50,7 @@
     {
         "id":           6,
         "name":         "Bullfrog",
-        "description":  "Description of bullfrog",
+        "description":  "Description of Bullfrog",
         "infoLink":     "https://en.wikipedia.org/wiki/American_bullfrog",
         "type":         "amphibian",
         "rarity":       "low"
