@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SessionHeaderView" customModule="EllerbeCreek" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="8nl-H9-OZS"/>
+                <outlet property="preserveNameLabel" destination="CMz-XZ-VMU" id="vZe-DZ-ab2"/>
+                <outlet property="totalPointsLabel" destination="NSR-FU-dAe" id="LEn-ns-dv4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MLT-el-oES">
+                    <rect key="frame" x="16" y="0.0" width="382" height="82"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSR-FU-dAe">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="53.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMz-XZ-VMU">
+                            <rect key="frame" x="0.0" y="61.5" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLv-oO-VuV" customClass="Separator" customModule="EllerbeCreek" customModuleProvider="target">
+                    <rect key="frame" x="16" y="90" width="382" height="6"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="Oza-SP-Skr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="zLv-oO-VuV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="3Jd-Bv-eUv"/>
+                <constraint firstItem="MLT-el-oES" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="aVT-zY-TjP"/>
+                <constraint firstAttribute="trailing" secondItem="zLv-oO-VuV" secondAttribute="trailing" constant="16" id="hiO-4x-9ak"/>
+                <constraint firstAttribute="bottom" secondItem="zLv-oO-VuV" secondAttribute="bottom" constant="8" id="j75-vo-IqZ"/>
+                <constraint firstItem="zLv-oO-VuV" firstAttribute="top" secondItem="MLT-el-oES" secondAttribute="bottom" constant="8" id="u86-y6-qwF"/>
+                <constraint firstAttribute="trailing" secondItem="MLT-el-oES" secondAttribute="trailing" constant="16" id="vsp-23-LX0"/>
+                <constraint firstItem="MLT-el-oES" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yZ7-Xe-Ytv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>
