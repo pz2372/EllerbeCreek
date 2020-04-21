@@ -38,5 +38,150 @@
         "infoLink":     "https://en.wikipedia.org/wiki/Pantherophis_obsoletus",
         "type":         "reptile",
         "rarity":       "low"
+    },
+    {
+        "id":           5,
+        "name":         "Bluebird",
+        "description":  "Description of Bluebird",
+        "infoLink":     "https://en.wikipedia.org/wiki/Bluebird",
+        "type":         "bird",
+        "rarity":       "low"
+    },
+    {
+        "id":           6,
+        "name":         "Bullfrog",
+        "description":  "Description of Bullfrog",
+        "infoLink":     "https://en.wikipedia.org/wiki/American_bullfrog",
+        "type":         "amphibian",
+        "rarity":       "low"
+    },
+    {
+        "id":           7,
+        "name":         "Canada Goose",
+        "description":  "Description of Canada Goose",
+        "infoLink":     "https://en.wikipedia.org/wiki/Canada_goose",
+        "type":         "bird",
+        "rarity":       "low"
+    },
+    {
+        "id":           8,
+        "name":         "Carolina Wren",
+        "description":  "Description of Carolina Wren",
+        "infoLink":     "https://en.wikipedia.org/wiki/Carolina_wren",
+        "type":         "bird",
+        "rarity":       "low"
+    },
+    {
+        "id":           9,
+        "name":         "Chorus Frog",
+        "description":  "Description of Chrous Frog",
+        "infoLink":     "https://en.wikipedia.org/wiki/Chorus_frog",
+        "type":         "amphibian",
+        "rarity":       "medium"
+    },
+    {
+        "id":           10,
+        "name":         "Common Yellowthroat",
+        "description":  "Description of Common Yellowthroat",
+        "infoLink":     "https://en.wikipedia.org/wiki/Common_yellowthroat",
+        "type":         "bird",
+        "rarity":       "low"
+    }
+    ,
+    {
+        "id":11,
+        "name":"Copperhead",
+        "description":"Description of Copperhead",
+        "infoLink":"https://en.wikipedia.org/wiki/Agkistrodon_contortrix",
+        "type":"reptile",
+        "rarity":"high"
+    }
+    ,
+    {
+        "id":12,
+        "name":"Coyote",
+        "description":"Description of Coyote",
+        "infoLink":"https://en.wikipedia.org/wiki/Coyote",
+        "type":"mammal",
+        "rarity":"medium"
+    }
+    ,
+    {
+        "id":13,
+        "name":"Crayfish",
+        "description":"Description of Crayfish",
+        "infoLink":"https://en.wikipedia.org/wiki/Crayfish",
+        "type":"invertebrate",
+        "rarity":"low"
+    }
+    ,
+    {
+        "id":14,
+        "name":"Cricket Frog",
+        "description":"Description of Cricket Frog",
+        "infoLink":"https://en.wikipedia.org/wiki/Cricket_frog",
+        "type":"amphibian",
+        "rarity":"medium"
+    }
+    ,
+    {
+        "id":15,
+        "name":"Eastern Box Turtle",
+        "description":"Description of Eastern Box Turtle",
+        "infoLink":"https://en.wikipedia.org/wiki/Eastern_box_turtle",
+        "type":"amphibian",
+        "rarity":"medium"
+    }
+    ,
+    {
+        "id":16,
+        "name":"Eastern Pond Hawk",
+        "description":"Description of Eastern Pond Hawk",
+        "infoLink":"https://en.wikipedia.org/wiki/Erythemis_simplicicollis",
+        "type":"insect",
+        "rarity":"high"
+    }
+    ,
+    {
+        "id": 17,
+        "name":"Eastern Red Bat",
+        "description":"Description of Eastern Red Bat",
+        "infoLink":"https://en.wikipedia.org/wiki/Eastern_red_bat",
+        "type":"mammal",
+        "rarity":"medium"
+    }
+    ,
+    {
+        "id": 18,
+        "name":"Great Blue Heron",
+        "description":"Description of Great Blue Heron",
+        "infoLink":"https://en.wikipedia.org/wiki/Great_blue_heron",
+        "type":"bird",
+        "rarity":"medium"
+    },
+    {
+        "id": 19,
+        "name":"Great Blue Skimmer",
+        "description":"Description of Great Blue Skimmer",
+        "infoLink":"https://en.wikipedia.org/wiki/Great_blue_skimmer",
+        "type":"invertebrate",
+        "rarity":"medium"
+    },
+    {
+        "id": 20,
+        "name":"Green Sunfish",
+        "description":"Description of Green Sunfish",
+        "infoLink":"https://en.wikipedia.org/wiki/Green_sunfish",
+        "type":"fish",
+        "rarity":"medium"
+        
+    },
+    {
+        "id": 21,
+        "name":"Green Tree Frog",
+        "description":"Description of Green Tree Frog",
+        "infoLink":"https://en.wikipedia.org/wiki/American_green_tree_frog",
+        "type":"amphibian",
+        "rarity":"medium"
     }
 ]
