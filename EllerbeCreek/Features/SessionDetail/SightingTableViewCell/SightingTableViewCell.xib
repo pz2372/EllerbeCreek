@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SightingTableViewCell" customModule="EllerbeCreek" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RsD-LM-cs6">
+                    <rect key="frame" x="16" y="8" width="311" height="72"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="T9N-uo-u1X">
+                            <rect key="frame" x="16" y="8" width="287" height="56"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vaA-EP-jtW">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="56"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="YKB-1o-Lry"/>
+                                        <constraint firstAttribute="height" constant="56" id="xv0-vb-Kmu"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDH-PT-9KQ">
+                                    <rect key="frame" x="68" y="0.0" width="106" height="56"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kOJ-8z-p6S">
+                                    <rect key="frame" x="182" y="0.0" width="105" height="56"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFI-Ed-24m">
+                                            <rect key="frame" x="0.0" y="0.0" width="105" height="35"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tm4-Oi-aAs">
+                                            <rect key="frame" x="0.0" y="35" width="105" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Egy-v8-tR7"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="105" id="Xoz-Eb-PbQ"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="T9N-uo-u1X" firstAttribute="leading" secondItem="RsD-LM-cs6" secondAttribute="leading" constant="16" id="Ogr-G6-ifM"/>
+                        <constraint firstAttribute="bottom" secondItem="T9N-uo-u1X" secondAttribute="bottom" constant="8" id="Q9N-PU-qV3"/>
+                        <constraint firstItem="T9N-uo-u1X" firstAttribute="top" secondItem="RsD-LM-cs6" secondAttribute="top" constant="8" id="cZI-b0-AXf"/>
+                        <constraint firstAttribute="trailing" secondItem="T9N-uo-u1X" secondAttribute="trailing" constant="8" id="oqj-fs-NgM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RsD-LM-cs6" secondAttribute="trailing" constant="16" id="HzN-ye-d5N"/>
+                <constraint firstItem="RsD-LM-cs6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="dPf-XJ-JD1"/>
+                <constraint firstAttribute="bottom" secondItem="RsD-LM-cs6" secondAttribute="bottom" constant="8" id="r0a-wt-bbQ"/>
+                <constraint firstItem="RsD-LM-cs6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="sol-rv-Lq0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="animalImageView" destination="vaA-EP-jtW" id="pUe-5E-TDg"/>
+                <outlet property="animalNameLabel" destination="pDH-PT-9KQ" id="Vy0-aW-PTc"/>
+                <outlet property="backgroundView" destination="RsD-LM-cs6" id="aZt-yY-5XQ"/>
+                <outlet property="pointsDescriptionLabel" destination="tm4-Oi-aAs" id="e2D-ba-8bp"/>
+                <outlet property="pointsLabel" destination="fFI-Ed-24m" id="Kzi-MG-Fxn"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>
