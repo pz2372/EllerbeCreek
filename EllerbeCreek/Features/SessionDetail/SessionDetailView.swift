@@ -205,14 +205,15 @@ extension SessionDetailView: MGLMapViewDelegate {
 extension SessionDetailView: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 12 //session.sightings.count
+        return session.sightings.count //12
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Cells.Sighting.id) as! SightingTableViewCell
         let index = indexPath.row
         
-        let sighting = Sighting(id: 4, animal: Animal(id: 0, name: "Bald-faced Hornet", description: Optional("Bald-faced Hornet description"), infoLink: "https://en.wikipedia.org/wiki/Bald-faced_hornet", type: AnimalType.invertebrate, rarity: AnimalRarity.medium), location: CLLocation(latitude: 36.0178153495306, longitude: -78.8837787588966)) //session.sightings[index]
+        let sighting = session.sightings[index]
+        //Sighting(id: 4, animal: Animal(id: 0, name: "Bald-faced Hornet", description: Optional("Bald-faced Hornet description"), infoLink: "https://en.wikipedia.org/wiki/Bald-faced_hornet", type: AnimalType.invertebrate, rarity: AnimalRarity.medium), location: CLLocation(latitude: 36.0178153495306, longitude: -78.8837787588966))
         
         guard let animalName = sighting.animal.name else { return cell }
         
