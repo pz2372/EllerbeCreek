@@ -6,3 +6,4 @@ Carthage/Checkouts
 Carthage/Build
 
 **/.DS_Store
+*.xcuserstate
