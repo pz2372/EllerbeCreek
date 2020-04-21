@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SessionTableViewCell" customModule="EllerbeCreek" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIf-Wq-WNy">
+                    <rect key="frame" x="16" y="8" width="311" height="72"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d56-KQ-aLJ">
+                            <rect key="frame" x="16" y="8" width="287" height="56"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3WV-ra-lmq">
+                                    <rect key="frame" x="0.0" y="0.0" width="182" height="56"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFb-Tg-Bix">
+                                            <rect key="frame" x="0.0" y="0.0" width="182" height="35.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQy-a4-b00">
+                                            <rect key="frame" x="0.0" y="35.5" width="182" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QGg-wI-8mF">
+                                    <rect key="frame" x="182" y="0.0" width="105" height="56"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsQ-lf-zIw">
+                                            <rect key="frame" x="0.0" y="0.0" width="105" height="35"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr8-kL-OJB">
+                                            <rect key="frame" x="0.0" y="35" width="105" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="rCm-mx-ori"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="105" id="bA3-GK-kfI"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="d56-KQ-aLJ" firstAttribute="top" secondItem="vIf-Wq-WNy" secondAttribute="top" constant="8" id="0fk-8h-k0Y"/>
+                        <constraint firstAttribute="bottom" secondItem="d56-KQ-aLJ" secondAttribute="bottom" constant="8" id="9WD-BL-IK3"/>
+                        <constraint firstItem="d56-KQ-aLJ" firstAttribute="leading" secondItem="vIf-Wq-WNy" secondAttribute="leading" constant="16" id="Qsk-Xa-I9w"/>
+                        <constraint firstAttribute="trailing" secondItem="d56-KQ-aLJ" secondAttribute="trailing" constant="8" id="lpA-mt-WW1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vIf-Wq-WNy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Btn-bD-U6W"/>
+                <constraint firstAttribute="trailing" secondItem="vIf-Wq-WNy" secondAttribute="trailing" constant="16" id="CZH-1p-E33"/>
+                <constraint firstAttribute="bottom" secondItem="vIf-Wq-WNy" secondAttribute="bottom" constant="8" id="VRo-dO-MGy"/>
+                <constraint firstItem="vIf-Wq-WNy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="VbA-6h-Qtj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="vIf-Wq-WNy" id="GDb-Sn-jYo"/>
+                <outlet property="pointsDescriptionLabel" destination="pr8-kL-OJB" id="4ti-X3-4yf"/>
+                <outlet property="pointsLabel" destination="VsQ-lf-zIw" id="9gQ-Cb-WmP"/>
+                <outlet property="preserveNameLabel" destination="wFb-Tg-Bix" id="JAj-ai-fpX"/>
+                <outlet property="timeSinceLabel" destination="fQy-a4-b00" id="8Lm-YO-nTX"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>
