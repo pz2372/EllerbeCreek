@@ -30,7 +30,7 @@ struct Sighting: Codable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let id = try container.decode(Int.self, forKey: .id)
-        let animalID = Int.random(in: 0...4) //try container.decode(Int.self, forKey: .animalID)
+        let animalID = try container.decode(Int.self, forKey: .animalID)
         let location = try container.decode(Location.self, forKey: .location)
         
         var animal = Animal()

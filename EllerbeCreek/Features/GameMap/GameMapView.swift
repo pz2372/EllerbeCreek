@@ -106,6 +106,7 @@ class GameMapView: NibBasedView {
     @objc private func handleSessionSightingsUpdating() {
         guard let session = sessionManager.session else { return }
         totalPointsView.textLabel.text = "\(session.totalPoints)"
+        updateAnnotations()
     }
     
     private func setUpLocationManager() {
@@ -182,7 +183,10 @@ class GameMapView: NibBasedView {
     }
     
     private func updateAnnotations() {
-        
+        if let annotations = mapView.annotations {
+            mapView.removeAnnotations(annotations)
+            mapView.addAnnotations(annotations)
+        }
     }
     
 }
@@ -195,10 +199,11 @@ extension GameMapView: MGLMapViewDelegate {
         let reuseIdentifier = "sighting-\(annotation.sighting.id)"
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
 
-        if annotationView == nil {
+        if let session = sessionManager.session, annotationView == nil {
             annotationView = SightingAnnotationView(reuseIdentifier: reuseIdentifier)
             annotationView!.bounds = CGRect(x: 0, y: 0, width: 21, height: 21)
-            annotationView!.backgroundColor = sessionManager.session!.sightings.filter({$0.id == annotation.sighting.id}).isEmpty ? Colors.lightOrange : Colors.black
+            annotationView!.backgroundColor = session.sightings.contains(where: { $0.id == annotation.sighting.id}) ? Colors.black : Colors.lightOrange
+            annotationView!.layer.borderColor = session.sightings.contains(where: { $0.id == annotation.sighting.id}) ? Colors.black.cgColor : Colors.darkOrange.cgColor
         }
 
         return annotationView
