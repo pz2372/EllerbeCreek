@@ -37,8 +37,6 @@ class GameMapNavigator: Navigator {
     }
     
     private func makeViewController(for destination: Destination) -> UIViewController {
-        // TODO: Create profile view controller
-        
         switch destination {
         case .profile:
             let controller = dependencyContainer.makeProfileViewController()
