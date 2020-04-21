@@ -91,7 +91,7 @@
     {
         "id":11,
         "name":"Copperhead",
-        "description":"Copperhead",
+        "description":"Description of Copperhead",
         "infoLink":"https://en.wikipedia.org/wiki/Agkistrodon_contortrix",
         "type":"reptile",
         "rarity":"high"
@@ -100,7 +100,7 @@
     {
         "id":12,
         "name":"Coyote",
-        "description":"Coyote",
+        "description":"Description of Coyote",
         "infoLink":"https://en.wikipedia.org/wiki/Coyote",
         "type":"mammal",
         "rarity":"medium"
@@ -109,7 +109,7 @@
     {
         "id":13,
         "name":"Crayfish",
-        "description":"Crayfish",
+        "description":"Description of Crayfish",
         "infoLink":"https://en.wikipedia.org/wiki/Crayfish",
         "type":"invertebrate",
         "rarity":"low"
@@ -118,7 +118,7 @@
     {
         "id":14,
         "name":"Cricket Frog",
-        "description":"Cricket Frog",
+        "description":"Description of Cricket Frog",
         "infoLink":"https://en.wikipedia.org/wiki/Cricket_frog",
         "type":"amphibian",
         "rarity":"medium"
@@ -127,7 +127,7 @@
     {
         "id":15,
         "name":"Eastern Box Turtle",
-        "description":"Eastern Box Turtle",
+        "description":"Description of Eastern Box Turtle",
         "infoLink":"https://en.wikipedia.org/wiki/Eastern_box_turtle",
         "type":"amphibian",
         "rarity":"medium"
@@ -136,7 +136,7 @@
     {
         "id":16,
         "name":"Eastern Pond Hawk",
-        "description":"Eastern Pond Hawk",
+        "description":"Description of Eastern Pond Hawk",
         "infoLink":"https://en.wikipedia.org/wiki/Erythemis_simplicicollis",
         "type":"insect",
         "rarity":"high"
@@ -145,7 +145,7 @@
     {
         "id": 17,
         "name":"Eastern Red Bat",
-        "description":"Eastern Red Bat",
+        "description":"Description of Eastern Red Bat",
         "infoLink":"https://en.wikipedia.org/wiki/Eastern_red_bat",
         "type":"mammal",
         "rarity":"medium"
@@ -154,7 +154,7 @@
     {
         "id": 18,
         "name":"Great Blue Heron",
-        "description":"Great Blue Heron",
+        "description":"Description of Great Blue Heron",
         "infoLink":"https://en.wikipedia.org/wiki/Great_blue_heron",
         "type":"bird",
         "rarity":"medium"
@@ -162,15 +162,15 @@
     {
         "id": 19,
         "name":"Great Blue Skimmer",
-        "description":"Great Blue Skimmer",
+        "description":"Description of Great Blue Skimmer",
         "infoLink":"https://en.wikipedia.org/wiki/Great_blue_skimmer",
-        "type":"insect",
+        "type":"invertebrate",
         "rarity":"medium"
     },
     {
         "id": 20,
         "name":"Green Sunfish",
-        "description":"Green Sunfish",
+        "description":"Description of Green Sunfish",
         "infoLink":"https://en.wikipedia.org/wiki/Green_sunfish",
         "type":"fish",
         "rarity":"medium"
@@ -179,7 +179,7 @@
     {
         "id": 21,
         "name":"Green Tree Frog",
-        "description":"Green Tree Frog",
+        "description":"Description of Green Tree Frog",
         "infoLink":"https://en.wikipedia.org/wiki/American_green_tree_frog",
         "type":"amphibian",
         "rarity":"medium"
