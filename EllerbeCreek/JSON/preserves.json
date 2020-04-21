@@ -1,0 +1,134 @@
+[
+  {
+    "id":           0,
+    "name":         "Beaver Marsh",
+    "center":       [36.018386, -78.88351],
+    "bounds":       {
+                        "ne": [36.020798, -78.881063],
+                        "sw": [36.016199, -78.885527]
+                    },
+    "sightings":    [
+        {
+            "id":           0,
+            "animalID":     0,
+            "location":     {"latitude": 36.0178153495306, "longitude": -78.8837787588966}
+        },
+        {
+            "id":           1,
+            "animalID":     1,
+            "location":     {"latitude": 36.0187147833317, "longitude": -78.8818824585387}
+        },
+        {
+            "id":           2,
+            "animalID":     2,
+            "location":     {"latitude": 36.0183224478803, "longitude": -78.8852367440906}
+        },
+        {
+            "id":           3,
+            "animalID":     2,
+            "location":     {"latitude": 36.0178092355443, "longitude": -78.8818824585387}
+        },
+        {
+            "id":           4,
+            "animalID":     3,
+            "location":     {"latitude": 36.0197793896702, "longitude": -78.8827939603388}
+        },
+        {
+            "id":           5,
+            "animalID":     4,
+            "location":     {"latitude": 36.0196949533823, "longitude": -78.8849547718941}
+        },
+        {
+            "id":           6,
+            "animalID":     4,
+            "location":     {"latitude": 36.0175282736195, "longitude": -78.8819061692837}
+        },
+        {
+            "id":           7,
+            "animalID":     5,
+            "location":     {"latitude": 36.0183543508383, "longitude": -78.8812331273022}
+        },
+        {
+            "id":           8,
+            "animalID":     6,
+            "location":     {"latitude": 36.0178500030864, "longitude": -78.8819373380237}
+        },
+        {
+            "id":           9,
+            "animalID":     7,
+            "location":     {"latitude": 36.0182698290815, "longitude": -78.8852168382461}
+        },
+        {
+            "id":           10,
+            "animalID":     8,
+            "location":     {"latitude": 36.0201368219983, "longitude": -78.8827952483315}
+        },
+        {
+            "id":           11,
+            "animalID":     9,
+            "location":     {"latitude": 36.0197162537294, "longitude": -78.8847853658137}
+        },
+        {
+            "id":           12,
+            "animalID":     10,
+            "location":     {"latitude": 36.0181682432623, "longitude": -78.8818039929659}
+        },
+        {
+            "id":           13,
+            "animalID":     11,
+            "location":     {"latitude": 36.0198329961389, "longitude": -78.8834906071277}
+        },
+        {
+            "id":           14,
+            "animalID":     12,
+            "location":     {"latitude": 36.0168652191618, "longitude": -78.8829499113358}
+        },
+        {
+            "id":           15,
+            "animalID":     13,
+            "location":     {"latitude": 36.0180161684726, "longitude": -78.8811108841757}
+        },
+        {
+            "id":           16,
+            "animalID":     14,
+            "location":     {"latitude": 36.0196878300258, "longitude": -78.8841321171101}
+        },
+        {
+            "id":           17,
+            "animalID":     15,
+            "location":     {"latitude": 36.0193414851472, "longitude": -78.8821308055841}
+        },
+        {
+            "id":           18,
+            "animalID":     16,
+            "location":     {"latitude": 36.0180229511797, "longitude": -78.8850887267356}
+        },
+        {
+            "id":           19,
+            "animalID":     17,
+            "location":     {"latitude": 36.0189953923155, "longitude": -78.8821334488272}
+        },
+        {
+            "id":           20,
+            "animalID":     18,
+            "location":     {"latitude": 36.0163872109216, "longitude": -78.883800083513}
+        },
+        {
+            "id":           21,
+            "animalID":     19,
+            "location":     {"latitude": 36.0181621888546, "longitude": -78.8818591374692}
+        },
+        {
+            "id":           22,
+            "animalID":     20,
+            "location":     {"latitude": 36.0165817275918, "longitude": -78.8835639206654}
+        },
+        {
+            "id":           23,
+            "animalID":     21,
+            "location":     {"latitude": 36.0181547467217, "longitude": -78.8818842108286}
+        }
+        
+    ]
+  }
+]
