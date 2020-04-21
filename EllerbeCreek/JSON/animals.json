@@ -1,0 +1,42 @@
+[
+    {
+        "id":           0,
+        "name":         "Bald-faced Hornet",
+        "description":  "Bald-faced Hornet description",
+        "infoLink":     "https://en.wikipedia.org/wiki/Bald-faced_hornet",
+        "type":         "invertebrate",
+        "rarity":       "medium"
+    },
+    {
+        "id":           1,
+        "name":         "Barred Owl",
+        "description":  "Barred Owl description",
+        "infoLink":     "https://en.wikipedia.org/wiki/Barred_owl",
+        "type":         "bird",
+        "rarity":       "high"
+    },
+    {
+        "id":           2,
+        "name":         "Beaver",
+        "description":  "Beaver description",
+        "infoLink":     "https://en.wikipedia.org/wiki/Beaver",
+        "type":         "mammal",
+        "rarity":       "medium"
+    },
+    {
+        "id":           3,
+        "name":         "Black Racer",
+        "description":  "Black Racer description",
+        "infoLink":     "https://en.wikipedia.org/wiki/Southern_black_racer",
+        "type":         "reptile",
+        "rarity":       "low"
+    },
+    {
+        "id":           4,
+        "name":         "Black Rat Snake",
+        "description":  "Black Rat Snake description",
+        "infoLink":     "https://en.wikipedia.org/wiki/Pantherophis_obsoletus",
+        "type":         "reptile",
+        "rarity":       "low"
+    }
+]
