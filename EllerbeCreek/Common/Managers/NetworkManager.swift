@@ -188,7 +188,7 @@ extension NetworkManager {
         
         var formattedDate: Date {
             dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
             return dateFormatter.date(from: date)!
         }
         
