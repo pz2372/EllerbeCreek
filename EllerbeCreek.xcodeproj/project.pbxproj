@@ -641,7 +641,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Ryan Anderson";
 				TargetAttributes = {
 					83FE537823E906C200E04182 = {
@@ -770,7 +770,6 @@
 				83FE53E823E9F8C800E04182 /* Fonts.swift in Sources */,
 				836FA91B244C16AE00D7D172 /* SessionTableViewCell.swift in Sources */,
 				8314B0512404C4D900894333 /* SightingDetailNavigator.swift in Sources */,
-				83FE53D023E9AFFB00E04182 /* Session.swift in Sources */,
 				83FE53D023E9AFFB00E04182 /* Session.swift in Sources */,
 				834D65B22427F4FB008587DC /* OnboardingView.swift in Sources */,
 				83C298E92448123E0013E6BE /* UserDefualts+Keys.swift in Sources */,
