@@ -14,6 +14,7 @@ protocol GameMapViewControllerDelegate: class {
     func isAtPreserve(_ userLocation: CLLocation, completion: (Bool) -> ())
     func showSightingView(with sighting: Sighting)
     func showSessionDetailView()
+    func sessionEnded()
 }
 
 class GameMapViewController: UIViewController, NibLoadable {
@@ -185,6 +186,10 @@ extension GameMapViewController: GameMapViewControllerDelegate {
         if let session =  SessionManager.shared.session {
             navigator.present(.sessionDetail(session), with: .overCurrentContext)
         }
+    }
+    
+    func sessionEnded() {
+        navigationItem.rightBarButtonItem = sessionButton
     }
     
 }
