@@ -60,6 +60,7 @@ class SettingsView: NibBasedView {
                 label.font = Fonts.semibold.withSize(20.0)
                 label.textColor = Colors.black
                 label.text = "\(Int(sightingDistance*3.2808)) ft"
+                label.textAlignment = .center
             }
         }
     }
