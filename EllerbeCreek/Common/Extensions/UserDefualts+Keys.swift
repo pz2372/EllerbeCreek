@@ -13,6 +13,8 @@ extension UserDefaults {
     public struct Keys {
         static let user = "User"
         static let token = "Token"
+        static let sightingDistance = "SightingDistance"
+        static let onboarding = "Onboarding"
     }
     
 }
