@@ -96,7 +96,7 @@ class ProfileViewController: UIViewController {
     }
     
     @objc private func settingsAction() {
-        
+        navigator.present(.settings, with: .overCurrentContext)
     }
     
 }

@@ -16,17 +16,11 @@ struct LocationNotificationInfo {
     
     // Location
     let radius: Double
-    let latitude: Double
-    let longitude: Double
+    let coordinates: CLLocationCoordinate2D
     
     // Notification
     let title: String
     let body: String
     let data: [String: Any]?
-    
-    // CLLocation Coordinates
-    var coordinates: CLLocationCoordinate2D {
-        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-    }
     
 }

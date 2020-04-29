@@ -89,12 +89,18 @@ class ProfileView: NibBasedView {
         } else if let days = Calendar.current.dateComponents([.day], from: date, to: Date()).day, days > 0, days < 7 {
             return "\(days) \(days == 1 ? "day" : "days") ago"
         } else {
-            let convertedDate = Calendar.current.dateComponents([.month, .day, .year], from: date)
-            guard let month = convertedDate.month,
-                  let day = convertedDate.day,
-                  let year = convertedDate.year else { return ""}
+            let dateFormatter = DateFormatter()
             
-            return  "\(month) \(day), \(year)"
+            dateFormatter.dateFormat = "MMMM"
+            let month = dateFormatter.string(from: date)
+            
+            dateFormatter.dateFormat = "dd"
+            let day = dateFormatter.string(from: date)
+            
+            dateFormatter.dateFormat = "yyyy"
+            let year = dateFormatter.string(from: date)
+                
+            return "\(month) \(day), \(year)"
         }
     }
     

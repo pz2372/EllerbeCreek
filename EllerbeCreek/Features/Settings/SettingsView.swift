@@ -14,6 +14,10 @@ class SettingsView: NibBasedView {
     
     public weak var delegate: SettingsViewControllerDelegate?
     
+    private var sightingDistance: Double {
+        return UserDefaults.standard.double(forKey: UserDefaults.Keys.sightingDistance)
+    }
+    
     // MARK: Interface Objects
     
     @IBOutlet var dismissButton: UIButton! {
@@ -36,6 +40,38 @@ class SettingsView: NibBasedView {
                 view.backgroundColor = Colors.background
                 view.layer.cornerRadius = 24.0
                 view.layer.masksToBounds = true
+            }
+        }
+    }
+    
+    @IBOutlet var notificationDistanceDetailLabel: UILabel! {
+        willSet {
+            if let label: UILabel = newValue {
+                label.font = Fonts.bold.withSize(24.0)
+                label.textColor = Colors.black
+                label.text = "Sighting Distance"
+            }
+        }
+    }
+    
+    @IBOutlet var notificationDistanceValueLabel: UILabel! {
+        willSet {
+            if let label: UILabel = newValue {
+                label.font = Fonts.semibold.withSize(20.0)
+                label.textColor = Colors.black
+                label.text = "\(Int(sightingDistance*3.2808)) ft"
+                label.textAlignment = .center
+            }
+        }
+    }
+    
+    @IBOutlet var notificationDistanceSlider: UISlider! {
+        willSet {
+            if let slider: UISlider = newValue {
+                slider.value = Float(sightingDistance*3.2808)
+                slider.maximumValue = 500
+                slider.minimumValue = 100
+                slider.tintColor = Colors.lightGreen
             }
         }
     }
@@ -65,6 +101,11 @@ class SettingsView: NibBasedView {
         guard let delegate = delegate else { return }
         self.contentView.backgroundColor = Colors.black.withAlphaComponent(0.0)
         delegate.showProfile()
+    }
+    
+    @IBAction func notificationDistanceSliderValueChanged() {
+        UserDefaults.standard.set(Double(notificationDistanceSlider.value/3.2808), forKey: UserDefaults.Keys.sightingDistance)
+        notificationDistanceValueLabel.text = "\(Int(sightingDistance*3.2808)) ft"
     }
     
 }
