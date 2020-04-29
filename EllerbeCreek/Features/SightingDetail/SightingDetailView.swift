@@ -156,7 +156,7 @@ class SightingDetailView: NibBasedView {
         guard let animalName = sighting.animal.name,
               let animalDescription = sighting.animal.description,
               let animalInfoLink = sighting.animal.infoLink,
-              let animalImage = UIImage(named: "hawk") else { return }
+              let animalImage = sighting.animal.image else { return }
         
         setPoints(with: sighting.points)
         setAnimalName(with: animalName)

@@ -4,14 +4,14 @@
   <contributor>
    <authoring_tool>SceneKit Collada Exporter v1.0</authoring_tool>
   </contributor>
-  <created>2020-04-07T17:06:19Z</created>
-  <modified>2020-04-07T17:06:19Z</modified>
+  <created>2020-04-27T17:58:27Z</created>
+  <modified>2020-04-27T17:58:27Z</modified>
   <unit meter="1.000000"/>
   <up_axis>Y_UP</up_axis>
  </asset>
  <library_images>
   <image id="_2248_Bird_v1_diff_jpg" name="_2248_Bird_v1_diff_jpg">
-   <init_from>12248_Bird_v1_diff.jpg</init_from>
+   <init_from>../bird/12248_Bird_v1_diff.jpg</init_from>
   </image>
  </library_images>
  <library_materials>
@@ -133,7 +133,7 @@
  <library_visual_scenes>
   <visual_scene id="scene8">
    <node id="bird" name="bird">
-    <matrix>0.1414214 0 0.1414214 0 0 0.2 -0 0 -0.1414214 0 0.1414214 0 0 0 0 1 </matrix>
+    <matrix>0.1414214 0 0.1414214 0 0 0.2 0 0 -0.1414214 0 0.1414214 0 0 0 0 1 </matrix>
     <instance_geometry url="#geometry3">
      <bind_material>
       <technique_common>

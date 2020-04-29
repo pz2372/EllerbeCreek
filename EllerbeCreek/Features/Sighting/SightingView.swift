@@ -15,10 +15,8 @@ class SightingView: NibBasedView {
     
     private var sighting: Sighting!
     
-    private let mockNodeNames = ["frog", "fish", "bird", "beaver"]
-    
     private var isNodePresent: Bool = false
-    private var nodeName: String = ""
+    private var arAnimal: ARAnimal!
     private var nodeModel: SCNNode = SCNNode()
     
     @IBOutlet var dismissButton: UIButton! {
@@ -81,10 +79,10 @@ class SightingView: NibBasedView {
     }
     
     private func commonInit() {
-        nodeName = mockNodeNames.randomElement() ?? "beaver"
-        let modelScene = SCNScene(named: "Assets.scnassets/\(nodeName)/\(nodeName).dae")!
+        arAnimal = ARAnimals.animals.filter { $0.type == sighting.animal.type }.first
+        let modelScene = SCNScene(named: arAnimal.assetPath)!
         for child in modelScene.rootNode.childNodes {
-            nodeModel.name = nodeName
+            nodeModel.name = arAnimal.name
             nodeModel.addChildNode(child as SCNNode)
         }
         
@@ -94,7 +92,7 @@ class SightingView: NibBasedView {
     
     func getParent(_ nodeFound: SCNNode?) -> SCNNode? {
         if let node = nodeFound {
-            if node.name == nodeName {
+            if node.name == arAnimal.name {
                 return node
             } else if let parent = node.parent {
                 return getParent(parent)
