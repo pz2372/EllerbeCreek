@@ -21,7 +21,9 @@ class GameMapView: NibBasedView {
     
     private let sessionManager = SessionManager.shared
     
-    private let maxSightingDistance: Double = 60.96  // 200ft
+    private var maxSightingDistance: Double {
+        return UserDefaults.standard.double(forKey: UserDefaults.Keys.sightingDistance)
+    }
     private let minSightingDistance: Double = 15.24  // 50ft
     
     @IBOutlet var mapView: MGLMapView!
