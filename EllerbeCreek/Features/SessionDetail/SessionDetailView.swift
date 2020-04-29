@@ -214,9 +214,10 @@ extension SessionDetailView: UITableViewDataSource {
         
         let sighting = session.sightings[index]
         
-        guard let animalName = sighting.animal.name else { return cell }
+        guard let animalName = sighting.animal.name,
+              let animalImage = sighting.animal.image else { return cell }
         
-        cell.animalImageView.image = UIImage(named: "hawk") // TODO: animalImage
+        cell.animalImageView.image = animalImage
         cell.animalNameLabel.text = "\(animalName)"
         cell.pointsLabel.text = "+\(sighting.points)"
         cell.pointsDescriptionLabel.text = session.totalPoints == 1 ? "point" : "points"

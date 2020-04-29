@@ -29,6 +29,8 @@ class NavigationHeaderView: NibBasedView {
         }
     }
     
+    @IBOutlet var detailTextLabelWidthConstraint: NSLayoutConstraint!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -44,6 +46,7 @@ class NavigationHeaderView: NibBasedView {
     private func commonInit() {
         backgroundColor = .clear
         contentView.backgroundColor = Colors.darkGreen
+        detailTextLabelWidthConstraint.isActive = false
     }
     
     override func layoutSubviews() {

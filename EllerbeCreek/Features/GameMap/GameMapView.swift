@@ -103,6 +103,9 @@ class GameMapView: NibBasedView {
         mapView.removeAnnotations(allAnnotations)
         
         updateHeaderView(with: visibleSightings)
+        
+        guard let delegate = delegate else { return }
+        delegate.sessionEnded()
     }
     
     @objc private func handleSessionSightingsUpdating() {

@@ -75,8 +75,8 @@ struct Animal: Codable {
     
     public var image: UIImage? {
         guard let name = name else { return nil }
-        let imageName = name.filter { !$0.isNewline && !$0.isWhitespace }
-        let image = UIImage(named: "\(imageName)")
+        let image = UIImage(named: "\(name)")
         return image
     }
+    
 }

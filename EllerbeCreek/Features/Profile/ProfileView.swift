@@ -19,6 +19,7 @@ class ProfileView: NibBasedView {
                 view.detailTextLabel.adjustsFontSizeToFitWidth = true
                 view.detailTextLabel.font = Fonts.semibold.withSize(24.0)
                 view.detailTextLabel.numberOfLines = 2
+                view.detailTextLabelWidthConstraint.isActive = true
             }
         }
     }
@@ -84,7 +85,9 @@ class ProfileView: NibBasedView {
     }
     
     private func getTimeSince(date: Date) -> String {
-        if let hours = Calendar.current.dateComponents([.hour], from: date, to: Date()).hour, hours < 24 {
+        if let minutes = Calendar.current.dateComponents([.minute], from: date, to: Date()).minute, minutes < 60 {
+            return "\(minutes) min ago"
+        } else if let hours = Calendar.current.dateComponents([.hour], from: date, to: Date()).hour, hours < 24 {
             return "\(hours) \(hours == 1 ? "hr" : "hrs") ago"
         } else if let days = Calendar.current.dateComponents([.day], from: date, to: Date()).day, days > 0, days < 7 {
             return "\(days) \(days == 1 ? "day" : "days") ago"
