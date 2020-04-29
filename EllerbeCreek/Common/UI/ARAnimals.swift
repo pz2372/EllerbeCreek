@@ -10,7 +10,7 @@ import Foundation
 
 struct ARAnimals {
     
-    static let animals: [ARAnimal] = [frog, duck, fish, beaver, wasp]
+    static let animals: [ARAnimal] = [frog, duck, fish, beaver, wasp, turtle]
     
     static let frog: ARAnimal = {
         return ARAnimal(name: "frog", type: .amphibian)
