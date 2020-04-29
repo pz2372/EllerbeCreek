@@ -79,7 +79,7 @@ class SightingView: NibBasedView {
     }
     
     private func commonInit() {
-        arAnimal = ARAnimals.animals.filter { $0.type == sighting.animal.type }.first
+        arAnimal = ARAnimals.animals.filter { $0.type == sighting.animal.type! }.first
         let modelScene = SCNScene(named: arAnimal.assetPath)!
         for child in modelScene.rootNode.childNodes {
             nodeModel.name = arAnimal.name
