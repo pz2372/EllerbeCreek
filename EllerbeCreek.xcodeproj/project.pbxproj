@@ -25,6 +25,7 @@
 		833C89012459404D003FDCF4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C88FD2459404C003FDCF4 /* SettingsView.swift */; };
 		833C89022459404D003FDCF4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C88FE2459404D003FDCF4 /* SettingsViewController.swift */; };
 		833C89032459404D003FDCF4 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 833C88FF2459404D003FDCF4 /* SettingsView.xib */; };
+		833C890524594154003FDCF4 /* LocationNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C890424594154003FDCF4 /* LocationNotificationManager.swift */; };
 		8346C8CF240588D600843887 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8346C8CE240588D600843887 /* Separator.swift */; };
 		834D65B22427F4FB008587DC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65B12427F4FB008587DC /* OnboardingView.swift */; };
 		834D65B42427F534008587DC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65B32427F534008587DC /* OnboardingViewController.swift */; };
@@ -146,6 +147,7 @@
 		833C88FD2459404C003FDCF4 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		833C88FE2459404D003FDCF4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		833C88FF2459404D003FDCF4 /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
+		833C890424594154003FDCF4 /* LocationNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationNotificationManager.swift; sourceTree = "<group>"; };
 		8346C8CE240588D600843887 /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
 		834D65B12427F4FB008587DC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		834D65B32427F534008587DC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -372,6 +374,7 @@
 		83642F312446472700483B9C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				833C890424594154003FDCF4 /* LocationNotificationManager.swift */,
 				83EB13C32426C89800D337C2 /* SessionManager.swift */,
 				83EB13C12426B51500D337C2 /* DatabaseManager.swift */,
 				83853AAF2449564F00B3F993 /* GameCenterManager.swift */,
@@ -762,6 +765,7 @@
 				83FE53C623E9AF0F00E04182 /* DependencyContainer.swift in Sources */,
 				836FA925244CA43F00D7D172 /* SessionDetailViewController.swift in Sources */,
 				83FE53CD23E9AFC000E04182 /* ViewControllerFactory.swift in Sources */,
+				833C890524594154003FDCF4 /* LocationNotificationManager.swift in Sources */,
 				832B79322457533700C7D378 /* ARAnimal.swift in Sources */,
 				836FA923244CA42B00D7D172 /* SessionDetailView.swift in Sources */,
 				83C925482432394B001E38FE /* NewSessionNavigator.swift in Sources */,
