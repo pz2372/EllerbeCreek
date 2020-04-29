@@ -21,6 +21,10 @@
 		8335C64E2429C9F500AA9BF3 /* PermissionDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335C64D2429C9F500AA9BF3 /* PermissionDescriptionView.swift */; };
 		8335C6502429CA0500AA9BF3 /* PermissionDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8335C64F2429CA0500AA9BF3 /* PermissionDescriptionView.xib */; };
 		8335C655242A540000AA9BF3 /* PermissionsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335C654242A540000AA9BF3 /* PermissionsHelper.swift */; };
+		833C89002459404D003FDCF4 /* SettingsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C88FC2459404C003FDCF4 /* SettingsNavigator.swift */; };
+		833C89012459404D003FDCF4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C88FD2459404C003FDCF4 /* SettingsView.swift */; };
+		833C89022459404D003FDCF4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C88FE2459404D003FDCF4 /* SettingsViewController.swift */; };
+		833C89032459404D003FDCF4 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 833C88FF2459404D003FDCF4 /* SettingsView.xib */; };
 		8346C8CF240588D600843887 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8346C8CE240588D600843887 /* Separator.swift */; };
 		834D65B22427F4FB008587DC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65B12427F4FB008587DC /* OnboardingView.swift */; };
 		834D65B42427F534008587DC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834D65B32427F534008587DC /* OnboardingViewController.swift */; };
@@ -138,6 +142,10 @@
 		8335C64D2429C9F500AA9BF3 /* PermissionDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionDescriptionView.swift; sourceTree = "<group>"; };
 		8335C64F2429CA0500AA9BF3 /* PermissionDescriptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionDescriptionView.xib; sourceTree = "<group>"; };
 		8335C654242A540000AA9BF3 /* PermissionsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsHelper.swift; sourceTree = "<group>"; };
+		833C88FC2459404C003FDCF4 /* SettingsNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsNavigator.swift; sourceTree = "<group>"; };
+		833C88FD2459404C003FDCF4 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		833C88FE2459404D003FDCF4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		833C88FF2459404D003FDCF4 /* SettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
 		8346C8CE240588D600843887 /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
 		834D65B12427F4FB008587DC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		834D65B32427F534008587DC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -289,6 +297,17 @@
 				8335C654242A540000AA9BF3 /* PermissionsHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		833C88FB24594002003FDCF4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				833C88FC2459404C003FDCF4 /* SettingsNavigator.swift */,
+				833C88FD2459404C003FDCF4 /* SettingsView.swift */,
+				833C88FF2459404D003FDCF4 /* SettingsView.xib */,
+				833C88FE2459404D003FDCF4 /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		834D65B72427F557008587DC /* Onboarding */ = {
@@ -534,6 +553,7 @@
 		83FE53B823E91E5F00E04182 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				833C88FB24594002003FDCF4 /* Settings */,
 				834D65B72427F557008587DC /* Onboarding */,
 				8314B04F2404C4BD00894333 /* SightingDetail */,
 				831C244B23F754BA00369C31 /* Sighting */,
@@ -702,6 +722,7 @@
 				83E554382445131B00988885 /* preserves.json in Resources */,
 				83A0DA1C243CFFD300022833 /* ProfileView.xib in Resources */,
 				831C245B23F755FB00369C31 /* SightingView.xib in Resources */,
+				833C89032459404D003FDCF4 /* SettingsView.xib in Resources */,
 				83E914F0243CE91B002FFB14 /* Assets.scnassets in Resources */,
 				8335C6502429CA0500AA9BF3 /* PermissionDescriptionView.xib in Resources */,
 			);
@@ -746,6 +767,7 @@
 				83C925482432394B001E38FE /* NewSessionNavigator.swift in Sources */,
 				83FE53D423E9B39100E04182 /* UIViewController+NibLoadable.swift in Sources */,
 				83EB13C22426B51500D337C2 /* DatabaseManager.swift in Sources */,
+				833C89022459404D003FDCF4 /* SettingsViewController.swift in Sources */,
 				836FA919244C0C2400D7D172 /* JSONEncoder+EncodableWrapper.swift in Sources */,
 				83C925462432393B001E38FE /* NewSessionView.swift in Sources */,
 				83853AB02449564F00B3F993 /* GameCenterManager.swift in Sources */,
@@ -792,6 +814,8 @@
 				83936E2323EB3D9000C9FA1A /* SightingAnnotationView.swift in Sources */,
 				83BAE99B24476F9E00C64769 /* TotalPointsView.swift in Sources */,
 				834D65C52428339A008587DC /* PermissionsView.swift in Sources */,
+				833C89002459404D003FDCF4 /* SettingsNavigator.swift in Sources */,
+				833C89012459404D003FDCF4 /* SettingsView.swift in Sources */,
 				83FE53D823E9C8F200E04182 /* MainNavigationController.swift in Sources */,
 				83FE53D223E9B00600E04182 /* User.swift in Sources */,
 				836FA927244CA44F00D7D172 /* SessionDetailNavigator.swift in Sources */,
