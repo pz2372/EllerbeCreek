@@ -28,7 +28,7 @@ class SessionDetailNavigator: Navigator {
     }
     
     func present(_ destination: Destination, with presentationStyle: UIModalPresentationStyle = .fullScreen) {
-        if let rootController = dependencyContainer.profileNavigationController.viewControllers.first, let topController = rootController.top {
+        if let rootController = UIApplication.shared.keyWindow?.rootViewController, let topController = rootController.top {
             let viewController = makeViewController(for: destination)
             viewController.modalPresentationStyle = presentationStyle
             viewController.modalPresentationCapturesStatusBarAppearance = true
