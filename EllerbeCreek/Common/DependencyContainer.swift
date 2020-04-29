@@ -52,5 +52,8 @@ class DependencyContainer: CoreDependencyContainer, KeyValueStorable {
         return SessionDetailViewController(navigator: SessionDetailNavigator(dependencyContainer: self), session: session)
     }
     
+    func makeSettingsViewController() -> SettingsViewController {
+        return SettingsViewController(navigator: SettingsNavigator(dependencyContainer: self))
+    }
 }
 

@@ -14,4 +14,5 @@ protocol ViewControllerFactory {
     func makeNewSessionViewController(preserve: Preserve) -> NewSessionViewController
     func makeProfileViewController() -> ProfileViewController
     func makeSessionDetailViewController(session: Session) -> SessionDetailViewController
+    func makeSettingsViewController() -> SettingsViewController
 }

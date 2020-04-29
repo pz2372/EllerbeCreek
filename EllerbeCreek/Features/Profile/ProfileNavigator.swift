@@ -12,6 +12,7 @@ class ProfileNavigator: Navigator {
     enum Destination {
         case gameMap
         case sessionDetail(_ session: Session, _ delegate: UIViewControllerTransitioningDelegate)
+        case settings
     }
     
     var dependencyContainer: CoreDependencyContainer & KeyValueStorable
@@ -42,6 +43,8 @@ class ProfileNavigator: Navigator {
             let controller = dependencyContainer.makeSessionDetailViewController(session: session)
             controller.transitioningDelegate = delegate
             return controller
+        case .settings:
+            return dependencyContainer.makeSettingsViewController()
         }
     }
 }
