@@ -15,6 +15,8 @@
 		831C245723F755CB00369C31 /* SightingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C245623F755CB00369C31 /* SightingView.swift */; };
 		831C245923F755DD00369C31 /* SightingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C245823F755DD00369C31 /* SightingViewController.swift */; };
 		831C245B23F755FB00369C31 /* SightingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831C245A23F755FB00369C31 /* SightingView.xib */; };
+		832B79302457524D00C7D378 /* ARAnimals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832B792F2457524D00C7D378 /* ARAnimals.swift */; };
+		832B79322457533700C7D378 /* ARAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832B79312457533700C7D378 /* ARAnimal.swift */; };
 		8335C64C2429B08C00AA9BF3 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8335C64B2429B08C00AA9BF3 /* GameKit.framework */; };
 		8335C64E2429C9F500AA9BF3 /* PermissionDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335C64D2429C9F500AA9BF3 /* PermissionDescriptionView.swift */; };
 		8335C6502429CA0500AA9BF3 /* PermissionDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8335C64F2429CA0500AA9BF3 /* PermissionDescriptionView.xib */; };
@@ -130,6 +132,8 @@
 		831C245623F755CB00369C31 /* SightingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingView.swift; sourceTree = "<group>"; };
 		831C245823F755DD00369C31 /* SightingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingViewController.swift; sourceTree = "<group>"; };
 		831C245A23F755FB00369C31 /* SightingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SightingView.xib; sourceTree = "<group>"; };
+		832B792F2457524D00C7D378 /* ARAnimals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAnimals.swift; sourceTree = "<group>"; };
+		832B79312457533700C7D378 /* ARAnimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAnimal.swift; sourceTree = "<group>"; };
 		8335C64B2429B08C00AA9BF3 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		8335C64D2429C9F500AA9BF3 /* PermissionDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionDescriptionView.swift; sourceTree = "<group>"; };
 		8335C64F2429CA0500AA9BF3 /* PermissionDescriptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionDescriptionView.xib; sourceTree = "<group>"; };
@@ -556,6 +560,7 @@
 		83FE53C223E9204000E04182 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				832B792F2457524D00C7D378 /* ARAnimals.swift */,
 				83FE53B323E91C3800E04182 /* Colors.swift */,
 				83FE53E723E9F8C800E04182 /* Fonts.swift */,
 				83FE53D523E9B3AA00E04182 /* NibBasedView.swift */,
@@ -588,6 +593,7 @@
 				83936E2023EB3D3300C9FA1A /* Preserve.swift */,
 				83719E7D242A86F6007BB8B4 /* Animal.swift */,
 				83E5544024451CEB00988885 /* Sighting.swift */,
+				832B79312457533700C7D378 /* ARAnimal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -735,6 +741,7 @@
 				83FE53C623E9AF0F00E04182 /* DependencyContainer.swift in Sources */,
 				836FA925244CA43F00D7D172 /* SessionDetailViewController.swift in Sources */,
 				83FE53CD23E9AFC000E04182 /* ViewControllerFactory.swift in Sources */,
+				832B79322457533700C7D378 /* ARAnimal.swift in Sources */,
 				836FA923244CA42B00D7D172 /* SessionDetailView.swift in Sources */,
 				83C925482432394B001E38FE /* NewSessionNavigator.swift in Sources */,
 				83FE53D423E9B39100E04182 /* UIViewController+NibLoadable.swift in Sources */,
@@ -746,6 +753,7 @@
 				834F7AAF244B91D300E850CE /* NetworkManager.swift in Sources */,
 				831C245523F755BD00369C31 /* SightingNavigator.swift in Sources */,
 				83C925422432391F001E38FE /* NewSessionViewController.swift in Sources */,
+				832B79302457524D00C7D378 /* ARAnimals.swift in Sources */,
 				834F7AB1244BDC2300E850CE /* CLLocationCoordinate2D+CLLocation.swift in Sources */,
 				83A0DA1A243CFFC700022833 /* ProfileNavigator.swift in Sources */,
 				8314B0532404C4E700894333 /* SightingDetailView.swift in Sources */,
