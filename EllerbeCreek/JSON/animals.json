@@ -10,7 +10,7 @@
     {
         "id":           1,
         "name":         "Barred Owl",
-        "description":  "Barred Owl description",
+        "description":  "In March, you might hear Barred Owls hooting and calling, even during the daytime. Researchers have confirmed that Barred Owls have “one of the most diverse vocal repertoires among North American owls”. These calls include the typical “who-cooks-for-you” vocalization, screams (AKA alarm calls), mumbles, twitters, gurgles (typically from males), one phrased hoots (typically from females), and duet behaviors where male and female gurgles and hoots co-occur.",
         "infoLink":     "https://en.wikipedia.org/wiki/Barred_owl",
         "type":         "bird",
         "rarity":       "high"
@@ -18,7 +18,7 @@
     {
         "id":           2,
         "name":         "Beaver",
-        "description":  "Beaver description",
+        "description":  "Today, beaver live throughout North America, excluding far northern Canada and the deserts of Mexico and southwestern U.S. In North Carolina, beaver roam the entire state, but are more abundant in the Piedmont and the Coastal Plain, excepting the outer banks and coastal islands. Most beaver live along creeks and build lodges and dams; about 25% of individuals live in bank burrows rather than lodges. Other beaver live in deep lakes and rivers, and do not build dams.",
         "infoLink":     "https://en.wikipedia.org/wiki/Beaver",
         "type":         "mammal",
         "rarity":       "medium"
@@ -90,7 +90,7 @@
     {
         "id":           11,
         "name":         "Copperhead",
-        "description":  "Description of Copperhead",
+        "description":  "The Copperhead (Agkistrodon contortrix) is the most widespread of North Carolina’s six venomous snakes. The copperhead probably occurs in every county in North Carolina, and is distributed throughout the southeastern United States. Known as “highland moccasins,” copperheads inhabit wooded areas ranging from riparian (streamside) habitat to ridgetops. They sometimes reside in more open habitat and are fairly tolerant of human development, often frequenting trash piles and abandoned buildings.",
         "infoLink":     "https://en.wikipedia.org/wiki/Agkistrodon_contortrix",
         "type":         "reptile",
         "rarity":       "high"
@@ -98,7 +98,7 @@
     {
         "id":           12,
         "name":         "Coyote",
-        "description":  "Description of Coyote",
+        "description":  "Reports of coyotes (Canis latrans) in North Carolina first emerged in the 1930s, often associated with imported specimens intended to help hunters practice for better game, i.e., red fox. Not until 1947, on Cherokee land in Swain County, did a forest ranger make the first recorded wild sighting of a coyote. In the mid-1980s the range of coyotes in North Carolina was primarily confined to some counties on the western boundary of the Piedmont. Yet today, coyotes occur in all 100 counties of the state. Their populations remain highest in the Western counties, but in the last ten to twenty years sizeable populations have grown in the Coastal Plain.",
         "infoLink":     "https://en.wikipedia.org/wiki/Coyote",
         "type":         "mammal",
         "rarity":       "medium"

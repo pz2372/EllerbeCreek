@@ -29,11 +29,11 @@ struct ARAnimals {
     }()
     
     static let wasp: ARAnimal = {
-        return ARAnimal(name: "wasp", type: .invertebrate)
+        return ARAnimal(name: "beaver", type: .invertebrate)
     }()
     
     static let turtle: ARAnimal = {
-        return ARAnimal(name: "turtle", type: .reptile)
+        return ARAnimal(name: "duck", type: .reptile)
     }()
     
 }
