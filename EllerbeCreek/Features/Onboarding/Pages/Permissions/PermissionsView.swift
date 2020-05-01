@@ -30,6 +30,18 @@ class PermissionsView: NibBasedView {
         }
     }
     
+    @IBOutlet var permissionsDescriptionLabel: UILabel! {
+        willSet {
+            if let label: UILabel = newValue {
+                label.font = Fonts.regular.withSize(16.0)
+                label.numberOfLines = 0
+                label.textColor = Colors.black
+                label.textAlignment = .center
+                label.text = "Enabling the below permissions is necessary to ensure that your gameplay experience is seamless."
+            }
+        }
+    }
+    
     @IBOutlet var locationPermissionDescription: PermissionDescriptionView! {
         willSet {
             if let view: PermissionDescriptionView = newValue {
