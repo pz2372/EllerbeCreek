@@ -72,11 +72,12 @@ class SessionHeaderView: NibBasedView {
     }
     
     private func setPoints(with value: Int) {
-        let attributedText = NSMutableAttributedString.init(string: value == 1 ? "\(value) point" : "\(value) points")
-        attributedText.setAttributes([NSAttributedString.Key.font: Fonts.bold.withSize(28.0)], range: NSMakeRange(0, "\(value)".count+1))
-        attributedText.setAttributes([NSAttributedString.Key.baselineOffset: 2.0], range: NSMakeRange("\(value)".count, attributedText.length-1))
-
-        totalPointsLabel.attributedText = attributedText
+//        let attributedText = NSMutableAttributedString.init(string: value == 1 ? "\(value) point" : "\(value) points")
+//        attributedText.setAttributes([NSAttributedString.Key.font: Fonts.bold.withSize(28.0)], range: NSMakeRange(0, "\(value)".count+1))
+//        attributedText.setAttributes([NSAttributedString.Key.baselineOffset: 2.0], range: NSMakeRange("\(value)".count, attributedText.length-1))
+        
+        let text = value == 1 ? "\(value) point" : "\(value) points"
+        totalPointsLabel.text = text
     }
     
 }
