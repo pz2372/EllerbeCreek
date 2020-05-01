@@ -31,17 +31,6 @@ class UserCreationView: NibBasedView {
         }
     }
     
-    @IBOutlet var separatorDescriptorLabel: UILabel! {
-        willSet {
-            if let label: UILabel = newValue {
-                label.font = Fonts.semibold.withSize(20.0)
-                label.textColor = Colors.black
-                label.textAlignment = .center
-                label.text = "or"
-            }
-        }
-    }
-    
     @IBOutlet var gameCenterButton: UIButton! {
         willSet {
             if let button: UIButton = newValue {
@@ -52,6 +41,18 @@ class UserCreationView: NibBasedView {
                 button.layer.shadowOffset  = CGSize(width: 0.0, height: 2.0)
                 button.layer.shadowOpacity = 0.1
                 button.layer.shadowRadius  = 6.0
+            }
+        }
+    }
+    
+    @IBOutlet var gameCenterDescriptionLabel: UILabel! {
+        willSet {
+            if let label: UILabel = newValue {
+                label.adjustsFontSizeToFitWidth = true
+                label.font = Fonts.regular.withSize(16.0)
+                label.numberOfLines = 0
+                label.text = "Enabling Game Center allows your game activity to be saved and synced across your other devices."
+                label.textColor = Colors.black
             }
         }
     }
@@ -91,10 +92,6 @@ class UserCreationView: NibBasedView {
             guard let delegate = self.delegate else { return }
             delegate.triggerScrollToNextSlide()
         }
-    }
-    
-    @IBAction func customAction() {
-        
     }
     
 }
