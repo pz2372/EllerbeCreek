@@ -34,6 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             GameCenterManager.shared.authenticate()
         } else {
+            UserDefaults.standard.set(Double(300/3.2808), forKey: UserDefaults.Keys.sightingDistance)
+            
             let onboardingViewController = dependencyContainer.makeOnboardingViewController()
             setWindow(rootViewController: onboardingViewController)
         }
